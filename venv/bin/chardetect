@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/dan/Google Drive/School/2018 08 - ECSU-CSC450 Senior Research/CSC450/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from chardet.cli.chardetect import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
