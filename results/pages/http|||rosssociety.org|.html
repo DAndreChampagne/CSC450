@@ -1,0 +1,1131 @@
+<!DOCTYPE html><!--[if lt IE 7 ]><html lang="en" class="no-js ie6 "><![endif]--><!--[if IE 7 ]><html lang="en" class="no-js ie7 "> <![endif]--><!--[if IE 8 ]><html lang="en" class="no-js ie8 "> <![endif]--><!--[if IE 9 ]><html lang="en" class="no-js ie9 "><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js "><!--<![endif]--><head id="Head1"><script type="text/javascript" src="https://bam.nr-data.net/1/dee0e5b8c5?a=23370383&amp;v=1099.d27c17c&amp;to=ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw%3D%3D&amp;rst=1876&amp;ref=http://rosssociety.org/&amp;ap=78&amp;be=224&amp;fe=1869&amp;dc=897&amp;af=err,xhr,stn,ins&amp;perf=%7B%22timing%22:%7B%22of%22:1540488350773,%22n%22:0,%22f%22:1,%22dn%22:2,%22dne%22:45,%22c%22:45,%22ce%22:66,%22rq%22:66,%22rp%22:177,%22rpe%22:201,%22dl%22:182,%22di%22:897,%22ds%22:897,%22de%22:971,%22dc%22:1869,%22l%22:1869,%22le%22:1871%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1099.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dee0e5b8c5","applicationID":"23370383","transactionName":"ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw==","queueTime":0,"applicationTime":78,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUHU1JRChACV1JVBwIPVQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&amp;&amp;console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&amp;&amp;"function"==typeof console.log&amp;&amp;(s.console=!0,o.indexOf("dev")!==-1&amp;&amp;(s.dev=!0),o.indexOf("nr_dev")!==-1&amp;&amp;(s.nrDev=!0))}catch(c){}s.nrDev&amp;&amp;i.on("internal-error",function(t){r(t.stack)}),s.dev&amp;&amp;i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&amp;&amp;(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&amp;&amp;(t(8),t(7),"addEventListener"in window&amp;&amp;t(5),c.xhrWrappable&amp;&amp;t(9),d=!0)}s.on("fn-start",function(t,n,e){d&amp;&amp;(p+=1)}),s.on("fn-err",function(t,n,e){d&amp;&amp;!e[l]&amp;&amp;(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&amp;&amp;!this.thrown&amp;&amp;p&gt;0&amp;&amp;(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&amp;&amp;window.performance.timing&amp;&amp;window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&amp;&amp;(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&amp;&amp;i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&amp;&amp;(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&amp;&amp;!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&amp;&amp;o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&amp;&amp;(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState&gt;3&amp;&amp;!n.resolved&amp;&amp;(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&amp;&amp;(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t&lt;g.length;t++)r([],g[t]);g.length&amp;&amp;(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&amp;&amp;m.resolve();if(!v&amp;&amp;!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&amp;&amp;t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r&lt;d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&amp;&amp;(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&amp;&amp;(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&amp;&amp;null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&amp;&amp;(p&gt;34||p&lt;10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&amp;&amp;"xpid"in NREUM.loader_config&amp;&amp;this.sameOrigin&amp;&amp;n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&amp;&amp;r){var i=h(r);i&amp;&amp;(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&amp;&amp;(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&amp;&amp;(o.onloadCalled||"function"!=typeof n.onload))&amp;&amp;o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s&lt;d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&amp;&amp;"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;!this.xhrGuids[e]&amp;&amp;(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;this.xhrGuids[e]&amp;&amp;(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&amp;&amp;("onload"===e&amp;&amp;(this.onload=!0),("load"===(t[0]&amp;&amp;t[0].type)||this.onload)&amp;&amp;(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&amp;&amp;f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&amp;&amp;o[1]&amp;&amp;(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&amp;&amp;"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&amp;&amp;(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&amp;&amp;n.port===e.port;return r.sameOrigin=i&amp;&amp;(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&amp;&amp;(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&amp;&amp;t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&amp;&amp;t instanceof ArrayBuffer&amp;&amp;t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&amp;&amp;t instanceof Blob&amp;&amp;t.size)return t.size;if(!("undefined"!=typeof FormData&amp;&amp;t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&amp;&amp;(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a&lt;r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&amp;&amp;s.indexOf("Chrome")===-1&amp;&amp;s.indexOf("Chromium")===-1&amp;&amp;(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&amp;&amp;(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&amp;&amp;(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&amp;&amp;t instanceof Function&amp;&amp;t.apply&amp;&amp;!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c&lt;n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&amp;&amp;Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&amp;&amp;(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&amp;&amp;t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&amp;&amp;t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f&lt;c;f++)s[f].apply(a,r);var d=u[g[e]];return d&amp;&amp;d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r&lt;e.length;r++)e[r]===n&amp;&amp;e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&amp;&amp;(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&amp;&amp;"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&amp;&amp;t.licenseKey&amp;&amp;t.applicationID&amp;&amp;n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&amp;&amp;i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&amp;&amp;performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&amp;&amp;v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&amp;&amp;w&amp;&amp;w[h]&amp;&amp;!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="viewport" content="width=device-width" />
+<link href="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/styles/combined.css" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/customStyles.css?t=635557341450000000" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/user.css?t=635248363840000000" rel="stylesheet" type="text/css" /><link href="//sf.wildapricot.org/WebUI/built6.11.0.2724/css/shared/ui/shared-ui-compiled.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="javascript" id="idJavaScriptEnvironment">var bonaPage_BuildVer='6.11.0.2724';
+var bonaPage_AdminBackendUrl = '/admin/';
+var bonaPage_StatRes='http://sf.wildapricot.org/WebUI/';
+var bonaPage_InternalPageType = { isUndefinedPage : false,isWebPage : true,isAdminPage : false,isDialogPage : false,isSystemPage : false,isErrorPage : false,isError404Page : false };
+var bonaPage_PageView = { isAnonymousView : true,isMemberView : false,isAdminView : false };
+var WidgetMode = 0;
+var bonaPage_IsUserAnonymous = true;
+var bonaPage_ThemeVer='bbf85624635248363840000000635557341450000000'; var bonaPage_ThemeId = 'blueprint_industrial_park.v3.0'; var bonaPage_ThemeVersion = '3.0';
+var bonaPage_id='125008'; version_id='';
+try { function waMetricsGlobalHandler(args) { if (WA.topWindow.waMetricsOuterGlobalHandler &amp;&amp; typeof(WA.topWindow.waMetricsOuterGlobalHandler) === 'function') { WA.topWindow.waMetricsOuterGlobalHandler(args); }}} catch(err) {}
+ try { if (parent &amp;&amp; parent.BonaPage) parent.BonaPage.implementBonaPage(window); } catch (err) { }
+document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } &lt;/style&gt;');</script><style type="text/css"> .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } </style><script type="text/javascript" language="javascript" src="http://donaldross.wildapricot.org/63eb4517/CheckHttpsAuthentication.aspx" id="idCheckHttpsAuthentication"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/bonapagetop/bonapagetop-compiled.js" id="idBonaPageTop"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/ui/shared-ui-compiled.js" id="idSharedJs"></script><style type="text/css">.CodeMirror { font-family: monospace; height: 300px; }.CodeMirror-scroll { overflow: auto; }.CodeMirror-lines { padding: 4px 0; }.CodeMirror pre { padding: 0 4px; }.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }.CodeMirror-gutters { border-right: 1px solid #ddd; background-color: #f7f7f7; white-space: nowrap; }.CodeMirror-linenumbers {}.CodeMirror-linenumber { padding: 0 3px 0 5px; min-width: 20px; text-align: right; color: #999; }.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; z-index: 3; }.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0; background: #7e7; z-index: 1; }.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {}.cm-tab { display: inline-block; }.cm-s-default .cm-keyword {color: #708;}.cm-s-default .cm-atom {color: #219;}.cm-s-default .cm-number {color: #164;}.cm-s-default .cm-def {color: #00f;}.cm-s-default .cm-variable {color: black;}.cm-s-default .cm-variable-2 {color: #05a;}.cm-s-default .cm-variable-3 {color: #085;}.cm-s-default .cm-property {color: black;}.cm-s-default .cm-operator {color: black;}.cm-s-default .cm-comment {color: #a50;}.cm-s-default .cm-string {color: #a11;}.cm-s-default .cm-string-2 {color: #f50;}.cm-s-default .cm-meta {color: #555;}.cm-s-default .cm-qualifier {color: #555;}.cm-s-default .cm-builtin {color: #30a;}.cm-s-default .cm-bracket {color: #997;}.cm-s-default .cm-tag {color: #170;}.cm-s-default .cm-attribute {color: #00c;}.cm-s-default .cm-header {color: blue;}.cm-s-default .cm-quote {color: #090;}.cm-s-default .cm-hr {color: #999;}.cm-s-default .cm-link {color: #00c;}.cm-negative {color: #d44;}.cm-positive {color: #292;}.cm-header, .cm-strong {font-weight: bold;}.cm-em {font-style: italic;}.cm-link {text-decoration: underline;}.cm-s-default .cm-error {color: #f00;}.cm-invalidchar {color: #f00;}div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}.CodeMirror-activeline-background {background: #e8f2ff;}.CodeMirror { line-height: 1; position: relative; overflow: hidden; background: white; color: black; }.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; -moz-box-sizing: content-box; box-sizing: content-box; }.CodeMirror-sizer { position: relative; }.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }.CodeMirror-vscrollbar { right: 0; top: 0; overflow-x: hidden; overflow-y: scroll; }.CodeMirror-hscrollbar { bottom: 0; left: 0; overflow-y: hidden; overflow-x: scroll; }.CodeMirror-scrollbar-filler { right: 0; bottom: 0; }.CodeMirror-gutter-filler { left: 0; bottom: 0; }.CodeMirror-gutters { position: absolute; left: 0; top: 0; padding-bottom: 30px; z-index: 3; }.CodeMirror-gutter { white-space: normal; height: 100%; -moz-box-sizing: content-box; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block;*zoom:1;*display:inline;}.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }.CodeMirror-lines { cursor: text; }.CodeMirror pre { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-width: 0; background: transparent; font-family: inherit; font-size: inherit; margin: 0; white-space: pre; word-wrap: normal; line-height: inherit; color: inherit; z-index: 2; position: relative; overflow: visible; }.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }.CodeMirror-code pre { border-right: 30px solid transparent; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }.CodeMirror-linebackground { position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; }.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }.CodeMirror-widget {}.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }.CodeMirror-measure { position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; }.CodeMirror-measure pre { position: static; }.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0; }.CodeMirror-focused div.CodeMirror-cursor { visibility: visible; }.CodeMirror-selected { background: #d9d9d9; }.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }.cm-searching { background: #ffa; background: rgba(255, 255, 0, .4); }.CodeMirror span { *vertical-align: text-bottom; }@media print { .CodeMirror div.CodeMirror-cursor { visibility: hidden; }}.CodeMirror-matchingtag { background-color: #FFCCAA; }</style><style type="text/css">  DIV.dialogRoundedBoxContainerOldIE { filter: alpha(opacity=73); }  DIV.dialogRoundedBoxShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=15, makeShadow=true, shadowOpacity=0.23); }  DIV.dialogOuterHeadContainerShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=2, makeShadow=true, shadowOpacity=0.27); }  DIV.dialogInnerHeadContainerOldIE { filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#EEEEEE, endColorstr=#B7B7B7, gradientType=0); }</style><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/General.js" id=""></script><script type="text/javascript" language="javascript" src="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/scripts/combined.js" id=""></script><title>Donald Ross</title>
+<meta name="Keywords" content="Donald Ross, Golf Course Architecture, Pinehurst, Golf Architect, Oak Hills Country Club, Essex County Club, Aronomink Golf Club, Donald Ross Society" /><meta name="Description" content="The Donald Ross Society is dedicated to preserving the classic golf courses designed by Donald Ross and forwarding his standards of excellence in golf course design" /><link rel="shortcut icon" type="image/ico" href="/Resources/Pictures/favicon.ico" />
+<meta name="google-site-verification" content="t3VuDGjboZ-eYHZ7AK1nEJVSXwIBMwYNFXAxX6AUfjI" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46735651-1', 'donaldross.org');
+  ga('send', 'pageview');
+
+</script><link rel="search" type="application/opensearchdescription+xml" title="rosssociety.org" href="/opensearch.ashx" /></head>
+  <body id="PAGEID_125008" class="publicContentView LayoutMain">
+<div class="mLayout layoutMain state1" id="mLayout">
+
+ <!-- header zone -->
+		<div class="zoneHeaderOuter zoneOuter">
+			<div class="zoneHeader container_12">
+				<div class="zoneHeaderInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="id_Header" data-componentid="Header" class="WaPlaceHolder WaPlaceHolderHeader" style=""><div style=""><div id="id_LhW2RGH" data-componentid="LhW2RGH" class="WaLayoutContainerOnly" style=""><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tbody><tr data-componentid="LhW2RGH_row" class="WaLayoutRow"><td id="id_JAtKD9W" data-componentid="JAtKD9W" class="WaLayoutItem" style="width:42%;"><div id="id_hwoTJs8" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="hwoTJs8" style=""><div style=""><div id="id_AjI6Qgc" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="height: 175px;" data-componentid="AjI6Qgc"><div class="gadgetStyleBody gadgetContentEditableArea" style="height: 175px;" data-editablearea="0" data-areaheight="175">
+<p><img width="550" height="200" title="" alt="" src="/Resources/Pictures/2015 Website/DRS Logo 2014.jpg" border="0" /></p>
+</div>
+<script type="text/javascript">if (window.WA) { new WaContentGadgetResizer({ id: 'id_AjI6Qgc' }); }</script>
+</div></div></div></td><td style="" data-componentid="JAtKD9W_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_NTzPOrb" data-componentid="NTzPOrb" class="WaLayoutItem" style="width:58%;"><div id="id_dEICz6p" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="dEICz6p" style=""><div style=""><div id="id_EDfh8z9" class="WaGadgetFirst WaGadgetCustomMenu  gadgetStyle002" style="margin-bottom:0px;margin-left:25px;" data-componentid="EDfh8z9"><div class="gadgetStyleBody " style="" data-areaheight="auto">
+<ul class="orientationHorizontal alignLeft">
+
+<li>
+			<a href="/home" title="Home">Home</a>
+		</li>
+<li>
+			<a href="/Join_Ross_Society" title="Join the Donald Ross Society">Join the Donald Ross Society</a>
+		</li>
+<li>
+			<a href="/planned_events" title="Event Calendar">Event Calendar</a>
+		</li>
+<li>
+			<a href="/contact" title="Contact">Contact</a>
+		</li>
+</ul>
+
+</div>
+</div><div id="id_vTiYxJ5" class="WaGadget WaGadgetLoginForm  gadgetStyleNone" style="margin-top:20px;margin-bottom:0px;" data-componentid="vTiYxJ5"><div class="gadgetStyleBody " style="" data-areaheight="auto">
+<div class="loginContainerForm orientationHorizontal oAuthIsfalse">
+<form method="post" action="http://rosssociety.org/Sys/Login" id="id_vTiYxJ5_form" class="generalLoginBox" data-disableinadminmode="false">
+<input type="hidden" name="ReturnUrl" id="id_vTiYxJ5_returnUrl" value="" />
+						<input type="hidden" name="CurrentUrl" id="id_vTiYxJ5_currentUrl" value="" />
+						<input type="hidden" name="browserData" id="id_vTiYxJ5_browserField" value="WebKit;Exec Command;Client Cookies Enabled;Platform Compatible;Javascript Enabled;" />
+<div>		
+<div class="loginUserName">
+<div class="loginUserNameTextBox">
+		<input name="email" type="text" maxlength="100" placeholder="Email" id="id_vTiYxJ5_userName" tabindex="1" class="emailTextBoxControl" />
+	</div>
+</div><div class="loginPassword">
+<div class="loginPasswordTextBox">
+		<input name="password" type="password" placeholder="Password" maxlength="50" id="id_vTiYxJ5_password" tabindex="2" class="passwordTextBoxControl" autocomplete="off" />
+	</div>
+</div><div class="loginAction">
+	<input type="submit" name="ctl03$ctl02$loginViewControl$loginControl$Login" value="Log in" id="id_vTiYxJ5_loginAction" onclick="if (!browserInfo.clientCookiesEnabled()) {alert('Warning: browser cookies disabled. Please enable them to use this website.'); return false;}" tabindex="4" class="loginButton loginButtonControl" />
+</div>	
+						</div>
+					
+						<div>
+<div class="loginActionRememberMe"><input id="id_vTiYxJ5_rememberMe" type="checkbox" name="rememberMe" tabindex="3" class="rememberMeCheckboxControl" /><label for="id_vTiYxJ5_rememberMe">Remember me</label></div><div class="loginPasswordForgot">
+		<a href="http://rosssociety.org/Sys/ResetPasswordRequest">Forgot password</a>
+	</div>
+</div>
+						
+</form></div>
+			
+<script>
+	jq$().ready(function()
+	{
+		var browserField = document.getElementById('id_vTiYxJ5' + '_browserField');
+
+		if (browserField)
+		{
+			browserField.value = browserInfo.getBrowserCapabilitiesData();
+		}
+
+		jq$('#id_vTiYxJ5' + '_form').FormValidate();
+		jq$('.WaGadgetLoginForm form').attr('data-disableInAdminMode', 'false');
+	});
+	</script>
+	
+</div>
+</div><div id="id_LU7hSpx" class="WaGadgetLast WaGadgetSiteSearch  gadgetStyleNone" style="margin-top:15px;margin-bottom:5px;" data-componentid="LU7hSpx"><div class="gadgetStyleBody " style="" data-areaheight="auto">
+<div class="searchBoxOuter alignRight">
+	<div class="searchBox">
+<form method="post" action="http://rosssociety.org/Sys/Search" id="id_LU7hSpx_form" class="generalSearchBox" data-disableinadminmode="true">
+<span class="searchBoxFieldContainer"><input class="searchBoxField" type="text" name="searchString" id="idid_LU7hSpx_searchBox" value="" maxlength="300" autocomplete="off" placeholder="Search Donald Ross Society" /></span>
+<div class="autoSuggestionBox" id="idid_LU7hSpx_resultDiv"></div>
+</form></div>
+	</div>
+	<script type="text/javascript">
+		(function(){
+
+			function init()
+			{
+				var model = {};
+				model.gadgetId = 'idid_LU7hSpx';
+				model.searchBoxId = 'idid_LU7hSpx_searchBox';
+				model.resultDivId = 'idid_LU7hSpx_resultDiv';
+				model.selectedTypes = '31';
+				model.searchTemplate = 'http://rosssociety.org/Sys/Search?q={0}&amp;types={1}&amp;page={2}';
+				model.searchActionUrl = '/Sys/Search/DoSearch';
+				model.GoToSearchPageTextTemplate = 'Search for &amp;#39;{0}&amp;#39;';
+				model.autoSuggest = true;
+				var WASiteSearch = new WASiteSearchGadget(model);
+			}
+
+			jq$(document).ready(init);
+		}) ();
+	</script>
+</div>
+</div></div></div></td></tr></tbody></table> </div></div>
+</div></div>
+			</div>
+		</div>
+		<div class="zoneHeader1Outer zoneOuter">
+			<div class="zoneHeader1 container_12">
+				<div class="zoneHeader1Inner zoneInner s1_grid_12 s2_grid_12 s3_grid_12 zoneRoundedCorners" data-sticky-wrapper="true">
+					<div class="header1StickyWrapper" style="width: 940px;">	
+<div id="id_Header1" data-componentid="Header1" class="WaPlaceHolder WaPlaceHolderHeader1" style=""><div style=""><div id="id_vfiw7Ye" class="WaGadgetOnly WaGadgetMenuHorizontal  gadgetStyleNone" style="" data-componentid="vfiw7Ye"><div class="menuBackground"></div>
+<div class="menuInner">
+	<ul class="firstLevel adapted" style=""><li class="sel">
+	<div class="item">
+		<a href="http://rosssociety.org/" title="HOME"><span>HOME</span></a>
+</div>
+</li><li class="dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Members" title="Members"><span>Members</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Renew_Membership" title="Renew or Update Membership"><span>Renew or Update Membership</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/member_news" title="Member News"><span>Member News</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li><li class="dir">
+	<div class="item">
+		<a href="http://rosssociety.org/events1" title="Events"><span>Events</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/annual_meeting" title="Annual Meeting Announcement"><span>Annual Meeting Announcement</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/planned_events" title="Event Calendar "><span>Event Calendar </span></a>
+</div>
+</li>
+	
+<li class=" dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Event_Recap" title="Event Recap"><span>Event Recap</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/page-1859627" title="Ohio - June 2018"><span>Ohio - June 2018</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Queen-City-event" title="Queen City - October 2015"><span>Queen City - October 2015</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Detroit-June-2015" title="Detroit - June 2015"><span>Detroit - June 2015</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Sarasota-February-2015" title="Sarasota February 2015"><span>Sarasota February 2015</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Annual-Event-2014" title="Annual Event 2014"><span>Annual Event 2014</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Philly-April-2014" title="Philly April 2014"><span>Philly April 2014</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Florida-2014-Recap" title="Florida 2014 Recap"><span>Florida 2014 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Providence-2013-Recap" title="Providence 2013 Recap"><span>Providence 2013 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/BOSTON-2011-Recap" title="BOSTON 2011 Recap"><span>BOSTON 2011 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Annual-Meeting-2010-Recap" title="Annual Meeting 2010 Recap"><span>Annual Meeting 2010 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Cape-Cod-2010-Recap" title="Cape Cod 2010 Recap"><span>Cape Cod 2010 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Florida-2010-Recap" title="Florida 2010 Recap"><span>Florida 2010 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Georgia-2009-Recap" title="Georgia 2009 Recap"><span>Georgia 2009 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Great-Lakes-2009-Recap" title="Great Lakes 2009 Recap"><span>Great Lakes 2009 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Annual-Meeting-2008" title="Annual Meeting 2008"><span>Annual Meeting 2008</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Event_Course_Listings" title="Event Course Listings"><span>Event Course Listings</span></a>
+</div>
+</li>
+	
+<li class=" dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Previous_Events" title="Previous Events"><span>Previous Events</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Philly_April_2014" title="Philly April 2014"><span>Philly April 2014</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Clearwater-Jan-2014" title="Clearwater Jan 2014"><span>Clearwater Jan 2014</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Providence-2013" title="Providence 2013"><span>Providence 2013</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Brookside-2012" title="Brookside 2012"><span>Brookside 2012</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Sarasota_2012" title="Sarasota 2012"><span>Sarasota 2012</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Carolinas-2011" title="Carolinas 2011"><span>Carolinas 2011</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/NEW_YORK_2011" title="NEW YORK 2011"><span>NEW YORK 2011</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Boston_2011" title="Boston 2011"><span>Boston 2011</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/ANNUAL_MEETING_2010" title="Annual Meeting 2010"><span>Annual Meeting 2010</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Cape_Cod_2010" title="Cape Cod 2010"><span>Cape Cod 2010</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Florida-2010" title="Florida 2010"><span>Florida 2010</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Annual_Meeting_2009" title="Annual Meeting 2009"><span>Annual Meeting 2009</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Great-Lakes-2009" title="Great Lakes 2009"><span>Great Lakes 2009</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Georgia_outing_2009" title="Georgia Outing  2009"><span>Georgia Outing  2009</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li>
+	
+</ul>
+</div>
+</li><li class="dir">
+	<div class="item">
+		<a href="http://rosssociety.org/About-the-society" title="About The Society"><span>About The Society</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Join_Ross_Society" title="Join the Donald Ross Society"><span>Join the Donald Ross Society</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/donald_ross_foundation" title="Donald Ross Society Foundation"><span>Donald Ross Society Foundation</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/donate_ross_foundation" title="Donate to the DRS Foundation"><span>Donate to the DRS Foundation</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Donald_Ross_bio" title="Donald Ross Bio"><span>Donald Ross Bio</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li><li class="dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Articles-and-Features" title="Articles and Features"><span>Articles and Features</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/A-Case-for-Golf-Course-Restoration" title="A Case for Golf Course Restoration"><span>A Case for Golf Course Restoration</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/A-Visit-to-Dornoch" title="A Visit to Dornoch"><span>A Visit to Dornoch</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Restoration-Guidelines" title="Restoration Guidelines"><span>Restoration Guidelines</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Return-to-Old-School-Design" title="Return to Old School Design"><span>Return to Old School Design</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Donald-Ross-Golf-Course-List" title="Ross Golf Course List"><span>Ross Golf Course List</span></a>
+</div>
+</li>
+	
+<li class=" dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Donald-Ross-Course-Reviews" title="Ross Course Reviews"><span>Ross Course Reviews</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Bedford-Springs-Spa" title="Bedford Springs Spa"><span>Bedford Springs Spa</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Brunswick-Country-Club" title="Brunswick Country Club"><span>Brunswick Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Charlotte-Country-Club" title="Charlotte Country Club"><span>Charlotte Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Cohasset-Golf-Club" title="Cohasset Golf Club"><span>Cohasset Golf Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Forsyth-Country-Club" title="Forsyth Country Club"><span>Forsyth Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Forsyth-Country-Club-Updated" title="Forsyth Country Club Updated"><span>Forsyth Country Club Updated</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/George-Wright" title="George Wright"><span>George Wright</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Mid-Pines-Restorative-Renovations" title="Mid Pines Restorative Renovations"><span>Mid Pines Restorative Renovations</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Orchards-Golf-Club" title="Orchards Golf Club"><span>Orchards Golf Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Plainfield-Country-Club" title="Plainfield Country Club"><span>Plainfield Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Raleigh-Country-Club" title="Raleigh Country Club"><span>Raleigh Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Roaring-Gap" title="Roaring Gap"><span>Roaring Gap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Teugega-Country-Club" title="Teugega Country Club"><span>Teugega Country Club</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Woodbury-Forest-Golf-Club" title="Woodbury Forest Golf Club"><span>Woodbury Forest Golf Club</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li>
+	
+</ul>
+</div>
+</li><li class="dir">
+	<div class="item">
+		<a href="http://rosssociety.org/Links" title="Links"><span>Links</span></a>
+<ul class="secondLevel">
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/The-documentary-film-Donald-Ross" title="Documentary film &quot;Donald Ross..&quot;"><span>Documentary film "Donald Ross.."</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Tufts-Archives" title="Tufts Archives"><span>Tufts Archives</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Bust-of-Donald-Ross" title="Bust of Donald Ross"><span>Bust of Donald Ross</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Stanley_Thompson_Society" title="Stanley Thompson Society"><span>Stanley Thompson Society</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Other-Links" title="Other Links"><span>Other Links</span></a>
+</div>
+</li>
+	
+</ul>
+</div>
+</li><li class="">
+	<div class="item">
+		<a href="http://rosssociety.org/Forum" title="Forum"><span>Forum</span></a>
+</div>
+</li><li class="phantom last-child"><div class="item"><a href="#"><span>≡</span></a><ul class="secondLevel"><li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/contact" title="Contact"><span>Contact</span></a>
+</div>
+</li></ul></div></li></ul>
+</div>
+
+<script type="text/javascript">
+	jq$(function()
+	{
+		var gadgetHorMenu = jq$('#id_vfiw7Ye'),
+			gadgetHorMenuContainer = gadgetHorMenu.find('.menuInner'),
+			firstLevelMenu = gadgetHorMenu.find('ul.firstLevel'),
+			holderInitialMenu = firstLevelMenu.children(),
+			outsideItems = null,
+			phantomElement = '&lt;li class="phantom"&gt;&lt;div class="item"&gt;&lt;a href="#"&gt;&lt;span&gt;&amp;#x2261;&lt;/span&gt;&lt;/a&gt;&lt;ul class="secondLevel"&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;',
+			placeHolder = gadgetHorMenu.parents('.WaLayoutPlaceHolder'),
+			placeHolderId = placeHolder &amp;&amp; placeHolder.attr('data-componentId');
+
+		function resizeMenu()
+		{
+			var i,
+				len,
+				fitMenuWidth = 0,
+				menuItemPhantomWidth = 80;
+
+			firstLevelMenu.html( holderInitialMenu).removeClass('adapted').css({ width: 'auto' }); // restore initial menu
+
+			//console.log(firstLevelMenu.width(), gadgetHorMenuContainer.width());
+
+
+			if( firstLevelMenu.width() &gt; gadgetHorMenuContainer.width() ) // if menu oversize
+			{
+				menuItemPhantomWidth = firstLevelMenu.addClass('adapted').append( phantomElement).children('.phantom').width();
+
+				for( i = 0, len = holderInitialMenu.size(); i &lt;= len; i++ )
+				{
+					fitMenuWidth += jq$( holderInitialMenu.get(i) ).width();
+
+					if( fitMenuWidth + menuItemPhantomWidth &gt; gadgetHorMenuContainer.width() )
+					{
+						outsideItems = firstLevelMenu.children(':gt('+(i-1)+'):not(.phantom)').remove();
+						firstLevelMenu.find('.phantom &gt; .item &gt; ul').append( outsideItems);
+						break;
+					}
+				}
+				gadgetHorMenu.find('.phantom &gt; .item &gt; a').click(function(){ return false; });
+			}
+
+			firstLevelMenu.css( 'width', '' ); // restore initial menu width
+			firstLevelMenu.children().removeClass('last-child').eq(-1).addClass('last-child'); // add last-child mark
+		}
+
+		resizeMenu();
+
+		jq$(window).resize(function()
+		{
+			resizeMenu();
+		});
+
+		function onLayoutColumnResized(sender, args)
+		{
+			args = args || {};
+
+			if (placeHolderId &amp;&amp; (placeHolderId == args.leftColPlaceHolderId || placeHolderId == args.rightColPlaceHolderId))
+			{
+				resizeMenu();
+			}
+		}
+
+		BonaPage.addPageStateHandler(BonaPage.PAGE_PARSED, function() { WA.Gadgets.LayoutColumnResized.addHandler(onLayoutColumnResized); });
+		BonaPage.addPageStateHandler(BonaPage.PAGE_PARSED, function() { WA.Gadgets.StickyPlaceHolderResized.addHandler(resizeMenu); });
+		BonaPage.addPageStateHandler(BonaPage.PAGE_UNLOADED, function() { WA.Gadgets.LayoutColumnResized.removeHandler(onLayoutColumnResized); });
+		BonaPage.addPageStateHandler(BonaPage.PAGE_UNLOADED, function() { WA.Gadgets.StickyPlaceHolderResized.removeHandler(resizeMenu); });
+
+
+
+		var supportTouch = !!(('ontouchstart' in window) || (window.DocumentTouch &amp;&amp; document instanceof DocumentTouch) || (navigator.msPointerEnabled &amp;&amp; navigator.msMaxTouchPoints));
+
+		if( supportTouch )
+		{
+			jq$('#id_vfiw7Ye').find('.menuInner li.dir &gt; .item &gt; a').on( 'click', function(event)
+			{
+				if( !this.touchCounter )
+					this.touchCounter = 0;
+
+				if( this.touchCounter &gt;= 1 )
+				{
+					this.touchCounter = 0;
+					return true;
+				}
+				this.touchCounter++;
+				event.preventDefault();
+			});
+
+			jq$('#id_vfiw7Ye').find('.menuInner li.dir &gt; .item &gt; a').on( 'mouseout', function(event)
+			{
+				if( !this.touchCounter )
+					this.touchCounter = 0;
+				this.touchCounter = 0;
+			});
+		}
+
+
+	});
+</script></div></div>
+</div></div>
+<div id="id_Header2" data-componentid="Header2" class="WaPlaceHolder WaPlaceHolderHeader2" style=""><div style=""><div id="id_TUIr4g6" class="WaGadgetOnly WaGadgetSlideshow  gadgetStyleNone" style="" data-componentid="TUIr4g6"><script language="javascript">
+    jq$(function() {
+        var imgAmount = jq$('#camera_wrap_TUIr4g6 &gt; div').size();
+        var cameraNavigation = ( imgAmount &lt;= 1 ) ? false : true,
+            cameraAutoAdvance = ( imgAmount &lt;= 1 ) ? false : true;
+
+		jq$('#camera_wrap_TUIr4g6').camera
+		(
+		  {
+			componentId: 'TUIr4g6',
+			thumbnails: true,
+			loader: 'bar',
+			fx: 'simpleFade',
+			time: (2*1000),
+			transPeriod: (700),
+			portrait: false,
+			randomSlide: false,
+			playPause: false,
+			pauseOnClick: false,
+			thumbnails: cameraNavigation,
+			pagination: cameraNavigation,
+			navigation: cameraNavigation,
+			autoAdvance: cameraAutoAdvance,
+			mobileAutoAdvance: cameraAutoAdvance,
+			height: '56%'		  }
+		);		
+	});
+</script>
+    <div class="camera_wrap camera_charcoal_skin" id="camera_wrap_TUIr4g6" style="display: block; margin-bottom: 61px; height: 526px;"><div class="camera_fakehover"><div class="camera_src camerasliding camerastarted paused">
+        <div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" data-title="">
+    </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" data-title="">
+    </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" data-title="">
+    </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" data-title="">
+    </div></div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 526px; margin-left: -80.2092px; margin-top: 0px; position: absolute; width: 1100.42px;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_1 cameranext" style="display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="515" style="visibility: hidden;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_2"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_3"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_4"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraappended" style="display: block; overflow: hidden; position: absolute; z-index: 1000; height: 526.889px; left: 0px; top: 0px; width: 940.889px; margin-left: 0px; margin-top: 0px; opacity: 0.889444;"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: block; height: 526px; margin-left: 0px; margin-top: 0px; width: 940px;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 526px; margin-left: -80.2092px; margin-top: 0px; position: absolute; width: 1100.42px;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div></div></div><div class="camera_bar" style="top: auto; height: 7px;"><span class="camera_bar_cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(34, 34, 34);"><span id="pie_0" style="opacity: 0; position: absolute; background-color: rgb(238, 238, 238); left: 0px; right: 940px; top: 2px; bottom: 2px; display: none;"></span></span></div><div class="camera_prev" style="opacity: 0;"><span></span></div><div class="camera_next" style="opacity: 0;"><span></span></div></div><div class="camera_thumbs_cont"></div><div class="camera_pag"><ul class="camera_pag_ul"><li class="pag_nav_0 cameracurrent" style="position:relative; z-index:1002"><span><span>0</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_1" style="position:relative; z-index:1002"><span><span>1</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_2" style="position:relative; z-index:1002"><span><span>2</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_3" style="position:relative; z-index:1002"><span><span>3</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li></ul></div><div class="camera_loader" style="opacity: 0.0915063;"></div></div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<!-- /header zone -->
+
+<!-- content zone -->
+	<div class="zoneContentOuter zoneOuter">
+		<div class="zoneContent container_12">
+			<div class="zoneContentInner s1_grid_12 s2_grid_12 s3_grid_12 zoneInner zoneRoundedCorners">
+<div id="id_Content" data-componentid="Content" class="WaPlaceHolder WaPlaceHolderContent" style=""><div style=""><div id="id_ATVL8JC" class="WaGadgetFirst WaGadgetContent WaLegacyContentGadget gadgetStyleNone" style="margin-bottom:0px;" data-componentid="ATVL8JC"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;"><strong style="line-height: 1.375;"><font style=""><font style=""><font style=""><strong style="line-height: 1.375;"><font style=""><strong style="line-height: 1.375;"><font style=""><strong style="line-height: 1.375;"><font style=""><font face="Verdana" style=""><font color="#000000" face="Verdana, sans-serif" style="font-size: 16px;">Sneak peek at 2019 events</font></font></font></strong></font></strong></font></strong></font></font></font></strong><br /></div><blockquote><div style="font-family: Verdana, Arial, Helvetica, sans-serif;"><p style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font face="Verdana" style="font-size: 14px;"><font color="#000000" face="Verdana, sans-serif" style="">There will be several other events but the Society has already firmed up two events in 2019.  The first is January 20-23 with a</font> <font color="#302D2D" face="Verdana, sans-serif" style="">return to Clearwater Florida to beat the cold and play at <strong>Dunedin GC</strong> on Sunday, January 20. Then in succession, golf is at the two courses at <strong>Belleair CC</strong>, and a morning</font> <font color="#000000" face="Verdana, sans-serif" style="">shotgun start on Wednesday January 23 at a fine non-Ross course, <strong>Feather Sound CC</strong>.</font></font></font></font></font></font></font></font></p><p style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font face="Verdana" style="font-size: 14px;"><font color="#000000" face="Verdana, sans-serif" style=""><br /></font></font></font></font></font></font></font></font></p></div><div style="font-family: Verdana, Arial, Helvetica, sans-serif;"><p style=""><font><font><font><font><font><font><font face="Verdana" style="font-size: 14px;"><font color="#000000" face="Verdana, sans-serif">Another event is confirmed</font> for <font color="#302D2D" face="Verdana, sans-serif">June 10-13 with</font> <font color="#000000" face="Verdana, sans-serif">a schedule for the Boston area. The first day is at <strong>Whitinsville GC</strong> on Monday June 10. Tuesday is at <strong>Brae Burn CC</strong> and Wednesday is <strong>Essex County Club</strong>. The event ends at <strong>Concord CC</strong> on Thursday June 13.</font><font face="Times New Roman, serif"> </font></font></font></font></font></font></font></font></p><p style=""><span style="">Additional details for these events were emailed to Society members on September 4. The entry form for Clearwater will soon be received by the membership while the entry form for Boston will be later in early 2019.</span></p><p style=""><span style=""><br /></span></p></div><div style="font-family: Verdana, Arial, Helvetica, sans-serif;"><p style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font style=""><font face="Verdana" style=""><font color="#000000" face="Verdana, sans-serif" style="font-size: 14px;">There will be other fine events in 2019 as well, stay tuned, but it is too early to announce those at this time.</font></font></font></font></font></font></font></font></p></div></blockquote><div style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+
+  
+
+  
+
+  
+
+  
+
+  <strong style="line-height: 1.375; font-size: 14px;"><font><font><font><font><font><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;"><br /></font></font></font></font></font></font></font></font></strong>
+
+  
+</div>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="line-height: 1.375; font-size: 14px;"><font><font><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">DRS Foundation</font></font></font></strong></font></strong></font></strong></font></font></font></strong><br /></div>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;"></div>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <p>The Society membership has again made it possible for the Foundation to donate to a few causes in line with the goals of the Society and the Society's charitable arm,  the DRS Foundation. Those goals are to commemorate the life and work of Donald Ross, educating the public as to his work, and promoting the preservation and restoration of the golf courses he designed.<br /></p>
+
+  <p>The Foundation recently made a donation of $6,000 to help Elk Rapids Golf Club in their efforts to restore the course to the plans of Ross.  The course was and remains a 9 hole gem constructed in the early 20s near the city of Elk Rapids, just northeast of Traverse City Michigan.   The early 20's course work was immediately impacted by financial straits and the bunkers shown on their Ross plan were never built.  Surviving over 96 years now, the club has now constructed the bunkers and is also expanding and improving their tees. So drop by on your travels and check out the 9 hole gem open to the public.  You can view a short video of the story by clicking on <font><font><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="color: rgb(77, 74, 0); font-size: 14px;"><a href="http://upnorthlive.com/news/local/golf-course-finally-complete-96-years-after-construction-began" target="_blank" style="font-weight: bold; color: rgb(77, 74, 0);">Elk Rapids GC</a><span><strong>. </strong> Just a short time ago, t</span>he club's Ross plans were "re-found" in the Tufts Archives and acted upon.</font></font></font></font></font></font></p>
+
+  <p>The Foundation also made a grant of $13,000 to the Tufts Archives in Pinehurst in November 2017.  The grant was the largest single annual donation yet to Tufts.  The membership is happy to continue its support of Tufts. The DRS and the Society's Foundation have proudly supported the Tufts Archives for over 25 years and look forward to supporting the Tufts Archives in the future.</p>
+
+  <p><br /></p>
+</blockquote><strong style="font-size: 14px;"><font face="Verdana, sans-serif" style="font-size: 16px;">Golf  Shop</font></strong><br />
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <font face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;"><font face="Verdana, sans-serif">The Society has a small golf shop for members only.  Leading the offering is</font> <font face="Verdana"><strong>Donald Ross Sportswear!</strong> A </font><font face="Verdana">limited selection of their superb sportswear is now offered to Society members.  Rob Stein, owner of Donald Ross Sportswear and Society member, has been very gracious.  The items are of top quality material and styling and is found in the finer golf shops and retail stores. </font><font color="#000000">Golf attire is offered for men and woman with the Society crest on left chest or left sleeve.</font><font face="Verdana">  Members c</font><font face="Verdana">an view their catalog of offerings and special pricing. Donald Ross Sportswear directly supports the Tufts Archives with generous donations and by their support of Tufts' fund raising. <font color="#000000">M</font></font><font color="#000000">embers should first log into the Society web site,  select 'Donald Ross Sportswear' via the MEMBERS tab. </font></font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;">Other items with the Society crest such as belts, pocket crests, and head covers are now offered at this MEMBERS page rather than only at events only. These are found via the 'Golf Shop' pick under the MEMBERS tab.</font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" style="font-size: 14px;">The MEMBERS tab also provides several books and a documentary about Ross, all with connections to fellow Society members.  </font><font color="#000000" style="font-size: 14px;">The first is Chris Buie's book 'The Life and Times of Donald Ross'.  </font><font color="#000000" style="font-size: 14px;">The book was produced by Classics of Golf, Mike Beckerich publisher and Society member.  A special discount is offered to members.  The second book is a revision to Society member Paul Dunn's book "Great Donald Ross Courses Everyone Can Play: Resort, Public, and Semi-Private." This is a welcome update to Mr. Dunn's first edition.  It is a great reference for touring the more accessible Ross courses. Paul updated the book using better quality and more photographs. The books and documentary are found via the 'Books' pick under the MEMBERS tab. </font></font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" style="font-size: 14px;"><br /></font></font>
+</blockquote>
+
+<div>
+  <strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375; color: rgb(55, 55, 55); font-size: 12.5px;"><strong><strong><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><strong><strong><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font style="font-size: 16px;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;">Next Event - Fall 2018 - Annual event - Hartford Connecticut</font></font></strong></strong></strong> <strong>- October 8-11, 2018</strong></font></font></strong></strong></strong></strong></strong></font></font></strong></strong></strong></strong><br />
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+    <p><font face="Verdana" style="font-size: 12px;"><font color="#1A1A1A" style="line-height: 1.375;"><font face="Verdana"><font><font><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="font-size: 14px;"><font color="#1A1A1A" face="Verdana"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">The annual meeting will be held in the Hartford Connecticut area October 8-11, 2018.  The golf will be played at <strong>Wampanoag CC</strong> on Monday afternoon October 8th, followed by <strong>The Hartford Golf Club, Longmeadow CC,</strong> and finally <strong>The Orchards Golf Club</strong> on Thursday morning October 11th.  A  SAVE THE DATE email was sent to Society members on May 12th and entry form emailed on June 27th. </font></font></font></font></font></font></font></font></font></font></font></font></font><span style="text-decoration: underline;"><font style="font-size: 14px;">The event has received many entries in a short period of time. The event  is now full as of July 30th.</font></span></p>
+  </blockquote>
+
+  <div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+    <div>
+      <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+        <p><strong style="line-height: 1.375;"><font><font><font><font face="Verdana"><font face="Verdana" style="font-size: 14px;"><br /></font></font></font></font></font></strong></p>
+      </blockquote>
+    </div>
+
+    <p><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">List of Donald Ross courses</font></font></font></strong></font></strong></font></strong></font></font></strong></font></strong></font></strong><br /></p>
+  </div>
+
+  <div>
+    <div style="display: inline !important;"></div>
+
+    <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+      <p><font style="font-size: 14px;"><font><font><font><font><font color="#1A1A1A" style="line-height: 1.375;"><font><font face="Verdana">The Society has completed and updated the directory of Donald Ross courses.  See the link below.  The list has been revised by Jan Ludwig, Board member, retired professor, and volunteer at Tufts Archives. The list has been updated with  with the certain expectation that Society members and others will review and provide comments and provenance for any revisions.  </font><font face="Arial, sans-serif"><font face="Verdana">It is of the very nature of projects like this one that they are never really completed; therefore, comments and criticisms, corrections and additions, are always welcome.  This is especially true as the</font> digitization<font face="Verdana"> of newspaper and magazine records has exploded in the last 5 years or more.  Contact information for Jan is available in the linked directory.  For a c</font></font></font></font></font></font></font></font></font><font face="Verdana"><font>ompleted and updated listing - Download PDF</font> <strong>-</strong></font> <strong><a href="/resources/Documents/Ross%20Course%20List/Final%20Ross%20course%20list%20August%202018%20%20.pdf" title="Updated listing of courses designed by Donald Ross" target="_blank">Directory of Donald Ross Designed Courses &gt;&gt;</a></strong></p>
+
+      <p style="font-size: 12.5px;"><br /></p>
+    </blockquote><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; color: rgb(55, 55, 55); line-height: 1.375; font-size: 14px;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">Indianapolis August 2018</font></font></font></strong></font></strong></font></strong><br />
+
+    <blockquote>
+      <font face="Verdana">The event was fantastic and enjoyed by over 20  members. </font>
+    </blockquote>
+
+    <blockquote>
+      <font face="Verdana" style="font-size: 14px;"><font style="color: rgb(0, 0, 0);">Friday, August 24<sup>th</sup> – <strong>Broadmoor County Club</strong> – Indianapolis - optional a</font><span>fternoon golf. Welcome Reception in evening</span></font>
+    </blockquote>
+
+    <blockquote>
+      <font face="Verdana" style="font-size: 14px;"><font style="color: rgb(0, 0, 0);">Saturday, August 25<sup>th</sup> – <strong>Broadmoor Country Club</strong> - </font><span>Lunch, afternoon golf followed by dinner at Broadmoor</span></font>
+    </blockquote>
+
+    <blockquote>
+      <font face="Verdana" style="font-size: 14px;"><font style="color: rgb(0, 0, 0);">Sunday, August 26<sup>th</sup> – <strong>Brickyard Crossing Golf Club</strong> – Indianapolis - </font>Early morning tee times with box lunch following play. <span>Private sunset dinner at Dye Course Mansion</span></font>
+    </blockquote>
+
+    <blockquote>
+      <font face="Verdana" style="font-size: 14px;"><font style="color: rgb(0, 0, 0);"><span>Monday, August 27<sup>th</sup></span> – <strong><span>Donald Ross Course</span></strong>, French Lick Resort, French Lick </font><font style="color: rgb(0, 0, 0);"> (optional)</font></font>
+
+      <p style="font-family: Verdana, Arial, Helvetica, sans-serif;"><br /></p>
+
+      <p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><br /></p>
+    </blockquote>
+  </div><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375; font-size: 12.5px;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">'The Wright Stuff'  - </font></font></font></strong></font></strong></font></strong><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px;">Dayton-Columbus - June 2018</strong><br />
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+    <font face="Verdana" style="font-size: 14px;"><span>Members played the best courses in this part of Ohio. A special thanks is extended to Society members Tom Smith, Bill Case, and Mark Rymuza for all the arrangements.</span><font style="color: rgb(0, 0, 0);"> Everyone had a great time. You can read the <a href="/resources/Documents/Ohio%202018/Ohio%20Event%20Summary%202018%20%20.pdf" target="_blank">Ohio summary report</a> .  The Society group played:</font></font>
+  </blockquote>
+</div>
+
+<blockquote>
+  <div style="font-size: 12.5px;">
+    <blockquote style="line-height: 14px;">
+      <font><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Monday June 18 -</span> <strong style="font-family: Verdana, Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Moraine Country Club</strong><span><font face="Verdana, Arial, Helvetica, sans-serif"> </font>  // </span></font><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Tuesday June 19 -</span> <strong style="font-family: Verdana; color: rgb(0, 0, 0);">Columbus Country Club</strong><span style="font-family: Verdana, Arial, Helvetica, sans-serif;"> </span>
+    </blockquote>
+
+    <blockquote style="line-height: 14px;">
+      <font face="Verdana"><span>Wednesday June 20  -</span> <strong style="color: rgb(0, 0, 0);">Springfield County Club</strong><span>  // </span></font><span><font face="Verdana">Thursday June 21</font> - </span><strong style="font-family: Verdana; color: rgb(0, 0, 0);">Miami Valley Golf Club</strong><span> </span>
+    </blockquote>
+  </div>
+</blockquote>
+
+<blockquote>
+  <div style="font-size: 12.5px;">
+    <blockquote></blockquote>
+  </div>
+</blockquote>
+
+<div style="font-size: 12.5px;">
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;"></blockquote>
+</div>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"></blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="font-size: 16px;">Daytona - March 2018</strong></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><font style="font-size: 14px;">Members played two local Ross courses and had the treat to play at Hammock Dunes. Golf architect Ron Forse made a wonderful presentation as well. The schedule was:</font></p>
+
+  <p><font style="font-size: 14px;">Saturday, March 10  - New Smyrna Golf Club, one of Ross’s final designs. </font></p>
+
+  <p><font style="font-size: 14px;">Sunday, March 11 - Afternoon times at Hammock Dunes Creek Course. This private Rees Jones gem was opened in 2003 and has hosted multiple US Open qualifiers. It will hold the 2019 Florida Open</font></p>
+
+  <p><font style="font-size: 14px;">Monday, March 12  - Morning times at Hammock Dunes Links Course. Tom Fazio designed this oceanfront layout in 1989 which was updated last year.</font></p>
+
+  <p><font style="font-size: 14px;">Tuesday, March 13 - After two days on modern courses, the final round was at a Ross design—Daytona Beach Golf Club’s South Course. </font></p>
+
+  <p><br /></p>
+</blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong><font><font style="font-size: 16px;">Tufts Archives -  DRS Foundation</font></font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p style="display: inline !important;"><font><strong><font style="font-size: 14px;"><font style="font-weight: normal;">The DRS Foundation made a $13,000 donation in November 2017 to the Tufts Archives. A $10,000 donation was made in April 2016. The membership continues to support the</font> <font style="font-weight: normal;">Tufts Archives efforts to collect, preserve, and disseminate the records and drawings of Donald J. Ross. You can read more about the donations via this link <a href="/donald_ross_foundation" target="_blank">DRS Foundation</a>  </font></font></strong></font></p>
+</blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">"Taking on the Giants" by Bill Case</font></font></font></strong></font></strong></font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><font><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="font-size: 14px;"><font color="#1A1A1A" face="Verdana"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">Ross' famed Pinehurst no. 2 was the site of a number of famous matches raising money for the Red Cross after World War II. The matches pitted top amateurs against top professionals for a number of years.  You can read Society member Bill Case's excellent article via this <a href="/resources/Documents/Case%20on%20Taking%20on%20the%20Giants.pdf" target="_blank">LINK</a>.  The article is a wonderful history of the matches and a nice reminder of the career of fine amateur Dick Chapman. Bill is a retired attorney, active golfer, and continues to write for the Pinehurst publication "PineStraw Magazine." The Society is thankful to both for the article. </font></font></font></font></font></font></font></font></font></p>
+</blockquote><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375; font-size: 12.5px;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">Three hundred fifty eight by Brad Becken</font></font></font></strong>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <p><font style="font-size: 14px;"><font><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font><font color="#1A1A1A" face="Verdana"><font><font><font>Society member Brad Becken has completed playing three-hundred-fifty-eight, yes 358, of Ross' courses.  The number is Brad's reckoning of those clearly known to have Ross heritage. Knocking them off at a good pace for a number of years,  Brad played quite a lot in the Carolinas and New England in the early period clipping off the clusters in "relatively" small areas.  There were also good spots from Florida to Georgia plus Pennsylvania to Ohio to southern Michigan to Illinois to find a number to play in a small area.   Then trips began to include 3 hour drives between courses on long summer days to get in a quick 36 holes. The last few years have included trips to Iowa, Wisconsin, and Manitoba to play just one or two on a long trip.  Fueled by an uncanny ability to find donut shops, and his own innate and determined grit, sometimes accompanied by younger Society members Mark Larson or Jim Caruso, Brad has reached his goal of playing every Ross. Congratulations Brad! </font></font></font></font></font></font></font></font></font></font><span style="font-size: 12.5px;"> </span><font style="font-size: 14px;">This was a <font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font><font color="#1A1A1A" face="Verdana"><font><font><font><font><span style="background-color: rgb(255, 255, 255); font-family: Verdana;">subject in the December issue of the "Golf Collectors Society Bulletin”. </span></font></font></font></font></font></font></font></font></font></font><font style="color: rgb(26, 26, 26); font-family: Verdana; line-height: 1.375;"><font><span style="background-color: rgb(255, 255, 255); font-family: Verdana;"><font>Click on thi</font><font>s</font></span></font></font><font style="color: rgb(26, 26, 26); font-family: Verdana; line-height: 1.375;"><span>  <a href="/resources/Documents/Becken%20Final%20Nov%206th%20edits%20.pdf" target="_blank">press release</a>  to read a summary of Brad's accomplishment.</span></font></p>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"></blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; line-height: 17.1875px; font-size: 12.5px;"><strong style="line-height: 1.375; font-size: 12.5px;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;"><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">Golf Collectors Society</font></font></font></strong></font></strong></font></strong><br /></font></font></font></strong></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <font face="Verdana" style="font-size: 14px;">The Golf Collectors Society is offering a complimentary membership for 2018 to Ross Society members. Please log into the DRS web site as a member, select the MEMBERS tab, and then the GOLF COLLECTORS tab to view the invitation for a complimentary membership.</font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <font face="Verdana" style="font-size: 14px;"><br /></font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"></blockquote><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375;"><font style="font-size: 16px;">North Carolina - October 2017 - Annual meeting</font></strong><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"><br /></font>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p style="line-height: 19px;"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="font-size: 14px;"><font color="#1A1A1A" face="Verdana"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">The annual meeting event was held in North Carolina from October 18-22.  The event included <strong>Raleigh CC</strong> on Wednesday afternoon, <strong>Sedgefield CC</strong> on Thursday afternoon, <strong>Alamance CC</strong> on Friday morning, <strong>Duke University Golf Club</strong> on Saturday, and <strong>Hope Valley CC </strong>on Sunday October 22. The Society had a marvelous dinner at Sedgefield CC with Kris Spence discussing his work at this course. The event included a very strong group of Ross courses the Society had not visited before.</font></font></font></font></font></font></font></font></p>
+</blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="line-height: 1.375;"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><strong><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><strong style="font-family: Verdana, sans-serif; line-height: 1.375;"><font style="font-size: 14px;"><strong><font color="#1A1A1A" face="Verdana"><strong><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><strong><font face="Verdana" style="font-size: 16px;">New Hampshire - August 2017</font></strong></font></strong></font></strong></font></strong></font></font></strong></font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><font style="font-size: 14px;"><font style="font-family: Verdana;">The Society had a great weekend in New Hampshire o</font><span>n Friday &amp; Saturday, August 18 &amp; 19th, 2017.  Society members Dudley Cotton and Dr. Bill Wilson arranged play at these two Ross gems. <font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana" style="font-size: 14px;">Mark Rymuza organized the event.</font></font></span><br /></font></p>
+
+  <p><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana" style="font-size: 14px;"><font>Friday - The Society played </font><span><strong>Manchester CC</strong> in a bit of rain. The course is an original Ross design opened in 1923 with ongoing restoration by Ron Forse. The course has served as a site for events such as the New England Amateur, NH Amateur and Woman’s Amateur, and the 2017 New Hampshire Open.</span></font></font></p>
+
+  <p><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif" style="font-size: 14px;"><font face="Verdana"><font>Saturday - Sunny skies made for a great day at </font><strong>Wentworth By The Sea CC</strong> in Rye New Hampshire.  The club is one of the oldest courses in the United States and opened for play in 1897.  The original nine holes were constructed on links land by George Wright and redone by Donald Ross and Walter Hatch in 1921.  Geoffrey Cornish added the second nine holes in 1964. There are wonderful seaside views along Witch Creek and Little Harbor. The day began with a par three contest on two original Ross greens, lunch, and an afternoon round capped by</font> <span><font face="Verdana">a club house dinner.</font></span></font></p>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"></blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="line-height: 1.375;"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana" style="font-size: 16px;">Cincinnati - July 2017 </font></font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <font style="font-size: 14px;"><font face="Verdana">Special thanks to Tom Smith for arranging play on these two fine courses. Saturday the 29<sup style="color: rgb(0, 0, 0);">th</sup> was golf at <strong>Maketewah Country Club</strong> in Cincinnati.  Originally a Tom Bendelow creation which opened in 1910 as a nine-hole course, Donald Ross renovated the club in 1929 to its present 18 holes.  The championship course has been a US Open qualifier course for over five decades and the site of many local and regional competitions.  Afternoon tee times followed by a club dinner after play.  Mark Rymuza organized a great event. Spectacular blue skies made for a wonderful weekend. </font></font>
+</blockquote>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p style="line-height: 20px;"><font face="Verdana"><font style="font-size: 14px;">Sunday was at <strong>Hyde Park Golf &amp; Country Club</strong>.  Tom Bendelow laid out the original nine holes in 1902.  The club acquired additional property and in 1920 Donald Ross completely redesigned the course which has stayed true to its Ross roots with occasional upgrades and the most recent by Tim Liddy. Long time member and club historian Art Fischer provided an excellent club history during lunch.  Member LV Semona also guided the group around the golf course and club house.</font></font></p></blockquote><blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+</blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong style="font-family: Verdana, sans-serif; line-height: 1.375;"><font style="font-size: 16px;">May 2017 - New Jersey</font><font style="font-size: 14px;"> -</font> <font style="font-size: 16px;">Double Header!</font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><font><font face="Verdana, sans-serif" style="font-size: 14px;"><strong>May 19-May 25</strong> – The Society went to New Jersey for a double-header! The event was a mix of many Ross gems, with Raynor flavoring, and a dash of a wonderful modern course. Board member Steve MacQuarrie put together a great event aided by Pam Allen and other Society members mentioned below. Weekend play started </font></font><font style="font-size: 14px;">Friday, May 19 at Bayonne Golf Club thanks to Society Board member Mike Miller. Saturday was Crestmont Country Club, with thanks to Crestmont member Scott Riskin. <font face="Verdana, Arial, Helvetica, sans-serif, WaWebKitSavedSpanIndex_10"> </font>Sunday was Watchung Valley Golf Club – a Seth Raynor. The morning was a tour of USGA museum tour in Far Hills with play at the Pynes Putting Course (inspired by the Himalayas in St. Andrews) followed by the afternoon round.</font></p>
+
+  <p><font style="font-size: 14px;"><font><font><font face="Verdana, sans-serif">Next was</font></font> f<span>our delightful days of golf beginning M</span></font><span>onday, May 22 at Essex County CC, the oldest club in New Jersey. </span><span>Tuesday was an  afternoon round at Plainfield Country Club. The Society moved to </span><span>Mountain Ridge Country Club with thanks to Society member Jamie Schachtel. The event ended T</span><span>hursday, May 25 at Knickerbocker Country Club with thanks to Society member Mike Beckerich.</span></font></p>
+</blockquote>
+
+<p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><strong><font style="font-size: 16px;"><font>March 2017 - Jacksonville</font> </font></strong><br /></p>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><font style="font-size: 14px;"><strong>March 23-28 </strong>- The event was fantastic. The Society played San Jose Country Club on Thursday March 23, Timuquana Country Club on Friday afternoon with a club dinner, followed by Hyde Park Golf Club on Saturday, Mark Bostick Golf Club at the University of Florida on Sunday morning. Monday morning was a shotgun start at Sawgrass Country Club. We're indebted to Society members Fred Seely, Joe Pesek, and Jim Hoener.  Society Board member Derek Dobbs also provided invaluable assistance in arranging this event.  </font></p>
+</blockquote><strong style="font-family: Verdana; color: rgb(0, 0, 0); font-size: 12.5px;"><font style="font-size: 16px;">Ross course - Warm Springs Georgia - DRS Foundation</font></strong>
+
+<blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <div>
+    <p><strong><font><strong><font><font><font style="font-size: 14px;"><span style="font-family: Verdana; color: rgb(55, 55, 55); font-weight: 100;">Thanks to the generous Society membership, the DRS Foundation made a $5,000 donation to Operation Double Eagle (The Warrior Alliance, Inc.) in February 2016. The donation will support the work by this non-profit veterans organization at the Ross course in Warm Springs.</span></font></font></font></strong></font></strong></p>
+  </div>
+</blockquote>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <p><strong><font><strong><font><font><font style="font-size: 14px;">Annual event 2016 - October 4-7 - Chicago</font></font></font></strong></font></strong></p>
+</div>
+
+<blockquote align="full" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
+  <font style="font-size: 14px;"><span style="font-family: Verdana, Arial, Helvetica, sans-serif;"><font><font><span><font face="Verdana">T<font>he Society's annual meeting was well attended by over 50 Society members. The event included play at four of the wonderful courses created or remodeled by Ross in the Chicago area. The golf began at </font></font></span></font></font></span><font face="Verdana, Arial, Helvetica, sans-serif">The Beverly Country Club on Tuesday October 4, then Exmoor Country Club, Skokie Country Club, and Evanston Golf Club on Friday. </font><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Society members enjoyed the event organized and well planned by fellow members Pam Allen and Dave Jongleux with the support of members and the fine staff at each club. </span><span style="font-family: Verdana, Arial, Helvetica, sans-serif;">Wednesday included an interesting presentation of the course history by Exmoor member Don Holton. Audrey Moriarty of Tufts Archives also attended to update everyone on their latest work at the archives.  Stop by Tufts Archives if ever in Pinehurst!</span></font>
+</blockquote>
+
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+  <font face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 12px;"><strong><font style="font-size: 14px;">Society member Bill Case and PineStraw magazine</font></strong></font>
+
+  <blockquote style="font-size: 12.5px;">
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"><font style="font-size: 14px;">While Bill Case has retired from his legal career, he continues to write and has authored many fine golf articles for the Pinehurst magazine PineStraw. Courtesy of PineStraw and Bill, click on the link <a href="/resources/Documents/Little%20Big%20Men%20PineStraw.pdf" target="_blank">"Little Big Men"</a>  for his latest which is about George Dunlap, Jr. winner of the 1933 US Amateur. Tufts Archives records were the backbone of Bill's well researched article and accompanying photographs.  You will probably meet Bill at a future Society event or two.</font></font></p>
+  </blockquote>
+
+  <div style="font-size: 12.5px;"></div>
+
+  <p style="font-size: 12.5px;"><strong><font><font style="font-size: 14px;">USGA notes the Ross documentary</font></font></strong></p>
+
+  <blockquote style="font-size: 12.5px;">
+    <p><font style="font-size: 14px;"><span><font><font>As part of the fanfare for the 2016 USGA Senior Open,  the spotlight was again on the excellent Ross docum<font face="Verdana, Arial, Helvetica, sans-serif, WaWebKitSavedSpanIndex_0">entary </font></font></font></span><span><font><font>by the Society member Cob Carlson.  Click on this <strong> <a href="http://www.usga.org/clubhouse/2016-ungated/08-ungated/filmmaker-focuses-on-donald-ross.html?utm_medium=email&amp;utm_campaign=insider&amp;utm_source=cheetahmail&amp;utm_content=DonaldRoss_Documentary" target="_blank"><font color="#37302D">USGA article</font></a></strong><font color="#37302D"> </font>.   And you can c<font><font>lick on the title <font><font color="#37302D"> </font><font style="line-height: 1.375; font-family: Verdana;"><a href="http://www.donaldrossfilm.com" target="_blank" style="color: rgb(55, 48, 45);"><font>"Donald Ross: Discovering the Legend."</font></a><font><font color="#37302D"> </font><font color="#ED1C24"> </font></font></font></font>This link is to the film's web site for even more information and to order a copy. The Society membership supported Mr. Carlson's effort with a donation and are happy to see continued notice of his fine work.</font></font></font></font></span></font></p>
+  </blockquote>
+
+  <p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;"><br /></p><font style="font-family: Verdana, Arial, Helvetica, sans-serif;"><strong style="line-height: 19px; font-family: Verdana, Arial, Helvetica, sans-serif;"><font face="Verdana"><font face="Verdana" style="font-size: 16px;"><strong>2015</strong></font></font></strong><br /></font>
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 17.1875px; font-size: 12.5px;">
+    <font><font><font><font face="Verdana" style="font-size: 14px;"><font color="#1A1A1A" style="line-height: 19px;">The annual meeting was wonderful with four superb courses under Carolina blue skies in October.  Click on the <a href="/resources/Documents/Charlotte%202015/Annual_rev_1_.pdf" target="_blank">Annual Report</a> for a </font><font color="#1A1A1A"><span style="line-height: 19px; font-family: Verdana;">summary of the golf by Steve MacQuarrie.  You can see a few fall photographs by Dunlop White of the Roaring Gap Club via this <a href="/Queen-City-event" target="_blank">link</a>. </span></font><span style="color: rgb(26, 26, 26); line-height: 19px; font-family: Verdana;">G</span><span>olf began in the mountains at the Roaring Gap Club, moved west to Mimosa Hills and then east to play Carolina GC and Charlotte CC.  </span><span>Tufts has long been the primary benefactor of these events through the DRS Foundation.</span></font></font></font></font></blockquote>
+
+  <p style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; font-size: 12.5px;"><font style="font-size: 14px;"><strong style="line-height: 1.375; font-family: Verdana;"><font>Other notes of interest :</font></strong><br /></font></p>
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; font-size: 12.5px;">
+    <p style="line-height: 16px;"><span style="line-height: 19.25px; font-family: Verdana, Arial, Helvetica, sans-serif;"><strong><font face="Verdana" style="font-size: 14px;">Ross and the Tufts in Pinehurst</font></strong></span></p>
+  </blockquote>
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; font-size: 12.5px;">
+    <p><span style="line-height: 19.25px; font-family: Verdana, Arial, Helvetica, sans-serif;"><font face="Verdana" style="font-size: 14px;">Society member Bill Case has completed a second article about the relationship of Donald Ross to the Tufts.  As the first, this draws upon the correspondence between the men and  observations on the transition from Leonard to Richard Tufts assuming leadership at Pinehurst.  This second article was also published in the Pine Straw, a local magazine in Southern Pines.   Bill's second article is  <a href="/Resources/Documents/ross%20and%20tufts%20part%202%20pinestraw%20.pdf" target="_blank">" Dear Mr. Ross "</a>    Bill's first installment is via this link <a href="/Resources/Documents/ross%20and%20tufts-pinestraw%20magazine.pdf" target="_blank">Ross and Tufts from the Pine Straw magazine.</a>   </font></span></p>
+  </blockquote>
+
+  <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; font-size: 12.5px;"></blockquote>
+
+  <div style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; background-color: transparent; font-size: 12.5px;">
+    <div>
+      <font><font><font><font style="font-size: 14px;">  <font>    <span>   </span></font></font></font></font></font>
+    </div>
+
+    <div style="font-size: 12.5px;">
+      <strong><font style="font-size: 14px;">What is the Donald Ross Society?</font></strong>
+    </div>
+
+    <div style="font-size: 12.5px;">
+       
+    </div>
+  </div>
+
+  <div style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 16px; background-color: transparent; font-size: 12.5px;">
+    <img width="162" height="232" title="Donald Ross" align="left" style="margin: 3px 10px 0px 0px; background-color: rgb(244, 241, 241);" alt="" src="/Resources/Pictures/ross1.jpg" border="0" y="131" x="0" />
+
+    <p align="justify"><font>F<font>ounded in 1989 to recognize and safeguard the integrity of courses from the "Golden Era" of Golf Course Architecture, the Society's particular focus is the work by Donald J. Ross &amp; Associates of Pinehurst, North Carolina before 1948. We believe that the golf courses designed by Ross are works-of-art that merit close care and meticulous preservation. When renovation work is needed, we believe that - wherever possible - the course should maintain its original look, shape, and playing character; and when accommodations are needed for the modern game, they should be consistent with the original design intent.</font></font></p>
+
+    <p align="justify"><font>We, therefore urge clubs to seek out those architects, shapers, consultants and superintendents in the industry who endeavor to preserve these traditions, and that are comfortable with the basic strategies outlined in our Restoration Guidelines, wherein we distill the wisdom of countless restoration successes and provide a blueprint for clubs interested in recapturing their Donald Ross design integrity.</font></p>
+
+    <p align="justify"><font><font>The Society also hosts three to five events per year which the Society membership can attend. The events are well attended and the membership is able to play many of Ross' classics and the many wonderful unknown Ross courses.  The events enable Society members to see new Ross courses, play old favorites, and meet other avid golfers and create new friendships.</font></font></p>  <!-- <h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle"></h1><h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle">Sunny Clearwater for a January Escape</h1> The Donald Ross Society is happy to announce the arrangements for an event at the Dunedin and Belleair Country Clubs in Dunedin and Clearwater Florida January 10 through 12 2014. 
+In addition to the events at the three wonderful old Ross courses (Belleair 1915, Dunedin 1926) the Society has made preliminary arrangements to visit the highly touted Streamsong Resort that has two brand new courses done by Crenshaw and Coore and Tom Doak. These courses have instantly hit the top 100 modern courses as rated by Golfweek Magazine. In that the Streamsong Resort is really not near any major city we are about as close as you can get from Clearwater. The visit to Streamsong is optional and not included in any pricing given. 
+Dunedin Country Club served as the headquarters of the PGA of America until 1953 and is a very good example of mid 1920's Ross styling. It is old style, historic and a very good golf course. 
+Belleair Country Clubs courses were originally built for the use of the guests of the Belleview Biltmore Hotel which is now closed. The two courses were built in 1915-16 making them two of the oldest golf courses in Florida. In the past decade they have been renovated by Gene Bates and still offer the Ross feel and the beautiful views of the Gulf of Mexico. <h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle"></h1><h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle">Schedule of Events 1/10-1/12</h1> <STRONG>Friday January 10, 2014</STRONG> 
+We will assemble at the Dunedin Country Club for tee times beginning at 11:00 AM. 
+Golf will be followed by hors d'doeuvres and a cash bar, 
+<STRONG>Saturday January 11, 2014</STRONG> 
+Lunch at the Belleair Country Club at 12:00 followed by a shotgun start at 1:00 PM on the West Course at Belleair. Dinner will follow, cocktails at 6:30 (cash bar) and dinner at 7:30 PM. 
+<STRONG>Sunday January 12, 2014</STRONG> 
+Breakfast will be provided at the Bellaire Country Club at 7:00 AM followed by a shotgun start on the Belleair East Course. Lunch and prizes will follow the golf. 
+Monday and Tuesday we have made some arrangements at Streamsong Resort in Streamsong Florida which is about &nbsp; 
+75 minutes from Clearwater. Those interested in visiting Streamsong should contact Mike Fay at fay.m@comcast.net. <h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle"></h1><h1 style="COLOR: #339900" class="pageTitle legacyContentPageTitle">Costs</h1> &nbsp; <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody> <tr> <td width="80%">Dunedin CC golf and hors d'ouevres</td> <td>$ 100.00</td> </tr> <tr> <td width="20%">Belleair CC golf &nbsp;breakfast &nbsp;lunch (twice) and dinner</td> <td>$ 350.00</td> </tr> </tbody> </table> &nbsp; <div style="PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px"> <div style="BORDER-BOTTOM: rgb(102,102,102) 1px dotted; TEXT-ALIGN: left; PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 15px"> <p style="TEXT-ALIGN: center; BACKGROUND-COLOR: transparent; MARGIN-BOTTOM: 0pt" align="center"><span style="FONT-FAMILY: 'Times New Roman', serif"><STRONG><font color="#669900" size="6">Southern &nbsp;Cruise</font></STRONG></span> <span style="FONT-FAMILY: 'Times New Roman', serif; FONT-SIZE: 24pt">&nbsp;</span></p><p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"><span style="FONT-SIZE: 16pt"><font face="Arial">March 26, 27 &amp; 28, &nbsp;2014</font></span></p><p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"> 
+
+<p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"><STRONG><span style="FONT-SIZE: 12pt"><font face="Arial">Wednesday &#8211; Brunswick Country Club - lunch, golf, dinner</font></span></STRONG></p><p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"><STRONG><span style="FONT-SIZE: 12pt"><font face="Arial">Thursday &#8211; Sawgrass Country Club - lunch, golf, dinner</font></span></STRONG></p><p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"><STRONG><span style="FONT-SIZE: 12pt"><font face="Arial">Friday &#8211; Palatka Golf Club - golf at 11 am</font> </span></STRONG> 
+<p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"> 
+
+<p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"> 
+
+<p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"><STRONG><span style="FONT-FAMILY: 'Times New Roman', 'serif'; FONT-SIZE: 12pt"><img title="" alt="" src="/Resources/Pictures/drawing_Green15.jpg" x="129" y="1252" border="3" height="600" width="398" align="right"></span></STRONG></p><p style="TEXT-ALIGN: center; MARGIN-BOTTOM: 0pt" align="center"> <p style="MARGIN-BOTTOM: 0pt" align="left"><font face="Arial" size="3">The Society has planned a spring event around Jacksonville, playing Brunswick CC, Sawgrass CC, and then Palatka Golf Club.&nbsp; Two very good&nbsp;Ross courses and a modern course are featured.</font></p><p style="MARGIN-BOTTOM: 0pt" align="left"> 
+
+<p style="MARGIN-BOTTOM: 0pt" align="left"><font face="Arial" size="3">Brunswick Country Club was completely renovated from 2006-2009&nbsp;with the help of Love Golf Design. Through their efforts, along with a loyal membership and PGA Golf Professional and General Manager Dan Hogan, the golf course was restored to</font></p><p style="MARGIN-BOTTOM: 0pt" align="left"><font face="Arial" size="3">its original 1938 Donald Ross Design.</font></p><p style="MARGIN-BOTTOM: 0pt"> 
+
+<p style="MARGIN-BOTTOM: 0pt"><font face="Arial" size="3">Sawgrass Country Club has been synonymous with great golf&nbsp;</font></p><p style="MARGIN-BOTTOM: 0pt"><font face="Arial" size="3">ever since it played host to The Players Championship in 1977. This premier PGA Tour event was played at SCC through 1981, when it moved to its permanent site on the Stadium Course at TPC Sawgrass. &nbsp; The golf course was designed by noted&nbsp;</font></p><p style="MARGIN-BOTTOM: 0pt"><font face="Arial" size="3">architect Ed Seay. Through the years, Sawgrass has been consistently recognized as one of the finest courses in the&nbsp;</font></p><p style="MARGIN-BOTTOM: 0pt"><font face="Arial" size="3">country and has been included in Golf Magazine&#8217;s Top 100 Courses in the U.S., Golf Digest&#8217;s Best Courses in Florida, and Golf Week Magazine&#8217;s Top 100 Courses in America.&nbsp;&nbsp;&nbsp;</font></p>  
+
+<span style="FONT-SIZE: 12pt"><font face="Arial">Just over the expansive waters of the St. Johns River and through the quaint downtown of Palatka, there is a vintage course that offers an authentic experience.&nbsp;</font></span><span style="FONT-FAMILY: Arial; FONT-SIZE: 12pt">Palatka Golf Club was designed by Donald Ross in 1925. In a natural, clutter-free environment, the holes gently tumble over the sandy ridges and wrap the tranquil woods of Ravine Gardens State Park. &nbsp;A hidden gem indeed.</span> 
+ 
+
+<span style="FONT-FAMILY: Arial; FONT-SIZE: 12pt">Click here for &nbsp; &nbsp;&nbsp;<a href="/Resources/Documents/Bout_with_Braid_.pdf" target="_blank">Details and entry form</a></span> 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font face="Arial" size="4">15th Hole &nbsp;Brunswick CC</font> 
+&nbsp; 
+</div> </div> -->
+  </div>
+</div>
+</div>
+</div><div id="id_fU3HUs6" class="WaGadgetLast WaGadgetContent  gadgetStyleNone" style="" data-componentid="fU3HUs6"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+</div>
+</div></div>
+</div></div>
+		</div>
+	</div>
+	<!-- /content zone -->
+
+<!-- footer zone -->
+		<div class="zoneFooterOuter zoneOuter">
+			<div class="zoneFooter container_12">
+				<div class="zoneFooterInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12 zoneRoundedCorners">
+<div id="id_Footer" data-componentid="Footer" class="WaPlaceHolder WaPlaceHolderFooter" style="background-color:#ABA174;"><div style=""><div id="id_8V3kXMR" data-componentid="8V3kXMR" class="WaLayoutContainerFirst" style=""><table cellspacing="0" cellpadding="0" class="WaLayoutTable" style=""><tbody><tr data-componentid="8V3kXMR_row" class="WaLayoutRow"><td id="id_MofLX1t" data-componentid="MofLX1t" class="WaLayoutItem" style="width:33%;"><div id="id_dCO6xec" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="dCO6xec" style=""><div style=""><div id="id_JEO1j91" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentid="JEO1j91"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<p align="center">Join the Donald Ross Society </p><p align="center"><a href="/Join_Ross_Society" target="_blank"><img width="120" height="120" alt="" src="/Resources/Pictures/2015%20Website/Join-Today.png" border="0" /></a></p></div>
+</div></div></div></td><td style="" data-componentid="MofLX1t_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_7qUfVoP" data-componentid="7qUfVoP" class="WaLayoutItem" style="width:33%;"><div id="id_yWD5iGJ" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="yWD5iGJ" style=""><div style=""><div id="id_8GLG3Xp" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentid="8GLG3Xp"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<p align="center">Donald Ross Courses</p><p align="center"><a href="/Donald-Ross-Golf-Course-List" target="_blank"><img width="234" height="115" alt="" src="/Resources/Pictures/2015%20Website/Designs.png" border="0" /></a> </p></div>
+</div></div></div></td><td style="" data-componentid="7qUfVoP_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_CDVGhfX" data-componentid="CDVGhfX" class="WaLayoutItem" style="width:33%;"><div id="id_A87s9Cj" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="A87s9Cj" style=""><div style=""><div id="id_KndmuwI" class="WaGadgetOnly WaGadgetContent  gadgetStyleNone" style="" data-componentid="KndmuwI"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<p align="center">Visit Tufts Archives Website</p><p align="center"><a href="http://giventufts.org/tufts-archives" target="_blank"><img width="100" height="105" alt="" src="/Resources/Pictures/2015%20Website/tufts2.png" border="0" /></a> </p></div>
+</div></div></div></td></tr></tbody></table> </div><div id="id_ncOqYw9" class="WaGadgetLast WaGadgetContent  gadgetStyleNone" style="" data-componentid="ncOqYw9"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<p align="center">Copyright© <span style="">2018 </span></p><p align="center"><span style=""> Donald Ross Society  501(c)(7)</span></p><p align="center">Donald Ross Society Foundation  501(c)(3)</p></div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<div class="zoneFooter1Outer zoneOuter">
+			<div class="zoneFooter1 container_12">
+				<div class="zoneFooter1Inner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="id_Footer1" data-componentid="Footer1" class="WaPlaceHolder WaPlaceHolderFooter1" style=""><div style=""><div id="id_JPM67wv" class="WaGadgetOnly WaGadgetSocialProfile  gadgetDefaultStyle" style="" data-componentid="JPM67wv"><div class="gadgetStyleBody " style="" data-areaheight="auto">
+<ul class="orientationHorizontal  alignLeft">
+
+
+		
+</ul>
+
+</div>
+</div></div>
+</div></div>
+			</div>
+		</div>
+		<!-- /footer zone -->
+		
+		<!-- branding zone -->
+<div class="zoneBrandingOuter zoneOuter">
+			<div class="zoneBranding container_12">
+				<div class="zoneBrandingInner zoneInner s1_grid_12 s2_grid_12 s3_grid_12">
+<div id="idFooterPoweredByContainer">
+	<span id="idFooterPoweredByWA">
+Powered by <a href="http://www.wildapricot.com" target="_blank">Wild Apricot</a> Membership Software</span>
+</div>
+</div>
+			</div>
+		</div>
+<!-- /branding zone -->
+<div id="idCustomJsContainer" class="cnCustomJsContainer">
+<script>
+try
+{
+    
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46994581-1', 'donaldross.org');
+  ga('send', 'pageview');
+
+
+}
+catch(err)
+{}</script>
+
+
+<script language="javascript" type="text/javascript">
+try
+{
+      if(window.BonaPrint != null)  {
+   BonaPrint.enabled = false;
+ }
+ 
+}
+catch(err)
+{}</script></div>
+	
+<script type="text/javascript" language="javascript">
+			jq$(document).ready(function()
+			{
+				new stickyPlaceholder();
+			});
+		</script>
+</div>
+
+<script type="text/javascript">if (window.BonaPage &amp;&amp; BonaPage.setPageState) { BonaPage.setPageState(BonaPage.PAGE_PARSED); }</script><iframe id="createFrameToOpen" style="display: none;"></iframe><span><div id="idPageShadingContainer" style="position: absolute; left: -3700px; top: -3700px; width: 1px; height: 1px; z-index: 7337; overflow: hidden; visibility: hidden; background-color: #FFFFFF; -moz-opacity: 0.73; -khtml-opacity: 0.73; opacity: 0.73;"><div id="idPageShadingWaitMessage" style="display: none; position: absolute; width: 350px; text-align: center;"><img src="/Admin/html_res/images/async-load-progress-01.gif" border="0" /><br /> <br />  <span id="idPageShadingWaitMessageText" style="font-size: 12px; font-weight: bold;">Please wait...</span></div></div></span><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="wa-lb-nav"><a class="wa-lb-prev"></a><a class="wa-lb-next"></a></div><div class="lb-waIconsContainer"><a class="lb-download"></a><a class="lb-close"></a></div><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div></div></div></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>
