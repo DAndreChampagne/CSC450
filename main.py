@@ -32,11 +32,10 @@ def visible_text(html):
     return u" ".join(t.strip() for t in visibleText)
 
 
-def _Log(text):
-    print(text)
+def _Log(text=''):
+    print(f'{datetime.datetime.now()}: {text}')
     with open('results/log.log', 'a') as outfile:
         outfile.write(text + '\r\n')
-
 
 def ReplaceNonValidCharacters(text):
     valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
@@ -241,68 +240,102 @@ knownsites = {}
 # _Log(f'spacy         = {x.similarity(y)}')
 
 
-results = []
+_Log('loading pages...')
 files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f ]
-results.extend(files)
-results.sort()
+files.sort()
+pagesForComparison = {}
+current = 1
+total = len(files)
+for f in files:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/pages/' + f, 'r') as infile:
+        pagesForComparison[f] = visible_text(infile.read())
 
-size = len(results)
-matrix = [[0 for x in range(size)] for y in range(size)]
+_Log('loading liberal samples...')
+liberalSamplesFiles = [f for f in listdir('results/liberal samples/') if isfile(join('results/liberal samples/', f)) and '.html' in f ]
+lib = {}
+current = 1
+total = len(liberalSamplesFiles)
+for f in liberalSamplesFiles:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/liberal samples/' + f, 'r') as infile:
+        lib[f] = visible_text(infile.read())
+
+_Log('loading conservative samples...')
+con = {}
+conservativeSamplesFiles = [f for f in listdir('results/conservative samples/') if isfile(join('results/conservative samples/', f)) and '.html' in f ]
+current = 1
+total = len(conservativeSamplesFiles)
+for f in conservativeSamplesFiles:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/conservative samples/' + f, 'r') as infile:
+        con[f] = visible_text(infile.read())
+
+rows = len(pagesForComparison) + 1
+columns = len(liberalSamplesFiles) + len(conservativeSamplesFiles) + 1
+comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
 
 startTime = datetime.datetime.now()
-_Log(f'files to process: {len(results)}')
-
-# load files into memory
-progress = 0
-total = len(files)
-storedFiles = {}
-for f in files:
-    progress += 1
-    _Log(f'loading file {progress} of {total} ({progress/total*100:.4f}%), {datetime.datetime.now() - startTime} elapsed, {f}')
-    with open(f'results/pages/{f}', 'r') as f1:
-        storedFiles[f] = visible_text(f1.read())
+_Log()
+_Log(f'files to process: {len(pagesForComparison)}')
 
 
-# add row and column headers
-for i in range(1, len(results)):
-    matrix[0][i] = results[i]
-for i in range(1, len(results)):
-    matrix[i][0] = results[i]
+# populate row and column headers
+col = 1
+row = 1
+for c in range(0, len(liberalSamplesFiles)):
+    comparisonResults[0][col] = liberalSamplesFiles[c]
+    col += 1
+for c in range(0, len(conservativeSamplesFiles)):
+    comparisonResults[0][col] = conservativeSamplesFiles[c]
+    col += 1
+for k in pagesForComparison.keys():
+    comparisonResults[row][0] = k
+    row += 1
 
 
-# process files
+# do the comparisons
 spacy.prefer_gpu()
 nlp = spacy.load('en')  # https://spacy.io/usage/models
+current = 1
+total = (len(comparisonResults)-1) * (len(comparisonResults[0])-1)
+startTime = datetime.datetime.now()
 
-progress = 0
-total = len(matrix)**2
-for row in range(1, len(matrix)):
-    for col in range(1, len(matrix[row])):
-        file1 = matrix[row][0]
-        file2 = matrix[0][col]
-        progress += 1
+for r in range(1, len(comparisonResults)):
+    for c in range(1, len(comparisonResults[r])):
+        f1 = comparisonResults[r][0]
+        f2 = comparisonResults[0][c]
 
-        _Log(f'processing {progress} of {total} ({progress / total * 100 :.4f}%), {datetime.datetime.now() - startTime} elapsed')
-        _Log(f'\t{file1}')
-        _Log(f'\t{file2}')
+        _Log(f'\tcomparing {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed): \'{f1}\', \'{f2}\'')
+        current += 1
 
-        html1 = nlp(storedFiles[file1])
-        html2 = nlp(storedFiles[file2])
-        s = html1.similarity(html2)
+        page = pagesForComparison[f1]
+        if f2 in lib:
+            comparison = lib[f2]
+        elif f2 in con:
+            comparison = con[f2]
+        else:
+            raise Exception('This is a problem')
 
-        _Log(f'\tsimilarity = {s}')
+        f1 = nlp(page)
+        f2 = nlp(comparison)
 
-        matrix[row][col] = s
+        comparisonResults[r][c] = f1.similarity(f2)
 
 
 # output to CSV
 buffer = ''
-for row in range(0, len(matrix)):
-    for col in range(0, len(matrix[row])):
-        buffer += str(matrix[row][col]) + ','
+for row in range(0, len(comparisonResults)):
+    for col in range(0, len(comparisonResults[row])):
+        buffer += str(comparisonResults[row][col]) + ','
     buffer += '\n'
 
 with open('results/similarity.csv', 'w') as outfile:
     outfile.write(buffer)
+
+
 
 _Log(f'complete in {datetime.datetime.now() - startTime}')
