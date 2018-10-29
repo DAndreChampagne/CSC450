@@ -34,7 +34,7 @@ def visible_text(html):
 
 def _Log(text):
     print(text)
-    with open('results/log.log', 'a') as outfile:
+    with open('results/similarity-log.log', 'a') as outfile:
         outfile.write(text + '\r\n')
 
 
