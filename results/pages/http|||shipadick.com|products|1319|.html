@@ -418,7 +418,26 @@ Your secret is safe with us.</strong></p>
 <script src="//cdn.foxycart.com/shipadick/loader.js" async="" defer=""></script>
 <!-- /FOXYCART -->
 
-<noscript>&lt;img height='1' width='1' style='display: none;' src='https://www.facebook.com/tr?id=709519426070903&amp;ev=PageView&amp;noscript=1&amp;cd[domain]=shipadick.com' alt='facebook_pixel'&gt;</noscript>
+
+<!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
+<script>
+var FC = FC || {};
+FC.onLoad = function() {
+	FC.client.on("cart-submit.done", function(params) {
+		if (
+			typeof fbq != 'undefined'
+			&amp;&amp; FC.client.isActionNeeded(params)
+			&amp;&amp; (!FC.sidecart || (FC.sidecart
+				&amp;&amp; !FC.sidecart.shouldUseFullpageCart()
+				&amp;&amp; !FC.sidecart.bypassSidecart(params)
+			))
+		) {
+			fbq('track', 'AddToCart');
+		}
+	});
+};
+</script>
+<!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><noscript>&lt;img height='1' width='1' style='display: none;' src='https://www.facebook.com/tr?id=709519426070903&amp;ev=PageView&amp;noscript=1&amp;cd[domain]=shipadick.com' alt='facebook_pixel'&gt;</noscript>
 		<script type="text/javascript">
 		/* &lt;![CDATA[ */
 		var pys_edd_ajax_events = [];
@@ -543,9 +562,9 @@ FooBox.ready(function() {
 
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
-Object Caching 1603/1667 objects using memcached
+Object Caching 1651/1719 objects using memcached
 Page Caching using memcached
 Content Delivery Network via Amazon Web Services: CloudFront: d1ffcqsu43x69e.cloudfront.net
-Database Caching 8/22 queries in 0.025 seconds using memcached
+Database Caching 8/24 queries in 0.030 seconds using memcached
 
- Served from: shipadick.com @ 2018-10-24 16:47:16 by W3 Total Cache --><span style="font-family:'foobox'; color:transparent; position:absolute; top:-1000em;">f</span><script src="https://cdn.foxycart.com/shipadick/foxycart.jsonp.sidecart.min.1540441042.js"></script><link rel="stylesheet" media="screen" href="https://cdn.foxycart.com/shipadick/responsive_styles.1540220714.css" /></body></html>
+ Served from: shipadick.com @ 2018-11-01 12:44:53 by W3 Total Cache --><span style="font-family:'foobox'; color:transparent; position:absolute; top:-1000em;">f</span><script src="https://cdn.foxycart.com/shipadick/foxycart.jsonp.sidecart.min.1541058135.js"></script><link rel="stylesheet" media="screen" href="https://cdn.foxycart.com/shipadick/responsive_styles.1540866773.css" /></body></html>

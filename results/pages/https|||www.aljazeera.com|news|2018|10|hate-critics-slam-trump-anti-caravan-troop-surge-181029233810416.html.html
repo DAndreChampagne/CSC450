@@ -1,0 +1,1529 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">/*mobile*/
+
+@media (min-width:320px) {
+  body #ensNotifyBanner {
+    background-color: #001969;
+    opacity: 1;
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 0px;
+    line-height: 1.42857;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100% !important;
+    z-index: 999999999;
+    left: 0 !important;
+    right: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  #ensNotifyBanner .ensButtons {
+    float: left;
+  }
+  #ensCloseBanner {
+    margin-left: 0px !important;
+  }
+  #ensNotifyBanner&gt;div {
+    max-width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+/*tablet*/
+
+@media (min-width:641px) {
+  body #ensNotifyBanner {
+    background-color: #001969;
+    opacity: 1;
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 0px;
+    line-height: 1.42857;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    height: 138px !important;
+    width: 100% !important;
+    z-index: 999999999;
+    left: 0 !important;
+    right: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  #ensNotifyBanner .ensButtons {
+    float: left;
+  }
+  #ensCloseBanner {
+    margin-left: 0px !important;
+  }
+  #ensNotifyBanner&gt;div {
+    max-width: 90%;
+    float: left;
+    text-align: left;
+  }
+}
+
+/*desktop*/
+
+@media (min-width:1025px) {
+  body #ensNotifyBanner {
+    background-color: #001969;
+    opacity: 1;
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    border-radius: 0px;
+    line-height: 1.42857;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    height: 80px !important;
+    width: 100% !important;
+    z-index: 999999999999;
+    left: 0 !important;
+    right: 0;
+    text-align: center;
+    max-height: 80px !important;
+    box-sizing: border-box;
+  }
+  #ensNotifyBanner .ensButtons {
+    float: none;
+    position: absolute;
+  }
+  #ensNotifyBanner&gt;div {
+    display: inline-block !important;
+    margin-top: 8px;
+    vertical-align: top;
+    max-width: 75%;
+    float: left !important;
+    text-align: left;
+    margin-left: 5%;
+  }
+  #ensCloseBanner {
+    margin-left: -80% !important;
+  }
+  .ensButtons {
+    margin-top: 0px !important;
+  }
+  #ensNotifyBanner&gt;div {
+    max-width: 75%;
+    float: right;
+    text-align: left;
+  }
+}
+
+#ensNotifyBanner p {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ensNotifyBanner .ensPrivacyTitle {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: -0.025em;
+  margin-bottom: 23px;
+  line-height: 32px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ensNotifyBanner a {
+  color: #EFEFEF;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#ensNotifyBanner .ensButtons .button {
+  cursor: pointer;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: #6C749C;
+}
+
+#ensNotifyBanner #ensSave {
+  display: none !important;
+}
+
+#ensModalLink {
+  font-family: "Helvetica";
+  font-weight: bold !important;
+  font-style: normal;
+  font-size: 14px !important;
+  line-height: 22px;
+  text-decoration: none;
+  color: white !important
+}body .ensButtons .button.raised.blue {
+    background-color: #001969!important;
+    font-size: 18px !important;
+    text-align: right !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px){
+    body #ensNotifyBanner&gt;div{
+         max-width: 85% !important;
+    }
+    body #ensNotifyBanner .ensButtons .button.raised.blue {
+         width: 30px !important;
+         position: relative !important;
+         margin-top: -270% !important;
+    }
+    body .ensNotifyBanner .ensButtons {
+        float: right !important;
+        margin-top: -2% !important;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 640px){
+    body #ensNotifyBanner&gt;div{
+         max-width: 85% !important;
+    }
+    body #ensNotifyBanner{
+         height: 15% !important;
+    }
+    body #ensNotifyBanner .ensButtons .button.raised.blue {
+         width: 30px !important;
+         position: relative !important;
+         margin-top: -200% !important;
+    }
+    body .ensNotifyBanner .ensButtons {
+        float: right !important;
+        margin-top: -2% !important;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1020px){
+    body #ensNotifyBanner{
+         height: 8% !important;
+         float: right !important;
+    }
+    body #ensNotifyBanner .ensButtons .button.raised.blue {
+         width: 30px !important;
+         position: relative !important;
+         margin-top: -110% !important;
+    }
+    body .ensNotifyBanner .ensButtons {
+        float: right !important;
+        margin-top: -2% !important;
+    }
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1024px){
+    body #ensNotifyBanner&gt;div{
+         max-width: 80% !important;
+    }
+    body #ensNotifyBanner {
+        height: 6% !important;
+    }
+    body #ensNotifyBanner .ensButtons .button.raised.blue {
+         width: 30px !important;
+         position: relative !important;
+         margin-top: -80% !important;
+    }
+    body .ensNotifyBanner .ensButtons {
+        float: right !important;
+        margin-top: -2% !important;
+    }
+}</style><style type="text/css">.ensModal input[type='checkbox'] {
+  display: none !important;
+  transform: scale(1.35) !important;
+  background-color: #0099da !important;
+  border: none !important;
+}
+
+.ensModal .switch {
+  background: #E1E1E1 !important;
+  transition: .5s !important;
+  width: 30px !important;
+  left: 20px !important;
+}
+
+.ensModal .toggle {
+  background: #888888 !important;
+  left: 20px !important;
+  top: -3px !important;
+  width: 20px !important;
+  height: 20px !important;
+  transition: .5s !important;
+  cursor: pointer !important;
+}
+
+.ensModal input[type='checkbox']:checked~.switch {
+  background: #ACBAE7 !important;
+  transition: .5s !important;
+}
+
+.ensModal input[type='checkbox']:checked~.toggle {
+  background: #001969 !important;
+  left: 32px !important;
+  top: -3px !important;
+  width: 20px !important;
+  height: 20px !important;
+  transition: .5s !important;
+}
+
+#ensModalWrapper .ensButtons {
+  padding: 4px 9px !important;
+  margin-top: 20px !important;
+  margin-left: 20px !important;
+  margin-bottom: 30px !important;
+}
+
+.ensButtons .button.blue {
+  background-color: #979797;
+  color: #fff !important;
+  height: 42px;
+  width: 160px;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+}
+
+.ensButtons .button.raised.blue {
+  background-color: #979797;
+  color: #fff !important;
+  height: 42px;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+  float: left !important;
+  box-shadow: none !important;
+  padding-top: 3px;
+  width: 100px;
+}
+
+.ensButtons .button.raised.grey {
+  background-color: #D3D3D3;
+  color: #fff;
+  height: 42px;
+  border: 1px solid transparent;
+  border-radius: 0px !important;
+  float: left !important;
+  box-shadow: none !important;
+  padding-top: 3px;
+  width: 100px;
+  margin-left: 0px;
+}
+
+.ensButtons .button.grey {
+  background-color: #fff;
+  color: #0099da;
+  height: 42px;
+  width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#ensModalLink {
+  font-family: "Helvetica";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #0099da
+}
+
+#ensModalLink:hover {
+  color: #0068aa
+}
+
+/*mobile*/
+
+@media screen and (max-width: 329px) and (min-width: 320px) {
+  body #ensModalWrapper {
+    font-family: "Helvetica";
+    background-color: #EFEFEF;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+    overflow-y: scroll !important;
+    max-height: 100% !important;
+    max-width: 350px;
+    position: fixed;
+    width: 90%;
+    margin: 20px auto;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    z-index: 99999999999 !important;
+  }
+  .ensTitle {
+    margin-left: 68px !important;
+    max-width: 240px;
+  }
+  .ensModal .ensToggleLabel {
+    max-width: 210px;
+  }
+  #ensModalWrapper .ensButtons {
+    padding: 4px 9px !important;
+    margin-top: 20px !important;
+    margin-left: 10px !important;
+    margin-bottom: 30px !important;
+  }
+  .ensToggleWrap {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 330px) {
+  body #ensModalWrapper {
+    font-family: "Helvetica";
+    background-color: #EFEFEF;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+    overflow-y: scroll !important;
+    max-height: 100% !important;
+    max-width: 350px;
+    position: fixed;
+    width: 90%;
+    margin: 20px auto;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    z-index: 99999999999 !important;
+  }
+  .ensTitle {
+    margin-left: 64px !important;
+    max-width: 290px;
+  }
+  .ensToggleWrap {
+    margin-top: 10px !important;
+  }
+}
+
+@media (min-width:641px) {
+  body #ensModalWrapper {
+    font-family: "Helvetica";
+    background-color: #EFEFEF;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+    max-width: 525px;
+    position: fixed;
+    width: 90%;
+    margin: 20px auto;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    z-index: 99999999999 !important;
+  }
+  .ensButtons .button.raised.grey {
+    width: 160px !important;
+    margin-left: -28px !important;
+  }
+  .ensButtons .button.raised.blue {
+    width: 160px !important;
+  }
+  .ensToggleWrap {
+    margin-top: 0px !important;
+  }
+  .ensDecModal {
+    margin-top: 0px !important;
+  }
+  #ensModalWrapper .ensTitle {
+    left: -67px !important;
+  }
+  .ensDecRow {
+    margin-top: 0px !important;
+  }
+}
+
+/*desktop*/
+
+@media (min-width:1025px) {
+  body #ensModalWrapper {
+    font-family: "Helvetica";
+    background-color: #;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+    max-width: 600px;
+    position: fixed;
+    width: 90%;
+    margin: 20px auto;
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    z-index: 99999999999 !important;
+  }
+  #ensModalWrapper .ensTitle {
+    left: -72px !important;
+  }
+}
+
+@media screen and (max-height:760px) {
+  body #ensModalWrapper {
+    overflow-y: scroll !important;
+    max-height: 100% !important;
+  }
+}
+
+#ensModalWrapper .ensTitle {
+  color: #222222;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: left;
+  margin-left: 11%;
+  left: -59px;
+  width: 80%;
+}
+
+#ensModalWrapper hr.style1 {
+  margin: 25px -30px 25px;
+  border: 0;
+  border-top: 1px solid #808890;
+  opacity: 1;
+}
+
+#ensModalWrapper hr {
+  opacity: 0;
+}
+
+#ensModalWrapper .consentDescription {
+  color: #222222;
+  padding-top: 0px;
+  margin-top: 0px;
+  visibility: hidden !important;
+}
+
+#ensModalWrapper .ensModal {
+  color: #222222;
+  font-family: "Helvetica";
+  padding: 0 !important;
+}
+
+#ensModalWrapper .ensModal hr {
+  color: #808890;
+}
+
+#ensModalWrapper .ensButtons {
+  float: none;
+}
+
+#ensModalWrapper b.ensPrivacyDescription {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0099da;
+}
+
+.ensToggleRow {
+  margin-bottom: 10px;
+  margin-left: 0px !important;
+  left: 0px !important;
+}
+
+#ensModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+  display: none !important;
+}
+
+.ensModal .card {
+  float: right !important;
+}
+
+.ensModal .ensToggleRow {
+  position: relative;
+  left: 4px !important;
+}
+
+.ensModal .ensToggleLabel .card {
+  position: absolute !important;
+  z-index: -1 !important;
+  right: 2px !important;
+  top: 0 !important;
+}
+
+.ensModal .ensToggleLabel {
+  display: block !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+
+.ensModal .description {
+  text-align: left !important;
+  line-height: 20px !important;
+  font-size: 16px !important;
+}
+
+.cardDec {
+  padding-top: 5px;
+}
+
+.ensTable {
+  margin-top: 20px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.ensToggleWrap {
+  margin-top: 70px;
+}
+
+.ensDecRow {
+  margin-top: 40px;
+}
+
+.ensToggleWrap .description {
+  max-width: 500px !important;
+}
+
+#ensDecModal {
+  margin-left: 4px;
+}
+
+#ens-cookie-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#ens-cookie-table td, #ens-cookie-table th {
+  border: 1px solid #ddd;
+  padding: 6px 14px !important;
+  word-wrap: break-word;
+  font-family: "Helvetica";
+}
+
+#ens-cookie-table th {
+  background-color: #001969;
+  color: white;
+}
+
+.ensShadow {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  height: 100%;
+  width: 100%;
+  background: #1c2e4e;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+}
+
+#ensModalWrapper &gt; div &gt; div.button.raised.grey &gt; div {
+  text-align: right !important;
+}</style><script src="https://pagead2.googlesyndication.com/pagead/js/rum.js"></script><script type="text/javascript" async="" src="//track.qcri.org/v2-track-min.js"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_270.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://nexus.ensighten.com/aljazeera/english/code/2ee48ae45567658249290b7b38bd4a03.js?conditionId0=2176560"></script><script src="https://connect.facebook.net/signals/config/968100353246427?v=2.8.30&amp;r=stable" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script src="https://nexus.ensighten.com/aljazeera/english/serverComponent.php?r=1.6463330100405038&amp;ClientID=2550&amp;PageID=https%3A%2F%2Fwww.aljazeera.com%2Fnews%2F2018%2F10%2Fhate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html"></script><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0, minimal-ui" />
+
+
+
+
+
+    
+        
+
+        <!-- header tags -->
+        <meta name="guid" content="181029233810416" /><title>'Fear and hate': Critics slam Trump's anti-caravan troop surge | USA News | Al Jazeera</title><meta name="title" content="'Fear and hate': Critics slam Trump's anti-caravan troop surge" /><meta name="channel" content="" /><meta name="author" content="" /><meta name="description" content="Rights groups call Pentagon's plan to send 5,200 troops to US-Mexico border an overreaction, saying there's 'no crisis'." /><meta property="og:title" content="'Fear and hate': Critics slam Trump's anti-caravan troop surge" /><meta property="og:description" content="Rights groups call Pentagon's plan to send 5,200 troops to US-Mexico border an overreaction, saying there's 'no crisis'." /><meta property="og:url" content="https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html" /><meta name="url" content="https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html" /><meta property="og:internalurl" content="https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html" /><meta name="ShortURL" content="http://aje.io/bgt5w" /><meta property="og:image" itemprop="image" content="https://www.aljazeera.com/mritems/Images/2018/10/30/28d0a66ccd474994916f11a8363a99c6_18.jpg" /><meta name="image" content="https://www.aljazeera.com/mritems/Images/2018/10/30/28d0a66ccd474994916f11a8363a99c6_18.jpg" /><meta property="twitter:title" content="'Fear and hate': Critics slam Trump's anti-caravan troop surge" /><meta property="twitter:description" content="Rights groups call Pentagon's plan to send 5,200 troops to US-Mexico border an overreaction, saying there's 'no crisis'." /><meta http-equiv="Last-Modified" name="LastModifiedDate" content="Tue, 30 October 2018 01:34:59 GMT" /><meta name="twitter:image" content="https://www.aljazeera.com/mritems/Images/2018/10/30/28d0a66ccd474994916f11a8363a99c6_18.jpg" /><meta name="ContentType" content="News" /><meta name="news_keywords" content="US-Mexico border, United States, Guatemala, Honduras, Mexico, Donald Trump, US &amp; Canada, Refugees, Human Rights, Asylum Seekers" /><link rel="amphtml" href="https://www.aljazeera.com/amp/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html" /><link rel="canonical" href="https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html" /><!--  BS Article Header --> 
+ 
+<meta http-equiv="x-ua-compatible" content="ie=Edge" />  
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta property="twitter:account_id" content="4970411" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="google-play-app" content="app-id=net.aljazeera.english" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="562" />
+ <link rel="alternate" type="application/rss+xml" title="Al Jazeera English" href="/xml/rss/all.xml" />
+<link rel="apple-touch-icon" href="/mritems/assets/images/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/mritems/assets/images/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/mritems/assets/images/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/mritems/assets/images/touch-icon-ipad-retina.png" />
+<meta name="apple-itunes-app" content="app-id=504847776" /> 
+
+
+<!-- Ensighten Script -->
+<script type="text/javascript" src="//nexus.ensighten.com/aljazeera/english/Bootstrap.js"></script><script type="text/javascript" src="//nexus.ensighten.com/aljazeera/privacy_ajc/Bootstrap.js"></script><script type="text/javascript" src="//nexus.ensighten.com/aljazeera/privacy_ajc/serverComponent.php?r=0.9987914604773676&amp;ClientID=2550&amp;PageID=https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html"></script>
+
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+<script src="/assets/scripts/jquery-1.11.1.min.js?i=1"></script>
+
+<script src="/assets/scripts/brightcove.js?x=163" type="text/javascript"></script>
+<script src="/assets/scripts/ArticleSiteScripts.js?x=39" type="text/javascript" async=""></script>  
+<script src="/assets/scripts/SocialSharePlugin.js?x=35" async=""></script>
+ 
+<script src="/assets/scripts/prebid.js?x=3" type="text/javascript" async=""></script>
+<script src="//mtrx.go.sonobi.com/morpheus.aljazeera.1667.js" type="text/javascript" async=""></script>
+<script src="/assets/scripts/article-adsscript.js?x=10" type="text/javascript"></script>  
+
+    <link href="/assets/styles/bootstrap-min.css" rel="stylesheet" />  
+    <link href="/assets/styles/firefox-hack.css" rel="stylesheet" />
+    <link href="/assets/styles/bs-custom-article-style.css?x=66" rel="stylesheet" />
+    <link href="/assets/styles/old-stories-styles-fixes.css?x=5" rel="stylesheet" /> 
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+    body {
+        background: #FCFCFC;
+    } 
+	
+    </style>
+
+<!-- Facebook AJE Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '968100353246427');
+fbq('track', 'PageView');
+</script> 
+<noscript>&lt;img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=968100353246427&amp;ev=PageView&amp;noscript=1"
+/&gt;</noscript>
+<!-- End Facebook AJE Pixel Code -->
+
+
+
+<!-- BS News Articles Header --> 
+<meta name="twitter:site" content="@AJENews" /> 
+<script src="/assets/scripts/infinite-scroll-pkgd.js"></script>
+<link href="/assets/styles/bs-content-onscroll-style.css?x=3" rel="stylesheet" />
+
+
+ 
+    
+  
+    <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.aljazeera.com" as="script" /><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.aljazeera.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_270.js" async=""></script><style type="text/css">.ensCenter{text-align: center;}#ensModalWrapper{border: 1px solid #333;position: fixed;max-width: 80%;border: 1px solid #000;display: none;box-shadow: 5px 5px 5px grey;background-color:#fff;padding: 20px 0;z-index: 9999;}.ensModal {font-family: Roboto, 'Helvetica Neue', Helvetica, Arial;}.ensModal input[type='checkbox'] {display: none;}.ensModal input[type='checkbox']:checked ~ .toggle {background: #fff;left: 36px;transition: .5s;}.ensModal input[type='checkbox']:checked ~ .switch {background: #43A047;transition: .5s;}.ensModal .switch {display: block;width: 50px;height: 15px;background: #939393;border-radius: 10px;position: absolute;top: 0;transition: .5s;}.ensModal .toggle {height: 17px;width: 17px;border-radius: 50%;background: white;position: absolute;top: -2px;left: -2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);transition: .5s;}.ensModal .card {display: inline-block;margin: 9px;margin: 5px;width: 50px;height: 20px;text-align: center;position: relative;float:right;}.ensModal{font-size: 18px;color: #333;padding: 20px;}.ensToggleRow{margin-bottom: 10px;}.ensToggleLabel{margin-right: 5px;}.ensButtons{clear: both;margin-top: 15px;float: right;}.ensButtons .button{display: inline-block;position: relative;width: 120px;height: 32px;line-height: 32px;border-radius: 2px;font-size: 0.9em;background-color: #fff;color: #646464;margin-left: 20px;}.ensButtons .button.grey {background-color: #eee;}.ensButtons .button.blue {background-color: #4285f4;color: #fff;}.ensButtons .button.raised {transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);transition-delay: 0.2s;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);}.ensButtons .button.raised:active {box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);transition-delay: 0s;}.ensModal .ensTitle {margin:5px;width:95%;color: #74736F;position: absolute;top:-5px;left:-5px;padding-left:5%;padding-top:13px;padding-bottom: 3px;text-align: center;}.ensModal .consentDescription {color:#333;font-size: 14px;}.ensModal hr {color: #C5C5C5}.ensModal .description {max-width:600px;font-size: 12px;marin-top:15px;clear: both;}</style><style type="text/css">.ensNotifyBanner{background-color: #191B23;color: #EDEDED;opacity: 0.8;width:60%;border-radius: 10px;padding:20px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial;position: fixed;bottom:50px;display: none;z-index: 9999;}.ensButtons{clear: both;margin-top: 15px;float: right;}.ensButtons .button{display: inline-block;position: relative;width: 120px;height: 32px;line-height: 32px;border-radius: 2px;font-size: 0.9em;background-color: #fff;color: #646464;margin-left: 20px;text-align: center;}.ensButtons .button{cursor: pointer;}.ensButtons .button.grey {background-color: #eee;}.ensButtons .button.blue {background-color: #4285f4;color: #fff;}.ensButtons .button.raised {transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);transition-delay: 0.2s;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);}.ensButtons .button.raised:active {box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);transition-delay: 0s;}.ensClear{ clear:both;}.ensModalLink{  cursor: pointer; text-decoration: underline;}.ensModalLink:hover{  color: #4285f4;}</style><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-30/html/container.html" /></head>
+<body>
+    <form id="hate-Critics-slam-Trump-anti-caravan-troop-surge-181029233810416" name="hate-Critics-slam-Trump-anti-caravan-troop-surge-181029233810416" method="post">    
+    
+    
+     
+ 
+        <!-- important tag dont remove(used to carry page context.....) -->
+        <input type="hidden" id="oryxcontext" value="B8C906090FB19032EA03A7D3B8D5B5D7D5F89B857AC31D85AB840131CD470FA8C43DDE3E56B128BFD0D23A3BBB1333AF07C4C415307E2E7CBC451A40CE2AA56101FC52BD2A81E216B861ABC3CB37A68CD1D526EA76B3AC8C637A40D06417631E591050F8C0D9AC778D57CAC7819F3AA46239E8F9B70EFDB81267C34426DA14A1C4688E71630542C819906E80C6A293666075B922F8752146C89BD3BDF9DB2892BBFF1B18A32A77B73FC9A8444588B73663BF003FF0107AC7F4BB1159EA2D53E20826BAB877BB97B18BACF1F070B03294F0C64AECAF3A6D549E58F40E0DA1BEB84666FA65356CF7504586AB40D65A8876DC1D01C7CBBB637BF5E018B80E4834744E614AFCBB0693477C18CC67DEE757EE8026CF2EC5D1E1FE87AF306D94DB8407D599F4A5BE062BAF6AEF1F218DD8559BEDF8A1413B32113B6AD4FB060AE72146" data-postingguid="181029233810416" />      
+
+<!-- googleoff: index -->
+
+        <!-- top adv -->
+        <div id="topadv" class="top-adv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 top-adv-wrapper" id="topdivad">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- / top adv -->
+      
+       <!-- breaking news -->
+   <div id="header_container" style="display: none;" class="hideticker">
+   		<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="js-news" class="js-hidden">
+                    </ul>
+                </div>
+            </div>
+        </div>
+	  </div>
+       <!-- /breaking news -->
+      
+
+       <!-- desktop site header -->
+       <div id="article-main-header" class="animated article-main-header article-main-header-scroll" style="position: relative;">
+         <div><div><div style=";border-style:none"><div class="container" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="row">
+    <div class="col-sm-9 navigation-block">
+      <div class="navigation">
+        <div class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img class="article-main-header-logo" alt="" src="/mritems/assets/images/aj-logo-sm-2.png" /><img class="article-main-header-logo-Big" alt="" src="/mritems/assets/images/aj-logo-lg-124.png" /><img class="logo-sticky" alt="" src="/mritems/assets/images/AljazeeraLogo.png" style="display: none;" /></a></div>
+            <div class="navigation-wrapper">
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <div class="form-search nav-form-search"></div>
+                  <li data-guid="171025111604759" class="nav-item-171025111604759"><a href="/" target="_self">Home </a></li>
+                  <li data-guid="161023134902510" class="dropdown menu-large"><a class="dropdown-toggle" data-toggle="dropdown" href="/news/">News <b class="caret"></b></a><ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li data-guid="140311071122120"><a href="/topics/regions/middleeast.html">Middle East</a></li>
+                          <li data-guid="131113081710422"><a href="/topics/regions/africa.html">Africa</a></li>
+                          <li data-guid="131112142029837"><a href="/topics/regions/asia.html">Asia</a></li>
+                          <li data-guid="140311071220644"><a href="/topics/regions/us-canada.html">US &amp; Canada</a></li>
+                          <li data-guid="131113111908681"><a href="/topics/regions/latin-america.html">Latin America</a></li>
+                          <li data-guid="131113084937332"><a href="/topics/regions/europe.html">Europe</a></li>
+                          <li data-guid="140311071939629"><a href="/topics/regions/asia-pacific.html">Asia Pacific</a></li>
+                          <li data-guid="170926095124731"><a href="/news" target="_self">All</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-guid="140311071122120" class="nav-item-140311071122120"><a href="/topics/regions/middleeast.html">Middle East </a></li>
+                  <li data-guid="161016132227401" class="dropdown menu-large"><a class="dropdown-toggle" data-toggle="dropdown" href="/documentaries/">Documentaries <b class="caret"></b></a><ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li data-guid="140309125006070"><a href="/programmes/specialseries/">Featured Documentaries</a></li>
+                          <li data-guid="140309124146566"><a href="/programmes/witness/">Witness</a></li>
+                          <li data-guid="140309100922773"><a href="/programmes/aljazeeraworld/">Al Jazeera World</a></li>
+                          <li data-guid="140309083414124"><a href="/programmes/101east/">101 East</a></li>
+                          <li data-guid="140309103232322"><a href="/programmes/peopleandpower/">People &amp; Power</a></li>
+                          <li data-guid="140309101835880"><a href="/programmes/faultlines/">Fault Lines</a></li>
+                          <li data-guid="171104105940754"><a href="/programmes/my-tunisia/tunisia.html">My Tunisia</a></li>
+                          <li data-guid="180816101727275"><a href="/programmes/this-is-europe/">This is Europe </a></li>
+                          <li data-guid="170702220310988"><a href="/programmes/aljazeera-selects/">Al Jazeera Selects </a></li>
+                          <li data-guid="140309100153551"><a href="/programmes/aljazeeracorrespondent/">Al Jazeera Correspondent</a></li>
+                          <li data-guid="160905084557919"><a href="/programmes/rewind/">REWIND</a></li>
+                          <li data-guid="161019084747265"><a href="/documentaries/">All</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-guid="140204094724441" class="dropdown menu-large"><a class="dropdown-toggle" data-toggle="dropdown" href="/programmes/">Shows <b class="caret"></b></a><ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li data-guid="140309102519696"><a href="/programmes/insidestory/">Inside Story</a></li>
+                          <li data-guid="140327064406019"><a href="http://stream.aljazeera.com" target="_blank">The Stream</a></li>
+                          <li data-guid="140309102803328"><a href="/programmes/listeningpost/">The Listening Post</a></li>
+                          <li data-guid="140309123607662"><a href="/programmes/talktojazeera/">Talk to Al Jazeera</a></li>
+                          <li data-guid="170215082732680"><a href="/programmes/the-big-picture/">The Big Picture</a></li>
+                          <li data-guid="140309124802201"><a href="/programmes/headtohead/">Head to Head</a></li>
+                          <li data-guid="140309101519781"><a href="/programmes/countingthecost/">Counting the Cost</a></li>
+                          <li data-guid="150811112506260"><a href="/programmes/upfront/">UpFront</a></li>
+                          <li data-guid="140309100432009"><a href="/programmes/earthrise/">earthrise</a></li>
+                          <li data-guid="140309101636015"><a href="/programmes/empire/">Empire</a></li>
+                          <li data-guid="161019085813616"><a href="/programmes/" target="_self">All</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-guid="141105143951929" class="nav-item-141105143951929"><a href="/investigations/">Investigations </a></li>
+                  <li data-guid="140130065247497" class="nav-item-140130065247497"><a href="/indepth/opinion/">Opinion </a></li>
+                  <li data-guid="161027083327112" class="nav-item-161027083327112"><a href="/indepth/inpictures/">In Pictures </a></li>
+                  <li data-guid="161017091647457" class="dropdown menu-large"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <b class="caret"></b></a><ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li data-guid="161027081630642"><a href="/indepth/features/">Features</a></li>
+                          <li data-guid="141105143951929"><a href="/investigations/">Investigations</a></li>
+                          <li data-guid="161027083327112"><a href="/indepth/inpictures/">In Pictures</a></li>
+                          <li data-guid="161027100258444"><a href="/indepth/interactive/">Interactive</a></li>
+                          <li data-guid="161019084958582"><a href="/indepth/interactive/documentaries/">Interactive Documentaries</a></li>
+                          <li data-guid="161115094809507"><a href="/shorts/">AJ Shorts</a></li>
+                          <li data-guid="170219130504928"><a href="/podcasts/">Podcasts</a></li>
+                          <li data-guid="161028145404792"><a href="/blogs/">Reporter's Notebook</a></li>
+                          <li data-guid="131112151343070"><a href="/topics/categories/human_rights.html">Human Rights</a></li>
+                          <li data-guid="131112152428605"><a href="/topics/categories/sport.html">Sport</a></li>
+                          <li data-guid="131112152215639"><a href="/topics/categories/science-and-technology.html">Science &amp; Technology</a></li>
+                          <li data-guid="140319114634577"><a href="/topics/categories/weather.html">Weather</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><nav class="nav-homepage-topics nav-wide"><ul>
+                  <li id="NavTopTopics">TRENDING:</li>
+                  <li><a href="/topics/people/jamal-khashoggi.html">Jamal Khashoggi</a></li>
+                  <li><a href="/topics/country/saudi-arabia.html">Saudi Arabia</a></li>
+                  <li><a href="/topics/events/midterms-2018.html">US Midterms 2018</a></li>
+                  <li><a href="/topics/country/sri-lanka.html">Sri Lanka</a></li>
+                  <li><a href="/topics/people/donald-trump.html">Donald Trump</a></li>
+                </ul></nav></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 search-live-block article-live-block">
+      <div class="search-btn-section">
+        <ul>
+          <li id="watchlive-active" class="watch-live-sticky"><a href="/live/"><span class="genericon genericon-video"></span><span class="watch-live--stickyWord">Live</span></a></li>
+          <li class="search-btn-top" style="margin: 1px 5px 0px 12px;"><a href="javascript:void(0)" class="article-button-search-top-main"><span class="genericon genericon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-wrapper-wrap" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-wrapper"><input class="field-search search-field-main-header" id="searchText-main-header" placeholder="Search..." type="text" /></div>
+      </div>
+    </div>
+  </div>
+</div></div></div><!--PageLoadedSucessfully--></div>
+       </div>
+       <!-- /desktop site header -->
+
+       <!-- mobile header -->
+       <div id="mobile-header" class="mobile-header mobile-header-article-main mobile-header-article-main-scroll">
+         <div><div><div style=";border-style:none"><div class="col-sm-9" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="navbar navbar-default">
+    <div class="row">
+      <div class="navbar-header"><button id="ChangeToggleMobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><div id="navbar-hamburger-mobile"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+          <div id="navbar-close-mobile" class="hidden"><span class="genericon genericon-close-alt" title="genericon-close"></span></div></button><a class="navbar-brand" href="/"><img alt="" src="/img/AljazeeraLogo.png" /></a><div class="mobile-social-icons" id="mobile-share-icons"><div class="article-mobile-sticky-facebook"><a class="fbshares" href="javascript:void(0)" onclick="sendGAEvent('Share','click','Facebook - Mobile Sticky'); sendGASocial('Facebook','Share');"> <span class="genericon genericon-facebook"></span></a></div><div class="article-mobile-sticky-twitter"><a class="twittershares" href="#" onclick="sendGAEvent('Share','click','Twitter - Mobile Sticky'); sendGASocial('Twitter','Tweet');"> <span class="genericon genericon-twitter"></span></a></div></div>
+      </div>
+      <div class="navbar-collapse collapse " aria-expanded="true" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav main-menu-sticky" style="height: 650px; max-height: 600px;">
+          <li class="search-mobile"><span class="genericon genericon-search"></span><input class="field-search" id="mobile-search-field" type="text" placeholder="Search" /></li>
+          <li data-guid="171025111604759"><a href="/" target="_self">Home </a></li>
+          <li data-guid="161023134902510"><a class="dropdown-toggle" data-toggle="dropdown" href="/news/">News <b class="caret"></b></a><ul class="dropdown-menu  multi-level">
+              <li data-guid="140311071122120"><a href="/topics/regions/middleeast.html">Middle East</a></li>
+              <li data-guid="131113081710422"><a href="/topics/regions/africa.html">Africa</a></li>
+              <li data-guid="131112142029837"><a href="/topics/regions/asia.html">Asia</a></li>
+              <li data-guid="140311071220644"><a href="/topics/regions/us-canada.html">US &amp; Canada</a></li>
+              <li data-guid="131113111908681"><a href="/topics/regions/latin-america.html">Latin America</a></li>
+              <li data-guid="131113084937332"><a href="/topics/regions/europe.html">Europe</a></li>
+              <li data-guid="140311071939629"><a href="/topics/regions/asia-pacific.html">Asia Pacific</a></li>
+              <li data-guid="170926095124731"><a href="/news" target="_self">All</a></li>
+            </ul>
+          </li>
+          <li data-guid="140311071122120"><a href="/topics/regions/middleeast.html">Middle East </a></li>
+          <li data-guid="161016132227401"><a class="dropdown-toggle" data-toggle="dropdown" href="/documentaries/">Documentaries <b class="caret"></b></a><ul class="dropdown-menu  multi-level">
+              <li data-guid="140309125006070"><a href="/programmes/specialseries/">Featured Documentaries</a></li>
+              <li data-guid="140309124146566"><a href="/programmes/witness/">Witness</a></li>
+              <li data-guid="140309100922773"><a href="/programmes/aljazeeraworld/">Al Jazeera World</a></li>
+              <li data-guid="140309083414124"><a href="/programmes/101east/">101 East</a></li>
+              <li data-guid="140309103232322"><a href="/programmes/peopleandpower/">People &amp; Power</a></li>
+              <li data-guid="140309101835880"><a href="/programmes/faultlines/">Fault Lines</a></li>
+              <li data-guid="171104105940754"><a href="/programmes/my-tunisia/tunisia.html">My Tunisia</a></li>
+              <li data-guid="180816101727275"><a href="/programmes/this-is-europe/">This is Europe </a></li>
+              <li data-guid="170702220310988"><a href="/programmes/aljazeera-selects/">Al Jazeera Selects </a></li>
+              <li data-guid="140309100153551"><a href="/programmes/aljazeeracorrespondent/">Al Jazeera Correspondent</a></li>
+              <li data-guid="160905084557919"><a href="/programmes/rewind/">REWIND</a></li>
+              <li data-guid="161019084747265"><a href="/documentaries/">All</a></li>
+            </ul>
+          </li>
+          <li data-guid="140204094724441"><a class="dropdown-toggle" data-toggle="dropdown" href="/programmes/">Shows <b class="caret"></b></a><ul class="dropdown-menu  multi-level">
+              <li data-guid="140309102519696"><a href="/programmes/insidestory/">Inside Story</a></li>
+              <li data-guid="140327064406019"><a href="http://stream.aljazeera.com" target="_blank">The Stream</a></li>
+              <li data-guid="140309102803328"><a href="/programmes/listeningpost/">The Listening Post</a></li>
+              <li data-guid="140309123607662"><a href="/programmes/talktojazeera/">Talk to Al Jazeera</a></li>
+              <li data-guid="170215082732680"><a href="/programmes/the-big-picture/">The Big Picture</a></li>
+              <li data-guid="140309124802201"><a href="/programmes/headtohead/">Head to Head</a></li>
+              <li data-guid="140309101519781"><a href="/programmes/countingthecost/">Counting the Cost</a></li>
+              <li data-guid="150811112506260"><a href="/programmes/upfront/">UpFront</a></li>
+              <li data-guid="140309100432009"><a href="/programmes/earthrise/">earthrise</a></li>
+              <li data-guid="140309101636015"><a href="/programmes/empire/">Empire</a></li>
+              <li data-guid="161019085813616"><a href="/programmes/" target="_self">All</a></li>
+            </ul>
+          </li>
+          <li data-guid="141105143951929"><a href="/investigations/">Investigations </a></li>
+          <li data-guid="140130065247497"><a href="/indepth/opinion/">Opinion </a></li>
+          <li data-guid="161027083327112"><a href="/indepth/inpictures/">In Pictures </a></li>
+          <li data-guid="161017091647457"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <b class="caret"></b></a><ul class="dropdown-menu  multi-level">
+              <li data-guid="161027081630642"><a href="/indepth/features/">Features</a></li>
+              <li data-guid="141105143951929"><a href="/investigations/">Investigations</a></li>
+              <li data-guid="161027083327112"><a href="/indepth/inpictures/">In Pictures</a></li>
+              <li data-guid="161027100258444"><a href="/indepth/interactive/">Interactive</a></li>
+              <li data-guid="161019084958582"><a href="/indepth/interactive/documentaries/">Interactive Documentaries</a></li>
+              <li data-guid="161115094809507"><a href="/shorts/">AJ Shorts</a></li>
+              <li data-guid="170219130504928"><a href="/podcasts/">Podcasts</a></li>
+              <li data-guid="161028145404792"><a href="/blogs/">Reporter's Notebook</a></li>
+              <li data-guid="131112151343070"><a href="/topics/categories/human_rights.html">Human Rights</a></li>
+              <li data-guid="131112152428605"><a href="/topics/categories/sport.html">Sport</a></li>
+              <li data-guid="131112152215639"><a href="/topics/categories/science-and-technology.html">Science &amp; Technology</a></li>
+              <li data-guid="140319114634577"><a href="/topics/categories/weather.html">Weather</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3 search-live-block article-live-block article-live-block-mobile" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="search-btn-section">
+    <ul>
+      <li id="Li2" class="watch-live-sticky"><a href="/live/"><span class="genericon genericon-video"></span><span class="watch-live-Word" style="top: 2px;">Live</span></a></li>
+      <li class="search-btn-top"><a href="#" class="article-button-search-mobile"><span class="genericon genericon-search"></span></a></li>
+    </ul>
+  </div>
+</div></div></div><!--PageLoadedSucessfully--></div>
+       </div>
+         <!-- googleon: index -->
+    <!--  /article header wrapper-->
+
+        <!-- article page body -->
+
+        <div id="placeholder1" type="content">
+
+            <!-- comments goes here -->
+        
+	<div><div class="article-page-container"><div><div><div><div style="width:100%"><div><div><div style=";border-style:none"></div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><section id="article-page" class="article-page-section"><div><div><div><div style="width:100%"><div><div class="container main-container main-container-scroll" style="padding-top: 0px;"><div><div><div><div style="width:100%"><div><div class="row article-top-header"><div><div style=";border-style:none"><div class="col-md-8 article-top-header-wrapper">
+  <div class="article-top-label">
+    <ul>
+      <li class="mini-primary" id="articlestoplabel"><a href="/news/" onclick="sendGAEvent('Labels','click','Content Type - Top');">News</a></li>
+      <li class="mini-label-slash">/</li>
+      <li class="mini-secondary" id="articlestoptopic"><a onclick="sendGAEvent('Topics','click','Article Topics - Top');" href="/topics/country/united-states.html">United States</a></li>
+    </ul>
+  </div>
+  <div class="article-heading">
+    <h1 class="post-title">'Fear and hate': Critics slam Trump's anti-caravan troop surge</h1>
+    <p class="article-heading-des">Rights groups call Pentagon's plan to send 5,200 troops to US-Mexico border an overreaction, saying there's 'no crisis'.</p>
+    <div class="article-heading-author-wrap">
+      <div class="article-heading-author-img">
+        <div class="article-heading-author-name">
+          <div class="article-duration"><time class="timeagofunction" datetime="Tue Oct 30 2018 01:34:59 GMT+0000" style="margin-top: 7px;">29 Oct 2018</time></div>
+        </div>
+      </div>
+    </div>
+    <div class="article-readToMe-share-block" id="article-top-share-icon">
+      <ul><li><a class="fbshares" href="javascript:void(0)" onclick="sendGAEvent('Share','click','Facebook'); sendGASocial('Facebook','Share');"><span class="genericon genericon-facebook"></span></a></li><li><a class="twittershares" href="#" onclick="sendGAEvent('Share','click','Twitter'); sendGASocial('Twitter','Tweet');"><span class="genericon genericon-twitter"></span></a></li></ul>
+    </div>
+  </div>
+</div></div></div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><div class="row article-main-content-wrapper"><div><div><div><div style="width:100%"><div><div class="col-md-8 article-main-content"><div><div style=";border-style:none"><article id="main-article-block" class="main-article-block clear-fix"><div class="main-article-body"><figure class="main-article-mediaCaption"><div class="main-article-media"><img class="img-responsive main-article-media-img" src="/mritems/imagecache/mbdxxlarge/mritems/Images/2018/10/30/28d0a66ccd474994916f11a8363a99c6_18.jpg" alt="A US Custom and Border Protection agent guards one of the gates at the border on the international bridge between Mexico and the US in Ciudad Juarez, Mexico [Jose Luis Gonzalez/Reuters]" title="'Fear and hate': Critics slam Trump's anti-caravan troop surge" /></div><figcaption class="main-article-caption">A US Custom and Border Protection agent guards one of the gates at the border on the international bridge between Mexico and the US in Ciudad Juarez, Mexico [Jose Luis Gonzalez/Reuters]</figcaption></figure><div class="article-more-on-block article-shaded-blocks article-embedded-card hidden-xs" xmlns:media="http://search.yahoo.com/mrss/">
+  <h4 class="embeded-box-name">
+        more on <span><a onclick="sendGAEvent('Article Embeds','click','More on box - Topic Link');" href="/topics/spotlight/mexico-border.html">US-Mexico border</a></span></h4>
+  <ul class="article-more-on-ul">
+    <li><a onclick="sendGAEvent('Article Embeds','click','More on box - Article Link');" href="/news/2018/10/military-receives-request-send-troops-mexico-border-181025164720195.html">US military 'receives request' to send troops to US-Mexico border</a><time>6 days ago</time></li>
+    <li><a onclick="sendGAEvent('Article Embeds','click','More on box - Article Link');" href="/news/2018/10/arrested-16658-migrant-family-members-border-september-181024173216055.html">US arrested 16,658 migrant family members at border in September</a><time>last week</time></li>
+    <li><a onclick="sendGAEvent('Article Embeds','click','More on box - Article Link');" href="/news/2018/10/retrial-begins-border-agent-shot-teen-border-181023141131887.html">Retrial to begin for US border agent who shot teen across border</a><time>last week</time></li>
+    <li><a onclick="sendGAEvent('Article Embeds','click','More on box - Article Link');" href="/programmes/upfront/2018/10/trump-border-detentions-state-sponsored-child-abuse-181020081951872.html">Trump border detentions 'state-sponsored child abuse'</a><time>last week</time></li>
+  </ul>
+</div>
+    <div class="article-p-wrapper" id="body-200771816342556199"><p class="speakable">A week out from the US midterm elections, the Pentagon said on Monday it is sending 5,200 troops, some armed, to the Southwest border to respond to a <a href="https://www.aljazeera.com/news/2018/10/alternatives-thousands-flee-honduras-bound-caravan-181016193005484.html">caravan of mostly Honduran migrants and refugees</a>, prompting sharp rebuke from immigrant and human rights groups.</p>
+<p class="speakable">The move comes amid President Donald Trump's <a href="https://www.aljazeera.com/news/2018/10/honduran-activists-trump-threats-cut-security-aid-181018183208432.html">repeated threats</a> against the caravan, including cutting off aid to Central American countries and Mexico if they do not block the refugees and migrants.</p>
+<p class="speakable"><span>"Sending active military forces to our southern border is not only a huge waste of taxpayer money, but an unnecessary course of action that will further terrorise and militarise our border communities," said Shaw Drake of the American Civil Liberties Union's border rights centre at El Paso, Texas.</span></p>
+<p>Now around 1,200km from the US border, the initial wave of refugees and migrants left Honduras more than two weeks ago. Estimates vary, but anywhere from 3,500 to more than 7,000 people are now part of the first group heading north through Mexico. Smaller groups <a href="https://www.aljazeera.com/news/2018/10/honduran-migrant-caravan-joined-latin-american-nationals-181028200214240.html">have since</a> left Honduras and El Salvador and hundreds of migrants and refugees crossed the Suchiate River between Guatemala and Mexico on foot Monday after being<a href="https://www.aljazeera.com/news/2018/10/honduran-killed-mexican-border-crackdown-migrant-caravan-181029130957107.html"> pushed back by Mexican authorites</a> the day before.</p>
+<p>Many of the participants told Al Jazeera they are <a href="https://www.aljazeera.com/news/2018/10/alternatives-thousands-flee-honduras-bound-caravan-181016193005484.html">fleeing violence and economic instability</a>, including unemployment. </p>
+<div class="article-also-read article-embed-tb-block article-embedded-card ">
+  <div class="topic-label">READ MORE</div>
+  <h4><a class="article-embed-title" onclick="sendGAEvent('Article Embeds','click','Dynamic Embed - Related Link');" href="/news/2018/10/honduran-women-find-safety-numbers-migrant-caravan-181021185658508.html">Honduran women find safety in numbers in migrant caravan</a></h4>
+</div>
+<p>Critics say the Trump administration has drummed up fear around the caravan in order to rally voters behind his anti-immigration agenda ahead of the November 6<a href="https://www.aljazeera.com/topics/events/midterms-2018.html"> midterm elections</a>.</p>
+<p>"The migrant caravan is full of women and children fleeing violence, poverty and government repression," tweeted Democratic Senator Ed Markey from Massachusetts. "Sending thousands of troops to turn them away as if they are foreign invaders reflects the profound paranoia, fear and hate fueling this administration's immigration policies."</p>
+<h2>'Operation Faithful Patriot'</h2>
+<p>Trump has called the caravan an "invasion" and without evidence, said "Middle Easterners" and "gang members" are among its participants. </p>
+<div class="article-also-read article-embed-tb-block article-embedded-card ">
+  <div class="topic-label">READ MORE</div>
+  <h4><a class="article-embed-title" onclick="sendGAEvent('Article Embeds','click','Dynamic Embed - Related Link');" href="/news/2018/10/migrant-caravan-activists-trump-blame-honduras-situation-181016213544549.html">Migrant caravan activists: Trump to blame for Honduras situation</a></h4>
+</div>
+<p>On Monday, Air Force General Terrence O'Shaughnessy, the Northern Command leader, told reporters that that 800 troops were already on their way to southern Texas. Explaining that the number will reach 5,200 by the end of the week, he said “Operation Faithful Patriot” will focus on Texas first, then Arizona and California.</p>
+<p>There are already about 2,000 National Guardsmen on the US's southern border, but now advanced helicopters will enable border protection agents to swoop down on migrants, O’Shaughnessy said. The military troops are intended to assist the border patrol, not engage directly with migrants, he added.</p>
+<p>The caravan's goal is to seek asylum at an official port of entry, however. </p>
+<p>Migrants are entitled under both US and international law to apply for asylum, but it may take while to make a claim.</p>
+<div>
+<div class="imagecontainer item" data-image-url="/mritems/Images/2018/10/30/6992529101e3487d9e60e1a5c032fa32_18.jpg">
+<table class="image" border="0">
+<tbody>
+<tr>
+<td><img src="/mritems/Images/2018/10/30/6992529101e3487d9e60e1a5c032fa32_18.jpg" border="0" /></td>
+</tr>
+<tr>
+<td class="caption">Central American migrants cross the Suchiate river, the natural border between Guatemala and Mexico, to reach the US [Carlos Garcia Rawlins/Reuters]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Caravans coming from Central America have made their way to the US border for years without much fanfare. Migrants and refugees often leave in groups for safety purposes. This month's caravan is unusual for its large size, however, and those travelling north seem to be so far undeterred by the president's threats.</p>
+<p>In April, a caravan that had about 1,500 people at its peak also caught Trump’s ire. Many of its participants attempted to stay in Mexico and only a few hundred people continued to the US border, seeking asylum at an official port of entry, rights groups said.</p>
+<p>According to the New York Times, about 400 were referred to the US for "credible fear" interviews. Many who passed that step are still awaiting further immigration hearings.</p>
+<h2>'There is no crisis at the border'</h2>
+<p>Rights groups also argue that there is little evidence to suggest that increasing border restrictions has an effect on individuals decision to flee their country.</p>
+<p>"In many cases we are talking about people who have no choice but to leave their homes, and people who will continue to keep trying to find a safe place to live, despite the policies of Mexico, the USA, or any other country that may be safer than theirs," Amnesty said in a statement last week.</p>
+<p>"The hardline border controls used by a series of US governments over the last 30 years have been shown to be ineffective at reducing migration and only condemn people to more precarious and dangerous routes that put human lives at risk and fuel smuggling network," the international rights organisation added.</p>
+<div>
+<div class="imagecontainer item" data-image-url="/mritems/Images/2018/10/26/c058353f3c6f4ef9baf1b0f578ad27d4_18.jpg">
+<table class="image" border="0">
+<tbody>
+<tr>
+<td><img src="/mritems/Images/2018/10/26/c058353f3c6f4ef9baf1b0f578ad27d4_18.jpg" border="0" /></td>
+</tr>
+<tr>
+<td class="caption">This new group of a few hundred Honduran migrants are behind the first group that has swelled to thousands and is currently traveling through Mexico. [Oliver de Ros/Al Jazeera] </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Michelle Mittelstadt, director of communications of the Migration Policy Institute, said "there is no crisis at the border".</p>
+<p>"We believe that the US is capable of dealing with the caravan without such extraordinary measures, and that is well within the capacity of the government to determine among those arriving at the border who has a legitimate protection claim and who does not," she told Al Jazeera, adding that overall activity at the border is a "mere fraction" of what it was in the 1990s and early 2000s.</p>
+<p>The White House is also weighing additional border security measures, including blocking those travelling in the caravan from seeking legal asylum and keeping them from entering the US.</p>
+<h2>Crackdown continues</h2>
+<p>The escalating rhetoric and expected deployments come as the president has been trying to turn the caravan into a key election issue with just days to go before the midterm elections that will determine whether Republicans maintain control of Congress.  </p>
+<div class="article-also-read article-embed-tb-block article-embedded-card ">
+  <div class="topic-label">READ MORE</div>
+  <h4><a class="article-embed-title" onclick="sendGAEvent('Article Embeds','click','Dynamic Embed - Related Link');" href="/news/2018/10/honduran-caravan-remains-determined-renewed-trump-threats-181026174836160.html">Honduran caravan remains determined despite renewed Trump threats</a></h4>
+</div>
+<p>"This will be the election of the caravans, the Kavanaughs, law and order, tax cuts, and you know what else? It's going to be the election of common sense," Trump said at a rally in Illinois on Saturday night.</p>
+<p>Trump, attempting to fulfill a number of campaign promises to crackdown on immigration, has implemented a "zero tolerance" policy at the border, drawing strong criticism from rights groups. Earlier this year, Trump was forced to end his administration's practice of separating children from their families at the border after public outcry. Hundreds of families remain separated. </p>
+<p>The president's dark description of the caravan belied the fact that any migrants who complete the long trek to the southern US border already face major hurdles, both physical and bureaucratic, to being allowed into the United States.</p>
+<div>
+<div class="imagecontainer item" data-image-url="/mritems/Images/2018/10/30/8afddf69e8ff45b9a003fbc99f840dc5_18.jpg">
+<table class="image" border="0">
+<tbody>
+<tr>
+<td><img src="/mritems/Images/2018/10/30/8afddf69e8ff45b9a003fbc99f840dc5_18.jpg" border="0" /></td>
+</tr>
+<tr>
+<td class="caption">A man washes his face from gas during a clash with the Mexican Police after they pull down the border gate with the intention to carry on their journey, in Tecun Uman, Guatemala [Carlos Garcia Rawlins/Reuters]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The Mexican, Guatemalan and Honduran governments also <a href="https://www.aljazeera.com/news/2018/10/honduran-caravan-pushes-mexican-police-standoff-181027131543744.html">fortified their respective borders</a> and increased security, attempting to turn back the migrants and refugees or keep them within from moving further north.</p>
+<p>Rights groups said the responses may <a href="https://www.aljazeera.com/news/2018/10/crackdown-honduran-migrant-caravan-international-law-181023194538522.html">violate</a> international law.</p>
+<p>On Sunday, a <a href="https://www.aljazeera.com/news/2018/10/honduran-killed-mexican-border-crackdown-migrant-caravan-181029130957107.html">Honduran man was killed</a> when Mexico federal police used rubber bullets and tear gas on a large group of migrants and refugees attempting to force their way across the Guatemala's border with Mexico. Mexican officials denied using rubber bullets, but refugees and migrants, as well as the media, including Al Jazeera witnessed federal police shooting rubber bullets during Sunday's confrontation.</p>
+<p><strong><em>Additional reporting by Sandra Cuffe in <em>Tapachula, Mexico.</em></em></strong></p></div>
+    <div class="article-body-artSource">
+      <p>
+            SOURCE:
+            <span>Al Jazeera and news agencies</span></p>
+    </div>
+    <div class="article-tags-feedback-wrapper">
+      <div class="article-body-tags">
+        <ul class="article-topic-detail-list" id="article-body-topics">
+          <li data-guid="170306115709716" data-topic-name="US-Mexico border"><a onclick="sendGAEvent('Topics','click','Article Topics - Bottom');" href="/topics/spotlight/mexico-border.html" style="padding: 6px 8px 3px;">US-Mexico border</a></li>
+          <li data-guid="140629181725304" data-topic-name="United States"><a onclick="sendGAEvent('Topics','click','Article Topics - Bottom');" href="/topics/country/united-states.html" style="padding: 6px 8px 3px;">United States</a></li>
+          <li data-guid="140629181121555" data-topic-name="Guatemala"><a onclick="sendGAEvent('Topics','click','Article Topics - Bottom');" href="/topics/country/guatemala.html" style="padding: 6px 8px 3px;">Guatemala</a></li>
+          <li data-guid="140629181136012" data-topic-name="Honduras"><a onclick="sendGAEvent('Topics','click','Article Topics - Bottom');" href="/topics/country/honduras.html" style="padding: 6px 8px 3px;">Honduras</a></li>
+          <li data-guid="140629181333528" data-topic-name="Mexico"><a onclick="sendGAEvent('Topics','click','Article Topics - Bottom');" href="/topics/country/mexico.html" style="padding: 6px 8px 3px;">Mexico</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html",
+        "headline": "'Fear and hate': Critics slam Trump's anti-caravan troop surge",
+    "datePublished": "30 Oct 2018 00:36 GMT",
+    "dateModified": "30 Oct 2018 01:34 GMT",
+    "description": "Rights groups call Pentagon's plan to send 5,200 troops to US-Mexico border an overreaction, saying there's 'no crisis'.",
+    "author": {
+    "@type": "Organization",
+    "name": "Al Jazeera"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Al Jazeera",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.aljazeera.com/mritems/assets/images/AJLOGOGOOGLE.png",
+        "width": 250,
+        "height": 40
+      }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2018/10/30/28d0a66ccd474994916f11a8363a99c6_18.jpg",
+            "height": 450,
+            "width": 800
+    }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "WebPage",
+	"name": "'Fear and hate': Critics slam Trump's anti-caravan troop surge",
+	"speakable": {
+		"@type": "SpeakableSpecification",
+		"cssSelector": [".post-title", ".speakable"]
+		},
+       	"url": "https://www.aljazeera.com/news/2018/10/hate-critics-slam-trump-anti-caravan-troop-surge-181029233810416.html"	
+}	
+       </script></article></div></div><div><div><div><div style="width:100%"><div guid="" path="UnderBodyContent" inherited="a1" applyzonekeepinhritance="true"><div><div><div><div style="width:100%"><div><div><div><div><div style="width:100%"><div><div><div><div style="border-style:none;"><div class="feedback-signForm">
+  <div class="article-feedback-txt have-your-say">
+          Have your say.<a href="javascript:showFeedbackForm();">Give us feedback.</a></div>
+  <div class="article-feedback-txt">
+         Sign up for our<a id="opennewsletter" href="javascript:showNewsletterForm();">Newsletter.</a></div>
+  <div id="bottomadsempty" style="padding-top: 30px;">
+<div id="div-gpt-ad-1430377943388-2" style="display: none;"><div id="google_ads_iframe_/5287/aljazeera_EN/news_2__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5287/aljazeera_EN/news_2" title="3rd party ad content" name="google_ads_iframe_/5287/aljazeera_EN/news_2" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<p class="adv-sidelabel">Advertisement</p>  
+</div>
+</div></div></div></div></div></div><div></div></div></div></div><!--PageLoadedSucessfully--></div></div><div></div></div></div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><div><div><div><div style="width:100%"><div><div><div><div><div style="width:100%"><div><div><div style=";border-style:none"> </div></div></div></div><div></div></div></div></div></div></div><div></div></div></div></div></div></div><div></div></div></div></div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><div class="col-md-4  main-article-sidebar"><div><div style=";border-style:none"><div class="sideAdv-wrapper" style="height: 2979.5px;">
+                  <div class="wrapper-sticky" style="display: block; height: 640px; width: 300px; margin: auto; position: relative; float: none; left: auto; right: auto; top: auto; bottom: auto; vertical-align: top;"><div class="article-adv-right-sideBar" style="top: auto; bottom: auto; left: auto; right: auto;">
+                    <div class="rightsideadstop">
+                    <!-- Ads Here -->
+                    </div>
+                  </div></div>
+                </div>
+    <div class="sideAdv-wrapper-2">
+                  <div class="article-adv-right-sideBar-2 rightsideadstop-2">
+                    <!-- Ads Here -->
+                  </div>
+                </div>
+              </div></div></div></div></div><div></div></div></div></div></div></div></div><div></div></div></div></div></div></div></div><div></div></div></div></div></section></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><div><div style=";border-style:none"><div class="section-separator">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<hr class="article-section-separator" />
+				<!-- Space --></div>
+		</div>
+	</div>
+</div>
+</div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div><div><div><div><div style="width:100%"><div><div><div style=";border-style:none"><div class="content-on-scroll-init" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="empty-div"></div>
+    <script type="text/javascript">
+$(document).ready(function() {
+ //infinite-scroll
+ if (typeof (InfiniteScroll) === 'function') {
+   var callerId = getMetaContentByName('guid');
+   var nextPages = [];
+      if (callerId) { if (callerId != '181010133542286') { nextPages.push('/news/2018/10/jamal-khashoggi-case-latest-updates-181010133542286.html'); } }if (callerId) { if (callerId != '181101053657132') { nextPages.push('/news/2018/11/divers-recover-crashed-lion-air-black-box-indonesian-sea-181101053657132.html'); } }if (callerId) { if (callerId != '181101053740772') { nextPages.push('/news/2018/11/sri-lanka-president-reconvene-parliament-rajapaksa-181101053740772.html'); } }if (callerId) { if (callerId != '181031220410604') { nextPages.push('/news/2018/10/honduran-mother-holds-husband-death-papers-border-181031220410604.html'); } }if (callerId) { if (callerId != '181030072527523') { nextPages.push('/news/2018/10/proposal-create-world-largest-protected-area-antarctic-181030072527523.html'); } }if (callerId) { if (callerId != '181025224401230') { nextPages.push('/indepth/features/carrying-bloodstained-backpacks-yemeni-children-return-class-181025224401230.html'); } }if (callerId) { if (callerId != '181031132306514') { nextPages.push('/indepth/opinion/rajapaksa-heads-sri-lanka-government-181031132306514.html'); } }if (callerId) { if (callerId != '181031151713337') { nextPages.push('/news/2018/10/fifa-hints-expanding-qatar-2022-world-cup-wider-gulf-region-181031151713337.html'); } }if (callerId) { if (callerId != '181030133955722') { nextPages.push('/news/2018/10/ali-milani-young-muslim-politician-challenging-boris-johnson-181030133955722.html'); } }if (callerId) { if (callerId != '181029095308704') { nextPages.push('/news/2018/10/modi-unveils-towering-statue-india-independence-leader-181029095308704.html'); } }
+   var infScroll = new InfiniteScroll( '.article-page-section', {
+     // options
+     //path: '.pagination__next',
+     path: function () { return nextPages[ this.loadCount ]; },
+     append: '.container.main-container',
+     history: 'replace',
+     historyTitle: true,
+     hideNav: '.pagination',
+     status: '.page-load-status'
+   });
+   //Triggered after item elements have been appended to the container.
+   infScroll.on('append', function( response, path, items, title ) {
+     var dividerDiv = $('&lt;div class="article-infiniteScroll-divider"&gt;&lt;!-- Divider --&gt;&lt;/div&gt;');
+     $('div.container.main-container.article-infinite-scroll').each(function(i, value) {
+      if ($(this).prev().not('div.article-infiniteScroll-divider')) {
+        $(this).before(dividerDiv);
+      }
+     });
+     $('img.lazy').lazy({effect:"fadeIn",effectTime:1000,defaultImage:"/img/nov-2016/novresptopfeature.jpg",visibleOnly:true});
+  try
+  {
+  //twitter embed
+  twttr.widgets.load() ;
+  //read more from GSA
+  CustomAjaxRender_EmbedArticleBlock();
+  }
+  catch (tw){
+  }
+ var indexnumber = infScroll.loadCount;
+  try {
+  /* var TopRightDiv = document.getElementsByClassName("rightsideadstop");
+if (TopRightDiv != null){
+TopRightDiv[indexnumber].innerHTML = document.getElementById("rightsideadshidden").innerHTML;
+}
+ var TopRightDiv2 = document.getElementsByClassName("rightsideadstop-2");
+if (TopRightDiv2 != null){
+ TopRightDiv2[indexnumber].innerHTML = document.getElementById("rightsideadshidden2").innerHTML;
+  } */
+}
+catch(err) {
+}
+ sendGAEvent('Article - infinite scroll','scroll','article '+ indexnumber);
+  path = path.replace('http://ajestaging-preprod.aljazeera.tv','');
+ ga('send', 'pageview', path);
+  pSUPERFLY.virtualPage({
+      sections: "New Section 1, New Section 2",
+      authors: "New Author",
+      path: path,
+      title: "New Title"
+    });
+   });
+   //Triggered when the next page has been successfully loaded, but not yet added to the container.
+   infScroll.on('load', function( response, path ) {
+    $(response).find('div.article-feedback-txt.have-your-say').remove();
+    $(response).find('div.container.main-container').removeClass('article-infinite-scroll');
+    $(response).find('div.container.main-container').addClass('article-infinite-scroll');
+    infScroll.appendItems($(response).html());
+   });
+   //Triggered when the history and URL have been changed.
+   infScroll.on('history', function(title, path) {
+     console.log('history: ' + path);
+   });
+ }
+});
+</script>
+    </div>
+<div class="page-load-status" xmlns:media="http://search.yahoo.com/mrss/">
+  <div class="loader-ellips infinite-scroll-request"><span class="loader-ellips__dot"></span><span class="loader-ellips__dot"></span><span class="loader-ellips__dot"></span><span class="loader-ellips__dot"></span></div>
+</div></div></div></div></div><div></div></div></div></div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div></div></div><div></div></div></div></div><div><div><div><div style="width:100%"><div></div></div><div></div></div></div></div></div></div>
+</div>
+
+        <!-- footer tags -->
+        <!-- googleoff: index -->
+        <div><div><div><div><div style="width:100%"><div><div><div style=";border-style:none"><div class="footer-top-socials">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-6 footer-logo pull-left">
+					<img alt="Al Jazeera" class="alj-footer-logo" id="footer-logo" src="/img/nov-2016/aje-logo-footer.png" /></div>
+				<div class="col-md-6 footer-socials pull-right">
+					<ul class="footer-nav-main" id="footer-nav-main">
+						<li>
+							<a href="/news/">News</a></li>
+						<li>
+							<a href="/programmes/">Programmes</a></li>
+						<li>
+							<a href="/indepth/opinion/">Opinion</a></li>
+						<li>
+							<a href="/aboutus/">About</a></li>
+						<li>
+							<a href="/investigations/">Investigations</a></li>
+						<li class="for-mobile" style="display: none;">
+							<a href="/contactus/">Contact Us</a></li>
+						<li class="last m-hide">
+							<a href="http://video.aljazeera.com/channels/eng" target="_blank">Video</a></li>
+						<li>
+							<a href="https://network.aljazeera.com/privacy/en" target="_blank">Privacy Policy</a></li>
+						<li>
+							<a href="https://network.aljazeera.com/cookies/en" target="_blank">Cookie Policy</a></li>
+						<li>
+							<a href="javascript:$('html, body').animate({ scrollTop: 0 }, 800); AJPrivacy.gateway.openModal()">Cookie Preferences</a></li>
+					</ul>
+					<ul id="footer-nav-social">
+						<li>
+							<a class="icon-facebook" href="http://www.facebook.com/aljazeera" target="_blank">Facebook</a></li>
+						<li>
+							<a class="icon-twitter" href="http://twitter.com/ajenglish" target="_blank">Twitter</a></li>
+						<li>
+							<a class="icon-google" href="http://plus.google.com/+aljazeera" target="_blank">Google+</a></li>
+						<li>
+							<a class="icon-rss" href="/xml/rss/all.xml" target="_blank">RSS</a></li>
+						<li>
+							<a class="icon-pod" href="/programmes/Podcasts.html" target="_blank">Podcast</a></li>
+						<li>
+							<a class="icon-youtube" href="https://www.youtube.com/user/AlJazeeraEnglish?sub_confirmation=1" target="_blank">YouTube</a></li>
+						<li>
+							<a class="Snapchat" href="https://www.snapchat.com/add/AJENews" target="_blank">SnapChat</a></li>
+					</ul>
+					<!-- end .social --></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12 footer-links">
+				<div class="col-md-3 col-sm-6">
+					<h3>
+						About</h3>
+					<ul class="list">
+						<li>
+							<a href="/aboutus/">About Us</a></li>
+						<li>
+							<a href="http://pr.aljazeera.com/" target="_blank">Press Office</a></li>
+						<li>
+							<a href="https://network.aljazeera.com/about-us/awards?field_channel_target_id=18&amp;sort_by=field_awards_date_value&amp;sort_order=DESC" target="_blank">Awards</a></li>
+						<li>
+							<a href="/aboutus/2006/11/2008525185733692771.html">Code of Ethics</a></li>
+						<li>
+							<a href="/aboutus/2011/01/20111168582648190.html">Terms and Conditions</a></li>
+						<li>
+							<a href="https://network.aljazeera.com/privacy/en" target="_blank">Privacy Policy</a></li>
+						<li>
+							<a href="https://network.aljazeera.com/cookies/en" target="_blank">Cookie Policy</a></li>
+						<li>
+							<a href="javascript:$('html, body').animate({ scrollTop: 0 }, 800); AJPrivacy.gateway.openModal()">Cookie Preferences</a></li>
+						<li>
+							<a href="/aboutus/2011/01/201111681520872288.html">Community Guidelines</a></li>
+						<li>
+							<a href="http://careers.aljazeera.net/en/" target="_blank">Work for us</a></li>
+						<li>
+							<a href="/hraquality" target="_blank">HR Quality</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h3>
+						Connect</h3>
+					<ul class="list">
+						<li>
+							<a href="/contactus/">Contact Us</a></li>
+						<li>
+							<a href="/connect/">Apps</a></li>
+						<li>
+							<a href="/aboutus/follow-us.html">Social</a></li>
+						<li>
+							<a href="http://sat.aljazeera.net/en">Channel Finder</a></li>
+						<li>
+							<a href="/watch_now/epgschedule.html">TV Schedule</a></li>
+						<li>
+							<a href="/programmes/Podcasts.html">Podcasts</a></li>
+						<li>
+							<a href="/newsletter">Newsletter</a></li>
+<li>
+						<a href="/tips" target="_blank">Submit a Tip</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h3>
+						Our Channels</h3>
+					<ul class="list">
+						<li>
+							<a href="http://aljazeera.net" target="_blank">Al Jazeera Arabic</a></li>
+						<li>
+							<a href="https://www.aljazeera.com" target="_blank">Al Jazeera English</a></li>
+						<li>
+							<a href="http://mubasher.aljazeera.net" target="_blank">Al Jazeera Mubasher</a></li>
+						<li>
+							<a href="http://doc.aljazeera.net" target="_blank">Al Jazeera Documentary</a></li>
+						<li>
+							<a href="http://balkans.aljazeera.net" target="_blank">Al Jazeera Balkans</a></li>
+						<li>
+							<a href="http://ajplus.net" target="_blank">AJ+</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h3>
+						Our Network</h3>
+					<ul class="list">
+						<li>
+							<a href="http://www.jetty.fm" target="_blank">Jetty</a></li>
+						<li>
+							<a href="http://studies.aljazeera.net/en/" target="_blank">Al Jazeera Centre for Studies</a></li>
+						<li>
+							<a href="http://training.aljazeera.net" target="_blank">Al Jazeera Media Institute</a></li>
+						<li>
+							<a href="http://liberties.aljazeera.com/en" target="_blank">Al Jazeera Centre for Public Liberties &amp; Human Rights</a></li>
+						<li>
+							<a href="http://forum.aljazeera.net" target="_blank">Al Jazeera Forum</a></li>
+						<li>
+							<a href="http://festival.aljazeera.net" target="_blank">Al Jazeera Film Festival</a></li>
+						<li>
+							<a href="http://learning.aljazeera.net" target="_blank">Al Jazeera Learning</a></li>
+						<li>
+							<a href="http://partners.aljazeera.net" target="_blank">Al Jazeera Hotel Partners</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12 footer-copyright">
+				<p>
+					© 2018 Al Jazeera Media Network</p>
+			</div>
+		</div>
+	</div>
+</div>
+<p>
+	 </p>
+</div></div><!--PageLoadedSucessfully--></div></div><div></div></div></div></div></div>
+        <!-- googleon: index -->
+        <!-- BS Article Footer --> 
+<script src="/assets/scripts/mailchimp-ajax-signup.js?x=1" type="text/javascript" async=""></script>   
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>  
+
+<!-- In article ads video -->
+<div id="div-gpt-ad-1430377943388-3" style="display: none;"><div id="google_ads_iframe_/5287/aljazeera_EN/news_3__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5287/aljazeera_EN/news_3" title="3rd party ad content" name="google_ads_iframe_/5287/aljazeera_EN/news_3" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- End In article ads video -->
+<!-- In article ads video -->
+<div id="div-gpt-ad-1430377943388-4" style="display: none;"><div id="google_ads_iframe_/5287/aljazeera_EN/news_4__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5287/aljazeera_EN/news_4" title="3rd party ad content" name="google_ads_iframe_/5287/aljazeera_EN/news_4" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- End In article ads video -->
+
+
+<div id="rightsideadshidden" style="display: none;">
+<div id="div-gpt-ad-1430377943388-1" style="display: none;"><div id="google_ads_iframe_/5287/aljazeera_EN/news_1__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5287/aljazeera_EN/news_1" title="3rd party ad content" name="google_ads_iframe_/5287/aljazeera_EN/news_1" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<p class="adv-sidelabel">Advertisement</p>  
+</div>
+ 
+ 
+<div id="bodyadshidden" style="display: none;">
+<div id="div-gpt-ad-1430377943388-0" style="display: none;"><div id="google_ads_iframe_/5287/aljazeera_EN/news_0__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5287/aljazeera_EN/news_0" title="3rd party ad content" name="google_ads_iframe_/5287/aljazeera_EN/news_0" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<p class="adv-sidelabel">Advertisement</p>
+</div>
+
+<div id="bottomadshidden" style="display:none;"></div> 
+
+ <script src="/assets/scripts/hcsticky.js"></script>
+<script src="/assets/scripts/bootstrap-min.js"></script>
+<script src="/assets/scripts/bs-article-script.js?x=7"></script>
+<script>
+    try {
+        $('.article-adv-right-sideBar').hcSticky({
+            stickTo: '.sideAdv-wrapper',
+            offResolutions: -800,
+            top: 75
+        });
+
+        $('.article-sidebar-trendings').hcSticky({
+            stickTo: '.article-sidebar-trending-wrapper',
+            offResolutions: -800,
+            top: 75
+        });
+    } catch (e) {}
+$('.article-vid-content').click(function() {
+            showVideo(); 
+        });
+    </script>
+<script>
+ if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var bodyptags = $('.article-p-wrapper &gt; p');
+
+if (bodyptags.length &gt; 2){
+
+$("&lt;div id='bodyads'&gt; &lt;/div&gt;").insertAfter(bodyptags[3]);
+
+}else{
+
+$("&lt;div id='bodyads'&gt; &lt;/div&gt;").insertAfter(bodyptags[0]); 
+
+}
+}  
+</script>
+<script type="text/javascript">
+	try {
+
+	  var TopRightDiv = document.getElementById("rightsideadstop");
+	  if (TopRightDiv != null){
+	    TopRightDiv.innerHTML = document.getElementById("rightsideadshidden").innerHTML;
+	    document.getElementById("rightsideadshidden").innerHTML = "";
+	  } 
+
+	  var BottomDiv = document.getElementById("bottomadsempty");
+	  BottomDiv.innerHTML = document.getElementById("bottomadshidden").innerHTML;
+	  document.getElementById("bottomadshidden").innerHTML = "";
+
+      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+         var BodyAds = document.getElementById("bodyads");
+	  if (BodyAds != null){ 
+	    BodyAds.innerHTML = document.getElementById("bodyadshidden").innerHTML;
+	    document.getElementById("bodyadshidden").innerHTML = "";
+	  }
+	} 
+ 
+	}
+	catch(err) {
+
+	
+	}
+</script>
+
+<script src="/assets/scripts/ticker-plugin-script.js?x=153" type="text/javascript" async=""></script>
+<script src="/assets/scripts/ticker-helper-scriptv2.js?x=154" type="text/javascript" async=""></script>
+<link href="/assets/styles/ticker-plugin-style.css?x=153" rel="stylesheet" /> 
+ 
+<script src="/assets/scripts/jquery.timeagov2.js" async=""></script> 
+<script type="text/javascript" src="/assets/scripts/jquery.lazy.min-v2.js?x=1" async=""></script>
+<script type="text/javascript" src="/assets/scripts/footer-general-run-v2.js?x=42" async=""></script>
+<script src="/assets/scripts/plugins/jquery.colorbox.js?x=1" async=""></script>
+<link href="/assets/styles/plugins/colorbox.css?x=20" rel="stylesheet" /><!-- BS News Articles Footer --> 
+
+     
+      
+      
+
+    
+     <!--PageLoadedSucessfully-->
+    </form>
+
+
+<div id="ensModalWrapper"><div class="ensModal"><div class="ensTitle">Edit Cookie Preferences</div><div class="consentDescription">undefined</div><hr /><div class="ensToggleRow" style="opacity: .5;"><label class="ensToggleLabel">Essential Cookies<div class="card"><input class="ensCheckbox" type="checkbox" name="check" disabled="disabled" checked="checked" /><span class="switch"></span><span class="toggle"></span></div></label><div class="description">These cookies are necessary to provide you with basic services and features available through our websites, such as remembering where you are in the website.</div></div><hr /><div class="ensToggleRow"><label for="Performance and FunctionalitySlide" class="ensToggleLabel">Performance and Functionality<div class="card"><input class="ensCheckbox" type="checkbox" id="Performance and FunctionalitySlide" name="Performance and FunctionalitySlide" checked="" /><span class="switch"></span><span class="toggle"></span></div></label><div class="description">These cookies are used to enhance the performance and functionality of our websites. They provide statistics on how our website is used and helps us improve by measuring errors. Certain functionality on our website may become unavailable without these cookies.</div></div><hr /><div class="ensToggleRow"><label for="AnalyticsSlide" class="ensToggleLabel">Analytics<div class="card"><input class="ensCheckbox" type="checkbox" id="AnalyticsSlide" name="AnalyticsSlide" checked="" /><span class="switch"></span><span class="toggle"></span></div></label><div class="description">These cookies collect information that is used in aggregate form to help us understand how our websites are used, and also helps us to continuously improve the experience we provide to you.</div></div><hr /><div class="ensToggleRow"><label for="AdvertisingSlide" class="ensToggleLabel">Advertising<div class="card"><input class="ensCheckbox" type="checkbox" id="AdvertisingSlide" name="AdvertisingSlide" checked="" /><span class="switch"></span><span class="toggle"></span></div></label><div class="description">These cookies are used to enhance your experience and make advertising messages more relevant to you.</div></div><hr /><div class="ensToggleRow"><label for="Social MediaSlide" class="ensToggleLabel">Social Media<div class="card"><input class="ensCheckbox" type="checkbox" id="Social MediaSlide" name="Social MediaSlide" checked="" /><span class="switch"></span><span class="toggle"></span></div></label><div class="description">These cookies are used to enable sharing or following of content that you find interesting on our websites. These settings apply to third party social networking and other websites.</div></div><hr /><div class="ensButtons"><div onclick="gateway.cookieModal.closeModal();" class="button raised grey"><div class="ensCenter">Cancel</div><paper-ripple fit=""></paper-ripple></div><div id="ensSave" class="button raised blue"><div class="ensCenter" fit="">Save</div><paper-ripple fit=""></paper-ripple></div></div></div></div><div><div id="ensNotifyBanner" class="ensNotifyBanner" style="display: block; left: 0px;"><div>We use cookies to give you the best possible experience. <a href="https://network.aljazeera.com/cookies/en" target="_blank">Learn more</a> about how we use cookies or <a onclick="document.getElementById('ensNotifyBanner').style.display='none'; AJPrivacy.gateway.openModal();">edit your cookie preferences.</a></div><div class="ensButtons"><div id="ensCloseBanner" class="enstDismiss">X</div></div><div class="ensClear"></div></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.fe97d5b55faa73e82b8adbe10e393b13.html?origin=https%3A%2F%2Fwww.aljazeera.com&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><script language="javascript" type="text/javascript" src="//static.chartbeat.com/js/chartbeat.js"></script><script async="" src="//radar.cedexis.com/1/15249/radar.js"></script></body></html>

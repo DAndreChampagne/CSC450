@@ -1,17 +1,17 @@
-<!DOCTYPE html><!--[if lt IE 7 ]><html lang="en" class="no-js ie6 "><![endif]--><!--[if IE 7 ]><html lang="en" class="no-js ie7 "> <![endif]--><!--[if IE 8 ]><html lang="en" class="no-js ie8 "> <![endif]--><!--[if IE 9 ]><html lang="en" class="no-js ie9 "><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js "><!--<![endif]--><head id="Head1"><script type="text/javascript" src="https://bam.nr-data.net/1/dee0e5b8c5?a=23370383&amp;v=1099.d27c17c&amp;to=ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw%3D%3D&amp;rst=1876&amp;ref=http://rosssociety.org/&amp;ap=78&amp;be=224&amp;fe=1869&amp;dc=897&amp;af=err,xhr,stn,ins&amp;perf=%7B%22timing%22:%7B%22of%22:1540488350773,%22n%22:0,%22f%22:1,%22dn%22:2,%22dne%22:45,%22c%22:45,%22ce%22:66,%22rq%22:66,%22rp%22:177,%22rpe%22:201,%22dl%22:182,%22di%22:897,%22ds%22:897,%22de%22:971,%22dc%22:1869,%22l%22:1869,%22le%22:1871%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1099.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dee0e5b8c5","applicationID":"23370383","transactionName":"ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw==","queueTime":0,"applicationTime":78,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUHU1JRChACV1JVBwIPVQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&amp;&amp;console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&amp;&amp;"function"==typeof console.log&amp;&amp;(s.console=!0,o.indexOf("dev")!==-1&amp;&amp;(s.dev=!0),o.indexOf("nr_dev")!==-1&amp;&amp;(s.nrDev=!0))}catch(c){}s.nrDev&amp;&amp;i.on("internal-error",function(t){r(t.stack)}),s.dev&amp;&amp;i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&amp;&amp;(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&amp;&amp;(t(8),t(7),"addEventListener"in window&amp;&amp;t(5),c.xhrWrappable&amp;&amp;t(9),d=!0)}s.on("fn-start",function(t,n,e){d&amp;&amp;(p+=1)}),s.on("fn-err",function(t,n,e){d&amp;&amp;!e[l]&amp;&amp;(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&amp;&amp;!this.thrown&amp;&amp;p&gt;0&amp;&amp;(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&amp;&amp;window.performance.timing&amp;&amp;window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&amp;&amp;(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&amp;&amp;i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&amp;&amp;(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&amp;&amp;!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&amp;&amp;o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&amp;&amp;(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState&gt;3&amp;&amp;!n.resolved&amp;&amp;(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&amp;&amp;(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t&lt;g.length;t++)r([],g[t]);g.length&amp;&amp;(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&amp;&amp;m.resolve();if(!v&amp;&amp;!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&amp;&amp;t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r&lt;d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&amp;&amp;(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&amp;&amp;(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&amp;&amp;null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&amp;&amp;(p&gt;34||p&lt;10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&amp;&amp;"xpid"in NREUM.loader_config&amp;&amp;this.sameOrigin&amp;&amp;n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&amp;&amp;r){var i=h(r);i&amp;&amp;(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&amp;&amp;(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&amp;&amp;(o.onloadCalled||"function"!=typeof n.onload))&amp;&amp;o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s&lt;d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&amp;&amp;"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;!this.xhrGuids[e]&amp;&amp;(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;this.xhrGuids[e]&amp;&amp;(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&amp;&amp;("onload"===e&amp;&amp;(this.onload=!0),("load"===(t[0]&amp;&amp;t[0].type)||this.onload)&amp;&amp;(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&amp;&amp;f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&amp;&amp;o[1]&amp;&amp;(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&amp;&amp;"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&amp;&amp;(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&amp;&amp;n.port===e.port;return r.sameOrigin=i&amp;&amp;(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&amp;&amp;(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&amp;&amp;t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&amp;&amp;t instanceof ArrayBuffer&amp;&amp;t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&amp;&amp;t instanceof Blob&amp;&amp;t.size)return t.size;if(!("undefined"!=typeof FormData&amp;&amp;t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&amp;&amp;(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a&lt;r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&amp;&amp;s.indexOf("Chrome")===-1&amp;&amp;s.indexOf("Chromium")===-1&amp;&amp;(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&amp;&amp;(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&amp;&amp;(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&amp;&amp;t instanceof Function&amp;&amp;t.apply&amp;&amp;!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c&lt;n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&amp;&amp;Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&amp;&amp;(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&amp;&amp;t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&amp;&amp;t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f&lt;c;f++)s[f].apply(a,r);var d=u[g[e]];return d&amp;&amp;d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r&lt;e.length;r++)e[r]===n&amp;&amp;e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&amp;&amp;(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&amp;&amp;"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&amp;&amp;t.licenseKey&amp;&amp;t.applicationID&amp;&amp;n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&amp;&amp;i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&amp;&amp;performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&amp;&amp;v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&amp;&amp;w&amp;&amp;w[h]&amp;&amp;!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+<!DOCTYPE html><!--[if lt IE 7 ]><html lang="en" class="no-js ie6 "><![endif]--><!--[if IE 7 ]><html lang="en" class="no-js ie7 "> <![endif]--><!--[if IE 8 ]><html lang="en" class="no-js ie8 "> <![endif]--><!--[if IE 9 ]><html lang="en" class="no-js ie9 "><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js "><!--<![endif]--><head id="Head1"><script type="text/javascript" src="https://bam.nr-data.net/1/dee0e5b8c5?a=23370383&amp;v=1099.d27c17c&amp;to=ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw%3D%3D&amp;rst=1934&amp;ref=http://rosssociety.org/&amp;ap=131&amp;be=311&amp;fe=1929&amp;dc=1008&amp;af=err,xhr,stn,ins&amp;perf=%7B%22timing%22:%7B%22of%22:1541080018344,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:90,%22c%22:90,%22ce%22:111,%22rq%22:111,%22rp%22:281,%22rpe%22:319,%22dl%22:284,%22di%22:1007,%22ds%22:1007,%22de%22:1057,%22dc%22:1928,%22l%22:1928,%22le%22:1931%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1099.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dee0e5b8c5","applicationID":"23370383","transactionName":"ZAYAZBQAXUNUVBBaX11MMkUEDVpTGmcRUVxaAE13Aw9WQlxUNFJXVjwtQg8GWl5UWw==","queueTime":0,"applicationTime":131,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUHU1JRChACV1JVBwIPVQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&amp;&amp;console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&amp;&amp;"function"==typeof console.log&amp;&amp;(s.console=!0,o.indexOf("dev")!==-1&amp;&amp;(s.dev=!0),o.indexOf("nr_dev")!==-1&amp;&amp;(s.nrDev=!0))}catch(c){}s.nrDev&amp;&amp;i.on("internal-error",function(t){r(t.stack)}),s.dev&amp;&amp;i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&amp;&amp;(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&amp;&amp;u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&amp;&amp;(t(8),t(7),"addEventListener"in window&amp;&amp;t(5),c.xhrWrappable&amp;&amp;t(9),d=!0)}s.on("fn-start",function(t,n,e){d&amp;&amp;(p+=1)}),s.on("fn-err",function(t,n,e){d&amp;&amp;!e[l]&amp;&amp;(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&amp;&amp;!this.thrown&amp;&amp;p&gt;0&amp;&amp;(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&amp;&amp;window.performance.timing&amp;&amp;window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&amp;&amp;(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&amp;&amp;i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&amp;&amp;(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&amp;&amp;!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&amp;&amp;o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&amp;&amp;(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState&gt;3&amp;&amp;!n.resolved&amp;&amp;(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&amp;&amp;(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t&lt;g.length;t++)r([],g[t]);g.length&amp;&amp;(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&amp;&amp;m.resolve();if(!v&amp;&amp;!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&amp;&amp;t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r&lt;d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&amp;&amp;(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&amp;&amp;(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&amp;&amp;null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&amp;&amp;(p&gt;34||p&lt;10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&amp;&amp;"xpid"in NREUM.loader_config&amp;&amp;this.sameOrigin&amp;&amp;n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&amp;&amp;r){var i=h(r);i&amp;&amp;(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&amp;&amp;(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&amp;&amp;(o.onloadCalled||"function"!=typeof n.onload))&amp;&amp;o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s&lt;d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&amp;&amp;"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;!this.xhrGuids[e]&amp;&amp;(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&amp;&amp;this.xhrGuids[e]&amp;&amp;(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&amp;&amp;"load"===t[0]&amp;&amp;f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&amp;&amp;("onload"===e&amp;&amp;(this.onload=!0),("load"===(t[0]&amp;&amp;t[0].type)||this.onload)&amp;&amp;(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&amp;&amp;f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&amp;&amp;o[1]&amp;&amp;(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&amp;&amp;"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&amp;&amp;(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&amp;&amp;n.port===e.port;return r.sameOrigin=i&amp;&amp;(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&amp;&amp;(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&amp;&amp;t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&amp;&amp;t instanceof ArrayBuffer&amp;&amp;t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&amp;&amp;t instanceof Blob&amp;&amp;t.size)return t.size;if(!("undefined"!=typeof FormData&amp;&amp;t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&amp;&amp;(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a&lt;r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&amp;&amp;s.indexOf("Chrome")===-1&amp;&amp;s.indexOf("Chromium")===-1&amp;&amp;(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&amp;&amp;(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&amp;&amp;(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&amp;&amp;t instanceof Function&amp;&amp;t.apply&amp;&amp;!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c&lt;n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&amp;&amp;Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&amp;&amp;(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&amp;&amp;t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&amp;&amp;t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f&lt;c;f++)s[f].apply(a,r);var d=u[g[e]];return d&amp;&amp;d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r&lt;e.length;r++)e[r]===n&amp;&amp;e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&amp;&amp;(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&amp;&amp;"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&amp;&amp;t.licenseKey&amp;&amp;t.applicationID&amp;&amp;n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&amp;&amp;i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&amp;&amp;performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&amp;&amp;v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&amp;&amp;w&amp;&amp;w[h]&amp;&amp;!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
 <meta name="viewport" content="width=device-width" />
-<link href="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/styles/combined.css" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/customStyles.css?t=635557341450000000" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/user.css?t=635248363840000000" rel="stylesheet" type="text/css" /><link href="//sf.wildapricot.org/WebUI/built6.11.0.2724/css/shared/ui/shared-ui-compiled.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="javascript" id="idJavaScriptEnvironment">var bonaPage_BuildVer='6.11.0.2724';
+<link href="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/styles/combined.css" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/customStyles.css?t=636765515250000000" rel="stylesheet" type="text/css" /><link href="http://rosssociety.org/resources/theme/user.css?t=635248363840000000" rel="stylesheet" type="text/css" /><link href="//sf.wildapricot.org/WebUI/built6.11.0.2724/css/shared/ui/shared-ui-compiled.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="javascript" id="idJavaScriptEnvironment">var bonaPage_BuildVer='6.11.0.2724';
 var bonaPage_AdminBackendUrl = '/admin/';
 var bonaPage_StatRes='http://sf.wildapricot.org/WebUI/';
 var bonaPage_InternalPageType = { isUndefinedPage : false,isWebPage : true,isAdminPage : false,isDialogPage : false,isSystemPage : false,isErrorPage : false,isError404Page : false };
 var bonaPage_PageView = { isAnonymousView : true,isMemberView : false,isAdminView : false };
 var WidgetMode = 0;
 var bonaPage_IsUserAnonymous = true;
-var bonaPage_ThemeVer='bbf85624635248363840000000635557341450000000'; var bonaPage_ThemeId = 'blueprint_industrial_park.v3.0'; var bonaPage_ThemeVersion = '3.0';
+var bonaPage_ThemeVer='bbf85624635248363840000000636765515250000000'; var bonaPage_ThemeId = 'blueprint_industrial_park.v3.0'; var bonaPage_ThemeVersion = '3.0';
 var bonaPage_id='125008'; version_id='';
 try { function waMetricsGlobalHandler(args) { if (WA.topWindow.waMetricsOuterGlobalHandler &amp;&amp; typeof(WA.topWindow.waMetricsOuterGlobalHandler) === 'function') { WA.topWindow.waMetricsOuterGlobalHandler(args); }}} catch(err) {}
  try { if (parent &amp;&amp; parent.BonaPage) parent.BonaPage.implementBonaPage(window); } catch (err) { }
-document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } &lt;/style&gt;');</script><style type="text/css"> .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } </style><script type="text/javascript" language="javascript" src="http://donaldross.wildapricot.org/63eb4517/CheckHttpsAuthentication.aspx" id="idCheckHttpsAuthentication"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/bonapagetop/bonapagetop-compiled.js" id="idBonaPageTop"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/ui/shared-ui-compiled.js" id="idSharedJs"></script><style type="text/css">.CodeMirror { font-family: monospace; height: 300px; }.CodeMirror-scroll { overflow: auto; }.CodeMirror-lines { padding: 4px 0; }.CodeMirror pre { padding: 0 4px; }.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }.CodeMirror-gutters { border-right: 1px solid #ddd; background-color: #f7f7f7; white-space: nowrap; }.CodeMirror-linenumbers {}.CodeMirror-linenumber { padding: 0 3px 0 5px; min-width: 20px; text-align: right; color: #999; }.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; z-index: 3; }.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0; background: #7e7; z-index: 1; }.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {}.cm-tab { display: inline-block; }.cm-s-default .cm-keyword {color: #708;}.cm-s-default .cm-atom {color: #219;}.cm-s-default .cm-number {color: #164;}.cm-s-default .cm-def {color: #00f;}.cm-s-default .cm-variable {color: black;}.cm-s-default .cm-variable-2 {color: #05a;}.cm-s-default .cm-variable-3 {color: #085;}.cm-s-default .cm-property {color: black;}.cm-s-default .cm-operator {color: black;}.cm-s-default .cm-comment {color: #a50;}.cm-s-default .cm-string {color: #a11;}.cm-s-default .cm-string-2 {color: #f50;}.cm-s-default .cm-meta {color: #555;}.cm-s-default .cm-qualifier {color: #555;}.cm-s-default .cm-builtin {color: #30a;}.cm-s-default .cm-bracket {color: #997;}.cm-s-default .cm-tag {color: #170;}.cm-s-default .cm-attribute {color: #00c;}.cm-s-default .cm-header {color: blue;}.cm-s-default .cm-quote {color: #090;}.cm-s-default .cm-hr {color: #999;}.cm-s-default .cm-link {color: #00c;}.cm-negative {color: #d44;}.cm-positive {color: #292;}.cm-header, .cm-strong {font-weight: bold;}.cm-em {font-style: italic;}.cm-link {text-decoration: underline;}.cm-s-default .cm-error {color: #f00;}.cm-invalidchar {color: #f00;}div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}.CodeMirror-activeline-background {background: #e8f2ff;}.CodeMirror { line-height: 1; position: relative; overflow: hidden; background: white; color: black; }.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; -moz-box-sizing: content-box; box-sizing: content-box; }.CodeMirror-sizer { position: relative; }.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }.CodeMirror-vscrollbar { right: 0; top: 0; overflow-x: hidden; overflow-y: scroll; }.CodeMirror-hscrollbar { bottom: 0; left: 0; overflow-y: hidden; overflow-x: scroll; }.CodeMirror-scrollbar-filler { right: 0; bottom: 0; }.CodeMirror-gutter-filler { left: 0; bottom: 0; }.CodeMirror-gutters { position: absolute; left: 0; top: 0; padding-bottom: 30px; z-index: 3; }.CodeMirror-gutter { white-space: normal; height: 100%; -moz-box-sizing: content-box; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block;*zoom:1;*display:inline;}.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }.CodeMirror-lines { cursor: text; }.CodeMirror pre { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-width: 0; background: transparent; font-family: inherit; font-size: inherit; margin: 0; white-space: pre; word-wrap: normal; line-height: inherit; color: inherit; z-index: 2; position: relative; overflow: visible; }.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }.CodeMirror-code pre { border-right: 30px solid transparent; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }.CodeMirror-linebackground { position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; }.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }.CodeMirror-widget {}.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }.CodeMirror-measure { position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; }.CodeMirror-measure pre { position: static; }.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0; }.CodeMirror-focused div.CodeMirror-cursor { visibility: visible; }.CodeMirror-selected { background: #d9d9d9; }.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }.cm-searching { background: #ffa; background: rgba(255, 255, 0, .4); }.CodeMirror span { *vertical-align: text-bottom; }@media print { .CodeMirror div.CodeMirror-cursor { visibility: hidden; }}.CodeMirror-matchingtag { background-color: #FFCCAA; }</style><style type="text/css">  DIV.dialogRoundedBoxContainerOldIE { filter: alpha(opacity=73); }  DIV.dialogRoundedBoxShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=15, makeShadow=true, shadowOpacity=0.23); }  DIV.dialogOuterHeadContainerShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=2, makeShadow=true, shadowOpacity=0.27); }  DIV.dialogInnerHeadContainerOldIE { filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#EEEEEE, endColorstr=#B7B7B7, gradientType=0); }</style><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/General.js" id=""></script><script type="text/javascript" language="javascript" src="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/scripts/combined.js" id=""></script><title>Donald Ross</title>
+document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } &lt;/style&gt;');</script><style type="text/css"> .WaHideIfJSEnabled, .HideIfJSEnabled { display: none; } </style><script type="text/javascript" language="javascript" src="http://donaldross.wildapricot.org/cfa1e876/CheckHttpsAuthentication.aspx" id="idCheckHttpsAuthentication"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/bonapagetop/bonapagetop-compiled.js" id="idBonaPageTop"></script><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/scripts/shared/ui/shared-ui-compiled.js" id="idSharedJs"></script><style type="text/css">.CodeMirror { font-family: monospace; height: 300px; }.CodeMirror-scroll { overflow: auto; }.CodeMirror-lines { padding: 4px 0; }.CodeMirror pre { padding: 0 4px; }.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }.CodeMirror-gutters { border-right: 1px solid #ddd; background-color: #f7f7f7; white-space: nowrap; }.CodeMirror-linenumbers {}.CodeMirror-linenumber { padding: 0 3px 0 5px; min-width: 20px; text-align: right; color: #999; }.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; z-index: 3; }.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: 0; background: #7e7; z-index: 1; }.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {}.cm-tab { display: inline-block; }.cm-s-default .cm-keyword {color: #708;}.cm-s-default .cm-atom {color: #219;}.cm-s-default .cm-number {color: #164;}.cm-s-default .cm-def {color: #00f;}.cm-s-default .cm-variable {color: black;}.cm-s-default .cm-variable-2 {color: #05a;}.cm-s-default .cm-variable-3 {color: #085;}.cm-s-default .cm-property {color: black;}.cm-s-default .cm-operator {color: black;}.cm-s-default .cm-comment {color: #a50;}.cm-s-default .cm-string {color: #a11;}.cm-s-default .cm-string-2 {color: #f50;}.cm-s-default .cm-meta {color: #555;}.cm-s-default .cm-qualifier {color: #555;}.cm-s-default .cm-builtin {color: #30a;}.cm-s-default .cm-bracket {color: #997;}.cm-s-default .cm-tag {color: #170;}.cm-s-default .cm-attribute {color: #00c;}.cm-s-default .cm-header {color: blue;}.cm-s-default .cm-quote {color: #090;}.cm-s-default .cm-hr {color: #999;}.cm-s-default .cm-link {color: #00c;}.cm-negative {color: #d44;}.cm-positive {color: #292;}.cm-header, .cm-strong {font-weight: bold;}.cm-em {font-style: italic;}.cm-link {text-decoration: underline;}.cm-s-default .cm-error {color: #f00;}.cm-invalidchar {color: #f00;}div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}.CodeMirror-activeline-background {background: #e8f2ff;}.CodeMirror { line-height: 1; position: relative; overflow: hidden; background: white; color: black; }.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; padding-right: 30px; height: 100%; outline: none; position: relative; -moz-box-sizing: content-box; box-sizing: content-box; }.CodeMirror-sizer { position: relative; }.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }.CodeMirror-vscrollbar { right: 0; top: 0; overflow-x: hidden; overflow-y: scroll; }.CodeMirror-hscrollbar { bottom: 0; left: 0; overflow-y: hidden; overflow-x: scroll; }.CodeMirror-scrollbar-filler { right: 0; bottom: 0; }.CodeMirror-gutter-filler { left: 0; bottom: 0; }.CodeMirror-gutters { position: absolute; left: 0; top: 0; padding-bottom: 30px; z-index: 3; }.CodeMirror-gutter { white-space: normal; height: 100%; -moz-box-sizing: content-box; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block;*zoom:1;*display:inline;}.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }.CodeMirror-lines { cursor: text; }.CodeMirror pre { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-width: 0; background: transparent; font-family: inherit; font-size: inherit; margin: 0; white-space: pre; word-wrap: normal; line-height: inherit; color: inherit; z-index: 2; position: relative; overflow: visible; }.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }.CodeMirror-code pre { border-right: 30px solid transparent; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }.CodeMirror-linebackground { position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; }.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }.CodeMirror-widget {}.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }.CodeMirror-measure { position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden; }.CodeMirror-measure pre { position: static; }.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0; }.CodeMirror-focused div.CodeMirror-cursor { visibility: visible; }.CodeMirror-selected { background: #d9d9d9; }.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }.cm-searching { background: #ffa; background: rgba(255, 255, 0, .4); }.CodeMirror span { *vertical-align: text-bottom; }@media print { .CodeMirror div.CodeMirror-cursor { visibility: hidden; }}.CodeMirror-matchingtag { background-color: #FFCCAA; }</style><style type="text/css">  DIV.dialogRoundedBoxContainerOldIE { filter: alpha(opacity=73); }  DIV.dialogRoundedBoxShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=15, makeShadow=true, shadowOpacity=0.23); }  DIV.dialogOuterHeadContainerShadowOldIE { filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=2, makeShadow=true, shadowOpacity=0.27); }  DIV.dialogInnerHeadContainerOldIE { filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#EEEEEE, endColorstr=#B7B7B7, gradientType=0); }</style><script type="text/javascript" language="javascript" src="//sf.wildapricot.org/WebUI/built6.11.0.2724/General.js" id=""></script><script type="text/javascript" language="javascript" src="http://sf.wildapricot.org/BuiltTheme/blueprint_industrial_park.v3.0/current/bbf85624/scripts/combined.js" id=""></script><title>Donald Ross</title>
 <meta name="Keywords" content="Donald Ross, Golf Course Architecture, Pinehurst, Golf Architect, Oak Hills Country Club, Essex County Club, Aronomink Golf Club, Donald Ross Society" /><meta name="Description" content="The Donald Ross Society is dedicated to preserving the classic golf courses designed by Donald Ross and forwarding his standards of excellence in golf course design" /><link rel="shortcut icon" type="image/ico" href="/Resources/Pictures/favicon.ico" />
 <meta name="google-site-verification" content="t3VuDGjboZ-eYHZ7AK1nEJVSXwIBMwYNFXAxX6AUfjI" />
 <script>
@@ -36,16 +36,13 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 </div>
 <script type="text/javascript">if (window.WA) { new WaContentGadgetResizer({ id: 'id_AjI6Qgc' }); }</script>
 </div></div></div></td><td style="" data-componentid="JAtKD9W_separator" class="WaLayoutSeparator"><div style="width: inherit;"></div></td><td id="id_NTzPOrb" data-componentid="NTzPOrb" class="WaLayoutItem" style="width:58%;"><div id="id_dEICz6p" class="WaLayoutPlaceHolder placeHolderContainer" data-componentid="dEICz6p" style=""><div style=""><div id="id_EDfh8z9" class="WaGadgetFirst WaGadgetCustomMenu  gadgetStyle002" style="margin-bottom:0px;margin-left:25px;" data-componentid="EDfh8z9"><div class="gadgetStyleBody " style="" data-areaheight="auto">
-<ul class="orientationHorizontal alignLeft">
+<ul class="orientationHorizontal alignCenter">
 
-<li>
-			<a href="/home" title="Home">Home</a>
-		</li>
 <li>
 			<a href="/Join_Ross_Society" title="Join the Donald Ross Society">Join the Donald Ross Society</a>
 		</li>
 <li>
-			<a href="/planned_events" title="Event Calendar">Event Calendar</a>
+			<a href="/resources/Documents/Ross%20Course%20List/Final%20Ross%20course%20list%20August%202018%20%20.pdf" title="Ross Course List">Ross Course List</a>
 		</li>
 <li>
 			<a href="/contact" title="Contact">Contact</a>
@@ -136,7 +133,7 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 					<div class="header1StickyWrapper" style="width: 940px;">	
 <div id="id_Header1" data-componentid="Header1" class="WaPlaceHolder WaPlaceHolderHeader1" style=""><div style=""><div id="id_vfiw7Ye" class="WaGadgetOnly WaGadgetMenuHorizontal  gadgetStyleNone" style="" data-componentid="vfiw7Ye"><div class="menuBackground"></div>
 <div class="menuInner">
-	<ul class="firstLevel adapted" style=""><li class="sel">
+	<ul class="firstLevel" style=""><li class="sel">
 	<div class="item">
 		<a href="http://rosssociety.org/" title="HOME"><span>HOME</span></a>
 </div>
@@ -186,31 +183,37 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Queen-City-event" title="Queen City - October 2015"><span>Queen City - October 2015</span></a>
+		<a href="http://rosssociety.org/Queen-City-event" title="Queen City - October 2015 Recap"><span>Queen City - October 2015 Recap</span></a>
 </div>
 </li>
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Detroit-June-2015" title="Detroit - June 2015"><span>Detroit - June 2015</span></a>
+		<a href="http://rosssociety.org/Detroit-June-2015" title="Detroit - June 2015 Recap"><span>Detroit - June 2015 Recap</span></a>
 </div>
 </li>
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Sarasota-February-2015" title="Sarasota February 2015"><span>Sarasota February 2015</span></a>
+		<a href="http://rosssociety.org/Sarasota-February-2015" title="Sarasota February 2015 Recap"><span>Sarasota February 2015 Recap</span></a>
 </div>
 </li>
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Annual-Event-2014" title="Annual Event 2014"><span>Annual Event 2014</span></a>
+		<a href="http://rosssociety.org/Annual-Event-2014" title="Annual Meeting 2014 Pinehurst Recap"><span>Annual Meeting 2014 Pinehurst Recap</span></a>
 </div>
 </li>
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Philly-April-2014" title="Philly April 2014"><span>Philly April 2014</span></a>
+		<a href="http://rosssociety.org/Philly-April-2014" title="Philly April 2014 Recap"><span>Philly April 2014 Recap</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Philly_April_2014" title="Philly April 2014"><span>Philly April 2014</span></a>
 </div>
 </li>
 	
@@ -222,147 +225,7 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 	
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/Providence-2013-Recap" title="Providence 2013 Recap"><span>Providence 2013 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/BOSTON-2011-Recap" title="BOSTON 2011 Recap"><span>BOSTON 2011 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Annual-Meeting-2010-Recap" title="Annual Meeting 2010 Recap"><span>Annual Meeting 2010 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Cape-Cod-2010-Recap" title="Cape Cod 2010 Recap"><span>Cape Cod 2010 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Florida-2010-Recap" title="Florida 2010 Recap"><span>Florida 2010 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Georgia-2009-Recap" title="Georgia 2009 Recap"><span>Georgia 2009 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Great-Lakes-2009-Recap" title="Great Lakes 2009 Recap"><span>Great Lakes 2009 Recap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Annual-Meeting-2008" title="Annual Meeting 2008"><span>Annual Meeting 2008</span></a>
-</div>
-</li>
-	
-</ul>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Event_Course_Listings" title="Event Course Listings"><span>Event Course Listings</span></a>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="http://rosssociety.org/Previous_Events" title="Previous Events"><span>Previous Events</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Philly_April_2014" title="Philly April 2014"><span>Philly April 2014</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
 		<a href="http://rosssociety.org/Clearwater-Jan-2014" title="Clearwater Jan 2014"><span>Clearwater Jan 2014</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Providence-2013" title="Providence 2013"><span>Providence 2013</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Brookside-2012" title="Brookside 2012"><span>Brookside 2012</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Sarasota_2012" title="Sarasota 2012"><span>Sarasota 2012</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Carolinas-2011" title="Carolinas 2011"><span>Carolinas 2011</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/NEW_YORK_2011" title="NEW YORK 2011"><span>NEW YORK 2011</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Boston_2011" title="Boston 2011"><span>Boston 2011</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/ANNUAL_MEETING_2010" title="Annual Meeting 2010"><span>Annual Meeting 2010</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Cape_Cod_2010" title="Cape Cod 2010"><span>Cape Cod 2010</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Florida-2010" title="Florida 2010"><span>Florida 2010</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Annual_Meeting_2009" title="Annual Meeting 2009"><span>Annual Meeting 2009</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Great-Lakes-2009" title="Great Lakes 2009"><span>Great Lakes 2009</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Georgia_outing_2009" title="Georgia Outing  2009"><span>Georgia Outing  2009</span></a>
 </div>
 </li>
 	
@@ -374,11 +237,17 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 </div>
 </li><li class="dir">
 	<div class="item">
-		<a href="http://rosssociety.org/About-the-society" title="About The Society"><span>About The Society</span></a>
+		<a href="http://rosssociety.org/About-Us" title="About Us"><span>About Us</span></a>
 <ul class="secondLevel">
 <li class=" ">
 	<div class="item">
 		<a href="http://rosssociety.org/Join_Ross_Society" title="Join the Donald Ross Society"><span>Join the Donald Ross Society</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
+		<a href="http://rosssociety.org/Donald-Ross-Golf-Course-List" title="Ross Golf Course List"><span>Ross Golf Course List</span></a>
 </div>
 </li>
 	
@@ -404,17 +273,11 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 </div>
 </li><li class="dir">
 	<div class="item">
-		<a href="http://rosssociety.org/Articles-and-Features" title="Articles and Features"><span>Articles and Features</span></a>
+		<a href="http://rosssociety.org/Articles" title="Articles"><span>Articles</span></a>
 <ul class="secondLevel">
 <li class=" ">
 	<div class="item">
 		<a href="http://rosssociety.org/A-Case-for-Golf-Course-Restoration" title="A Case for Golf Course Restoration"><span>A Case for Golf Course Restoration</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/A-Visit-to-Dornoch" title="A Visit to Dornoch"><span>A Visit to Dornoch</span></a>
 </div>
 </li>
 	
@@ -426,109 +289,21 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 	
 <li class=" ">
 	<div class="item">
+		<a href="http://rosssociety.org/A-Visit-to-Dornoch" title="A Visit to Dornoch"><span>A Visit to Dornoch</span></a>
+</div>
+</li>
+	
+<li class=" ">
+	<div class="item">
 		<a href="http://rosssociety.org/Return-to-Old-School-Design" title="Return to Old School Design"><span>Return to Old School Design</span></a>
 </div>
 </li>
 	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Donald-Ross-Golf-Course-List" title="Ross Golf Course List"><span>Ross Golf Course List</span></a>
-</div>
-</li>
-	
-<li class=" dir">
-	<div class="item">
-		<a href="http://rosssociety.org/Donald-Ross-Course-Reviews" title="Ross Course Reviews"><span>Ross Course Reviews</span></a>
-<ul class="secondLevel">
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Bedford-Springs-Spa" title="Bedford Springs Spa"><span>Bedford Springs Spa</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Brunswick-Country-Club" title="Brunswick Country Club"><span>Brunswick Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Charlotte-Country-Club" title="Charlotte Country Club"><span>Charlotte Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Cohasset-Golf-Club" title="Cohasset Golf Club"><span>Cohasset Golf Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Forsyth-Country-Club" title="Forsyth Country Club"><span>Forsyth Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Forsyth-Country-Club-Updated" title="Forsyth Country Club Updated"><span>Forsyth Country Club Updated</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/George-Wright" title="George Wright"><span>George Wright</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Mid-Pines-Restorative-Renovations" title="Mid Pines Restorative Renovations"><span>Mid Pines Restorative Renovations</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Orchards-Golf-Club" title="Orchards Golf Club"><span>Orchards Golf Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Plainfield-Country-Club" title="Plainfield Country Club"><span>Plainfield Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Raleigh-Country-Club" title="Raleigh Country Club"><span>Raleigh Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Roaring-Gap" title="Roaring Gap"><span>Roaring Gap</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Teugega-Country-Club" title="Teugega Country Club"><span>Teugega Country Club</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Woodbury-Forest-Golf-Club" title="Woodbury Forest Golf Club"><span>Woodbury Forest Golf Club</span></a>
-</div>
-</li>
-	
 </ul>
 </div>
-</li>
-	
-</ul>
+</li><li class="">
+	<div class="item">
+		<a href="http://rosssociety.org/contact" title="Contact"><span>Contact</span></a>
 </div>
 </li><li class="dir">
 	<div class="item">
@@ -536,19 +311,7 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 <ul class="secondLevel">
 <li class=" ">
 	<div class="item">
-		<a href="http://rosssociety.org/The-documentary-film-Donald-Ross" title="Documentary film &quot;Donald Ross..&quot;"><span>Documentary film "Donald Ross.."</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
 		<a href="http://rosssociety.org/Tufts-Archives" title="Tufts Archives"><span>Tufts Archives</span></a>
-</div>
-</li>
-	
-<li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/Bust-of-Donald-Ross" title="Bust of Donald Ross"><span>Bust of Donald Ross</span></a>
 </div>
 </li>
 	
@@ -566,15 +329,11 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 	
 </ul>
 </div>
-</li><li class="">
+</li><li class="last-child">
 	<div class="item">
 		<a href="http://rosssociety.org/Forum" title="Forum"><span>Forum</span></a>
 </div>
-</li><li class="phantom last-child"><div class="item"><a href="#"><span>≡</span></a><ul class="secondLevel"><li class=" ">
-	<div class="item">
-		<a href="http://rosssociety.org/contact" title="Contact"><span>Contact</span></a>
-</div>
-</li></ul></div></li></ul>
+</li></ul>
 </div>
 
 <script type="text/javascript">
@@ -677,7 +436,7 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 	});
 </script></div></div>
 </div></div>
-<div id="id_Header2" data-componentid="Header2" class="WaPlaceHolder WaPlaceHolderHeader2" style=""><div style=""><div id="id_TUIr4g6" class="WaGadgetOnly WaGadgetSlideshow  gadgetStyleNone" style="" data-componentid="TUIr4g6"><script language="javascript">
+<div id="id_Header2" data-componentid="Header2" class="WaPlaceHolder WaPlaceHolderHeader2" style=""><div style=""><div id="id_TUIr4g6" class="WaGadgetFirst WaGadgetSlideshow  gadgetStyleNone" style="" data-componentid="TUIr4g6"><script language="javascript">
     jq$(function() {
         var imgAmount = jq$('#camera_wrap_TUIr4g6 &gt; div').size();
         var cameraNavigation = ( imgAmount &lt;= 1 ) ? false : true,
@@ -701,16 +460,18 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 			navigation: cameraNavigation,
 			autoAdvance: cameraAutoAdvance,
 			mobileAutoAdvance: cameraAutoAdvance,
-			height: '56%'		  }
+			height: '400px'		  }
 		);		
 	});
 </script>
-    <div class="camera_wrap camera_charcoal_skin" id="camera_wrap_TUIr4g6" style="display: block; margin-bottom: 61px; height: 526px;"><div class="camera_fakehover"><div class="camera_src camerasliding camerastarted paused">
+    <div class="camera_wrap camera_charcoal_skin" id="camera_wrap_TUIr4g6" style="display: block; margin-bottom: 61px; height: 400px;"><div class="camera_fakehover"><div class="camera_src camerasliding camerastarted paused">
         <div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" data-title="">
     </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" data-title="">
     </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" data-title="">
     </div><div data-link="" data-src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" data-target="" data-thumb="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" data-title="">
-    </div></div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 526px; margin-left: -80.2092px; margin-top: 0px; position: absolute; width: 1100.42px;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_1 cameranext" style="display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="515" style="visibility: hidden;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_2"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_3"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraSlide cameraSlide_4"><div class="camerarelative" style="width: 940px; height: 526px;"></div></div><div class="cameraappended" style="display: block; overflow: hidden; position: absolute; z-index: 1000; height: 526.889px; left: 0px; top: 0px; width: 940.889px; margin-left: 0px; margin-top: 0px; opacity: 0.889444;"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: block; height: 526px; margin-left: 0px; margin-top: 0px; width: 940px;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 526px; margin-left: -80.2092px; margin-top: 0px; position: absolute; width: 1100.42px;" /><div class="camerarelative" style="width: 940px; height: 526px;"></div></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div></div></div><div class="camera_bar" style="top: auto; height: 7px;"><span class="camera_bar_cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(34, 34, 34);"><span id="pie_0" style="opacity: 0; position: absolute; background-color: rgb(238, 238, 238); left: 0px; right: 940px; top: 2px; bottom: 2px; display: none;"></span></span></div><div class="camera_prev" style="opacity: 0;"><span></span></div><div class="camera_next" style="opacity: 0;"><span></span></div></div><div class="camera_thumbs_cont"></div><div class="camera_pag"><ul class="camera_pag_ul"><li class="pag_nav_0 cameracurrent" style="position:relative; z-index:1002"><span><span>0</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_1" style="position:relative; z-index:1002"><span><span>1</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_2" style="position:relative; z-index:1002"><span><span>2</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_3" style="position:relative; z-index:1002"><span><span>3</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li></ul></div><div class="camera_loader" style="opacity: 0.0915063;"></div></div>
+    </div></div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 449.32px; margin-left: 0px; margin-top: -24.66px; position: absolute; width: 940px;" /><div class="camerarelative" style="width: 940px; height: 400px;"></div></div><div class="cameraSlide cameraSlide_1 cameranext" style="display: none;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="515" style="visibility: hidden;" /><div class="camerarelative" style="width: 940px; height: 400px;"></div></div><div class="cameraSlide cameraSlide_2"><div class="camerarelative" style="width: 940px; height: 400px;"></div></div><div class="cameraSlide cameraSlide_3"><div class="camerarelative" style="width: 940px; height: 400px;"></div></div><div class="cameraSlide cameraSlide_4"><div class="camerarelative" style="width: 940px; height: 400px;"></div></div><div class="cameraappended" style="display: block; overflow: hidden; position: absolute; z-index: 1000; height: 400.724px; left: 0px; top: 0px; width: 940.724px; margin-left: 0px; margin-top: 0px; opacity: 0.724375;"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: block; height: 400px; margin-left: 0px; margin-top: 0px; width: 940px;"><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="imgLoaded" data-alignment="" data-portrait="" width="1000" height="478" style="visibility: visible; height: 449.32px; margin-left: 0px; margin-top: -24.66px; position: absolute; width: 940px;" /><div class="camerarelative" style="width: 940px; height: 400px;"></div></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div><div class="cameraContent"></div></div></div><div class="camera_bar" style="top: auto; height: 7px;"><span class="camera_bar_cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(34, 34, 34);"><span id="pie_0" style="opacity: 0; position: absolute; background-color: rgb(238, 238, 238); left: 0px; right: 940px; top: 2px; bottom: 2px; display: none;"></span></span></div><div class="camera_prev" style="opacity: 0;"><span></span></div><div class="camera_next" style="opacity: 0;"><span></span></div></div><div class="camera_thumbs_cont"></div><div class="camera_pag"><ul class="camera_pag_ul"><li class="pag_nav_0 cameracurrent" style="position:relative; z-index:1002"><span><span>0</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Holston%2015th%20Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_1" style="position:relative; z-index:1002"><span><span>1</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Metacomet%20Country%20Club%207th%20Tee.JPG" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_2" style="position:relative; z-index:1002"><span><span>2</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Roaring_Gap_do_drop_.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li><li class="pag_nav_3" style="position:relative; z-index:1002"><span><span>3</span></span><img src="http://rosssociety.org/resources/Pictures/Home%20page%20slider/Worceseter-Country-Club-18th-Green.jpg" class="camera_thumb" style="position: absolute; opacity: 0;" /><div class="thumb_arrow" style="opacity: 0;"></div></li></ul></div><div class="camera_loader" style="opacity: 0.252506;"></div></div>
+</div><div id="id_nluoaVz" class="WaGadgetLast WaGadgetContent  gadgetStyle003" style="" data-componentid="nluoaVz"><div class="gadgetStyleBody gadgetContentEditableArea" style="" data-editablearea="0" data-areaheight="auto">
+<p align="center"><span><span style="background-color: rgb(171, 161, 116);"><span><font color="#FFFFFF" face="Verdana" style="font-size: 24px;">DONALD ROSS SOCIETY Mission Statement</font></span></span></span></p><p align="center"><span><span style="background-color: rgb(171, 161, 116);"><span><font color="#FFFFFF" face="Verdana" style="font-size: 14px;">The Society was founded in 1989 to promote the recognition of Donald J. Ross, the excellence of his architecture and the preservation and restoration of the golf courses he designed.</font></span></span></span></p></div>
 </div></div>
 </div></div>
 			</div>
@@ -752,26 +513,25 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 </blockquote><strong style="font-size: 14px;"><font face="Verdana, sans-serif" style="font-size: 16px;">Golf  Shop</font></strong><br />
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
-  <font face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;"><font face="Verdana, sans-serif">The Society has a small golf shop for members only.  Leading the offering is</font> <font face="Verdana"><strong>Donald Ross Sportswear!</strong> A </font><font face="Verdana">limited selection of their superb sportswear is now offered to Society members.  Rob Stein, owner of Donald Ross Sportswear and Society member, has been very gracious.  The items are of top quality material and styling and is found in the finer golf shops and retail stores. </font><font color="#000000">Golf attire is offered for men and woman with the Society crest on left chest or left sleeve.</font><font face="Verdana">  Members c</font><font face="Verdana">an view their catalog of offerings and special pricing. Donald Ross Sportswear directly supports the Tufts Archives with generous donations and by their support of Tufts' fund raising. <font color="#000000">M</font></font><font color="#000000">embers should first log into the Society web site,  select 'Donald Ross Sportswear' via the MEMBERS tab. </font></font>
+  <font face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;"><font face="Verdana, sans-serif">The Society has a small golf shop for members only.  Leading the offering is</font> <font face="Verdana"><strong>Donald Ross Sportswear!</strong> A </font><font face="Verdana">limited selection of their superb sportswear is now offered to Society members.  Rob Stein, owner of Donald Ross Sportswear and Society member, has been very gracious.  The items are of top quality material and styling and is found in the finer golf shops and retail stores. </font><font color="#000000">Golf attire is offered for men and woman with the Society crest on left chest or left sleeve.</font><font face="Verdana">  Members c</font><font face="Verdana">an view their catalog of offerings and special pricing. Donald Ross Sportswear directly supports the Tufts Archives with generous donations and by their support of Tufts' fund raising. <font color="#000000">M</font></font><font color="#000000">embers should first log into the Society web site,  select 'Donald Ross Sportswear' via the GOLF SHOP tab. </font></font>
 </blockquote>
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
-  <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;">Other items with the Society crest such as belts, pocket crests, and head covers are now offered at this MEMBERS page rather than only at events only. These are found via the 'Golf Shop' pick under the MEMBERS tab.</font>
+  <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" style="font-size: 14px;">Other items with the Society crest such as belts, pocket crests, and head covers are now offered at this GOLF SHOP page rather than only at events only. These are found via the 'Golf Shop' pick under the GOLF SHOP tab.</font>
 </blockquote>
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
-  <font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" style="font-size: 14px;">The MEMBERS tab also provides several books and a documentary about Ross, all with connections to fellow Society members.  </font><font color="#000000" style="font-size: 14px;">The first is Chris Buie's book 'The Life and Times of Donald Ross'.  </font><font color="#000000" style="font-size: 14px;">The book was produced by Classics of Golf, Mike Beckerich publisher and Society member.  A special discount is offered to members.  The second book is a revision to Society member Paul Dunn's book "Great Donald Ross Courses Everyone Can Play: Resort, Public, and Semi-Private." This is a welcome update to Mr. Dunn's first edition.  It is a great reference for touring the more accessible Ross courses. Paul updated the book using better quality and more photographs. The books and documentary are found via the 'Books' pick under the MEMBERS tab. </font></font>
+  <font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" style="font-size: 14px;">The GOLF SHOP tab also provides several books and a documentary about Ross, all with connections to fellow Society members.  </font><font color="#000000" style="font-size: 14px;">The first is Chris Buie's book 'The Life and Times of Donald Ross'.  </font><font color="#000000" style="font-size: 14px;">The book was produced by Classics of Golf, Mike Beckerich publisher and Society member.  A special discount is offered to members.  The second book is a revision to Society member Paul Dunn's book "Great Donald Ross Courses Everyone Can Play: Resort, Public, and Semi-Private." This is a welcome update to Mr. Dunn's first edition.  It is a great reference for touring the more accessible Ross courses. Paul updated the book using better quality and more photographs. The books and documentary are found via the 'Books' pick under the GOLF SHOP tab. </font></font>
 </blockquote>
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
   <font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" style="font-size: 14px;"><br /></font></font>
 </blockquote>
 
-<div>
-  <strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375; color: rgb(55, 55, 55); font-size: 12.5px;"><strong><strong><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><strong><strong><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font style="font-size: 16px;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;">Next Event - Fall 2018 - Annual event - Hartford Connecticut</font></font></strong></strong></strong> <strong>- October 8-11, 2018</strong></font></font></strong></strong></strong></strong></strong></font></font></strong></strong></strong></strong><br />
+<div><strong style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 1.375; color: rgb(55, 55, 55); font-size: 12.5px;"><strong><strong><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><strong><strong><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font style="font-size: 16px;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><strong style="line-height: 1.375;"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"> Annual Meeting - Hartford Connecticut</font></font></strong></strong></strong> <strong>- October 8-11, 2018</strong></font></font></strong></strong></strong></strong></strong></font></font></strong></strong></strong></strong><br />
 
   <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif;">
-    <p><font face="Verdana" style="font-size: 12px;"><font color="#1A1A1A" style="line-height: 1.375;"><font face="Verdana"><font><font><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="font-size: 14px;"><font color="#1A1A1A" face="Verdana"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">The annual meeting will be held in the Hartford Connecticut area October 8-11, 2018.  The golf will be played at <strong>Wampanoag CC</strong> on Monday afternoon October 8th, followed by <strong>The Hartford Golf Club, Longmeadow CC,</strong> and finally <strong>The Orchards Golf Club</strong> on Thursday morning October 11th.  A  SAVE THE DATE email was sent to Society members on May 12th and entry form emailed on June 27th. </font></font></font></font></font></font></font></font></font></font></font></font></font><span style="text-decoration: underline;"><font style="font-size: 14px;">The event has received many entries in a short period of time. The event  is now full as of July 30th.</font></span></p>
+    <p><font face="Verdana" style="font-size: 12px;"><font color="#1A1A1A" style="line-height: 1.375;"><font face="Verdana"><font><font><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375;"><font style="font-size: 14px;"><font color="#1A1A1A" face="Verdana"><font face="Arial, 'Helvetica Neue', Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">The annual meeting was held in the Hartford Connecticut area October 8-11, 2018.  Approximately 50 members played at <strong>Wampanoag CC</strong> on Monday afternoon October 8th, followed by <strong>The Hartford Golf Club, Longmeadow CC,</strong> and finally <strong>The Orchards Golf Club</strong> on Thursday morning October 11th.  </font></font></font></font></font></font></font></font></font></font></font></font></font></p>
   </blockquote>
 
   <div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
@@ -884,7 +644,7 @@ document.write('&lt;style type="text/css"&gt; .WaHideIfJSEnabled, .HideIfJSEnabl
 <p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; line-height: 17.1875px; font-size: 12.5px;"><strong style="line-height: 1.375; font-size: 12.5px;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;"><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><strong style="line-height: 1.375;"><font><font face="Verdana"><font color="#1A1A1A" style="line-height: 1.375; font-size: 16px;">Golf Collectors Society</font></font></font></strong></font></strong></font></strong><br /></font></font></font></strong></p>
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
-  <font face="Verdana" style="font-size: 14px;">The Golf Collectors Society is offering a complimentary membership for 2018 to Ross Society members. Please log into the DRS web site as a member, select the MEMBERS tab, and then the GOLF COLLECTORS tab to view the invitation for a complimentary membership.</font>
+  <font face="Verdana" style="font-size: 14px;">The Golf Collectors Society is offering a complimentary membership for 2018 to Ross Society members. Please log into the DRS web site as a member, select the MEMBERS tab, and then the GOLF COLLECTORS SOCIETY OFFER tab to view the invitation for a complimentary membership.</font>
 </blockquote>
 
 <blockquote style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12.5px;">
