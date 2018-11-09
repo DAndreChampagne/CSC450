@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351bc678-b863-4e66-aa18-e7a77bab543f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/results/results-old.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/~$results.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/similarity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/similarity-old.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/termcount.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/termcount-old.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +20,14 @@
     <session id="-858544896">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="13" />
+          <entry key="project.open.time.2" value="14" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +39,7 @@
           <entry key="csv" value="8" />
           <entry key="html" value="2" />
           <entry key="json" value="3" />
-          <entry key="log" value="8" />
+          <entry key="log" value="9" />
           <entry key="py" value="5" />
         </counts>
       </usages-collector>
@@ -47,7 +48,7 @@
           <entry key="CSV" value="4" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="3" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="PLAIN_TEXT" value="17" />
           <entry key="Python" value="5" />
         </counts>
       </usages-collector>
@@ -57,14 +58,14 @@
           <entry key="Python Console" value="3" />
           <entry key="json" value="281" />
           <entry key="log" value="1" />
-          <entry key="py" value="10908" />
+          <entry key="py" value="11221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="281" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="10911" />
+          <entry key="Python" value="11224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -75,11 +76,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+            <state relative-caret-position="166">
+              <caret line="211" column="31" selection-start-line="211" selection-start-column="31" selection-end-line="211" selection-end-column="31" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1541614988806" expanded="true" signature="560:743" ph="..." />
+                <marker date="1541643730811" expanded="true" signature="560:743" ph="..." />
+                <marker date="1541643730811" expanded="true" signature="1710:1785" ph="..." />
               </folding>
             </state>
           </provider>
@@ -102,6 +104,7 @@
       <find>comparisonResults</find>
       <find>pages</find>
       <find>_LiberalTerms</find>
+      <find>SaveWebResult</find>
     </findStrings>
     <replaceStrings>
       <replace>null,</replace>
@@ -134,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,20 +249,20 @@
     <frame x="521" y="23" width="919" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2736602" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2850627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328877" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3195021" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3195021" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328877" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32780084" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.328877" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32780084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,7 +310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/results.csv">
+    <entry file="file://$PROJECT_DIR$/results/results-old.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
     </entry>
@@ -325,15 +328,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/termcount.csv">
+    <entry file="file://$PROJECT_DIR$/results/termcount-old.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="29810" lean-forward="true" selection-start-line="29810" selection-end-line="29810" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/selenium_ex.py" />
     <entry file="file://$USER_HOME$/Downloads/pokemon_api.py">
@@ -346,13 +342,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142021">
+          <caret line="29810" selection-start-line="29810" selection-end-line="29810" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="145" column="20" selection-start-line="145" selection-start-column="20" selection-end-line="145" selection-end-column="20" />
+        <state relative-caret-position="166">
+          <caret line="211" column="31" selection-start-line="211" selection-start-column="31" selection-end-line="211" selection-end-column="31" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1541614988806" expanded="true" signature="560:743" ph="..." />
+            <marker date="1541643730811" expanded="true" signature="560:743" ph="..." />
+            <marker date="1541643730811" expanded="true" signature="1710:1785" ph="..." />
           </folding>
         </state>
       </provider>
