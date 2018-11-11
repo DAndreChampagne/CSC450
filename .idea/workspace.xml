@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351bc678-b863-4e66-aa18-e7a77bab543f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/results/results-old.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/failed attempt 1/code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/failed attempt 1/similarity.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/similarity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/similarity-old.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/termcount.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/termcount-old.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/~$results.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,14 +21,14 @@
     <session id="-858544896">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="26" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="14" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.2" value="17" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,7 +37,7 @@
           <entry key="20181024 133037954738 Trump" value="1" />
           <entry key="20181024 142529638130 Trump" value="1" />
           <entry key="20181024 171037302416 Trump" value="1" />
-          <entry key="csv" value="8" />
+          <entry key="csv" value="9" />
           <entry key="html" value="2" />
           <entry key="json" value="3" />
           <entry key="log" value="9" />
@@ -45,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="4" />
+          <entry key="CSV" value="5" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="17" />
@@ -58,14 +59,14 @@
           <entry key="Python Console" value="3" />
           <entry key="json" value="281" />
           <entry key="log" value="1" />
-          <entry key="py" value="11221" />
+          <entry key="py" value="12386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="281" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="11224" />
+          <entry key="Python" value="12389" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -76,12 +77,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="211" column="31" selection-start-line="211" selection-start-column="31" selection-end-line="211" selection-end-column="31" />
+            <state relative-caret-position="342">
+              <caret line="489" column="18" lean-forward="true" selection-start-line="489" selection-start-column="18" selection-end-line="489" selection-end-column="18" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1541643730811" expanded="true" signature="560:743" ph="..." />
-                <marker date="1541643730811" expanded="true" signature="1710:1785" ph="..." />
+                <marker date="1541901237528" expanded="true" signature="771:1077" ph="..." />
+                <marker date="1541901237528" expanded="true" signature="2044:2119" ph="..." />
               </folding>
             </state>
           </provider>
@@ -127,17 +128,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="521" />
+    <option name="x" value="546" />
     <option name="y" value="23" />
-    <option name="width" value="919" />
-    <option name="height" value="815" />
+    <option name="width" value="894" />
+    <option name="height" value="841" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +154,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,16 +247,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="23" width="919" height="815" extended-state="0" />
+    <frame x="546" y="23" width="894" height="841" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2850627" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31924883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328877" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3195021" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3084112" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39118826" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -300,27 +301,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/failed attempt 1/similarity.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-39" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/failed attempt 1/similarity.csv" />
     <entry file="file://$PROJECT_DIR$/results/results-old.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/failed attempt 1/code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/failed attempt 1/code.py" />
     <entry file="file://$PROJECT_DIR$/results/similarity-log.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -349,14 +335,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/sentiment.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="211" column="31" selection-start-line="211" selection-start-column="31" selection-end-line="211" selection-end-column="31" />
+        <state relative-caret-position="342">
+          <caret line="489" column="18" lean-forward="true" selection-start-line="489" selection-start-column="18" selection-end-line="489" selection-end-column="18" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1541643730811" expanded="true" signature="560:743" ph="..." />
-            <marker date="1541643730811" expanded="true" signature="1710:1785" ph="..." />
+            <marker date="1541901237528" expanded="true" signature="771:1077" ph="..." />
+            <marker date="1541901237528" expanded="true" signature="2044:2119" ph="..." />
           </folding>
         </state>
       </provider>
