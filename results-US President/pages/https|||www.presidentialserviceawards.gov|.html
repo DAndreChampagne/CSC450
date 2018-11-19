@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script src="https://js-agent.newrelic.com/nr-1099.min.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1542004393985/recaptcha__en.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e6ca1cd120","applicationID":"4416246","transactionName":"ZldRZkJUWhdSVEJZCl8dcmFgGlABVVZDXBEfU0BCSA==","queueTime":0,"applicationTime":13,"ttGuid":"735DA8E5E3AF42D0","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&amp;&amp;(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a&lt;r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&amp;&amp;u.indexOf("Chrome")===-1&amp;&amp;u.indexOf("Chromium")===-1&amp;&amp;(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&amp;&amp;(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&amp;&amp;(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&amp;&amp;e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&amp;&amp;e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c&lt;f;c++)u[c].apply(a,r);var p=s[y[t]];return p&amp;&amp;p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r&lt;t.length;r++)t[r]===n&amp;&amp;t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&amp;&amp;(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&amp;&amp;"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&amp;&amp;e.licenseKey&amp;&amp;e.applicationID&amp;&amp;n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&amp;&amp;i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&amp;&amp;performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&amp;&amp;g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&amp;&amp;w&amp;&amp;w[m]&amp;&amp;!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><meta name="com.silverpop.brandeddomains" content="www.pages04.net,pointsoflight.mkt4753.com,&#10;                www.abillionpluschange.org,www.allforgood.org,www.americorpsalums.org,www.generationon.org,&#10;                www.goodandready.org,www.handsonnetwork.org,www.pointsoflight.org,www.presidentialserviceawards.gov,&#10;        www.volunteeringandservice.org" /><meta name="com.silverpop.cothost" content="engage4.silverpop.com" /><title>
+	The President's Volunteer Service Award
+</title><link rel="stylesheet" type="text/css" href="assets/css/normalize.css" /><link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css" /><link rel="stylesheet" type="text/css" href="assets/css/pvsa-design.css?update=04052017" /><link rel="stylesheet" type="text/css" href="assets/js/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+    <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="assets/css/print.css" media="print" />
+    <script src="/assets/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>    
+    <script src="/assets/js/fancybox/jquery.fancybox.js?v=2.1.4" type="text/javascript"></script>
+    <script src="/assets/js/jqcode.js?update=12032014" type="text/javascript"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    
+    <script src="https://www.sc.pages04.net/lp/static/js/iMAWebCookie.js?3abe81a-13674a64302-b72427ac28f4177bd55290ce12678282&amp;h=www.pages04.net" type="text/javascript"></script>
+            
+    <!--[if IE]>
+    <link id="lnkCSSIEfont" rel="stylesheet" href="/assets/css/ie-fontfix.css" type="text/css" />         
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link id="lnkCSSIE7" rel="stylesheet" href="/assets/css/ie7.css" type="text/css" />         
+    <![endif]-->
+    <!--[if IE 8]>
+    <link id="lnkCSSIE8" rel="stylesheet" href="/assets/css/ie8.css" type="text/css" />         
+    <![endif]-->
+    
+      
+    <script src="/assets/js/jquery.cycle.all.js" type="text/javascript"></script>
+
+
+
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1059078-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+    <a class="accessibility" href="#main-content">Skip to Content</a>
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="EfjvWTlR+opwpZtGve5q7WpuF9z3WOPDjWpB4ujYfgwPqaf48zgvQ3fAdYCaqTw0Yyoz2eQL6kaZU9PJgv4y8WqD3qxZAYSgcU2pRL7alHAbLKfSoDEBnD5BurSsX6HlNtedpXcv2gTxusb6LSR2sEhbkZO0AZYfNrBrbjALEj2nyTAWx3GSL0hpNm//MwICyDgkxemcetzCjVF72JmFCQ==" />
+</div>
+        <div id="page-container">
+		    <div id="header">
+			    <div id="navigation">
+				    <div class="page-sizer">
+					    <h1 id="site-title"><a href="./" id="A1">The President's Volunteer Service Award</a></h1>
+                        <ul class="menu"><li><a href="/about" target="_self">About PVSA</a><div class="dropdown"><ul><li><a href="/who-we-are" target="_self">Who We Are</a></li><li><a href="/the-award" target="_self">The Award</a></li><li><a href="/award-package" target="_self">Award Packages</a></li><li><a href="/sign-updates.aspx" target="_self">Sign Up for Updates</a></li><li><a href="/our-agreement" target="_self">Our Agreement</a></li><li><a href="/faq" target="_self">FAQ</a></li><li><a href="/accessibility" target="">Accessibility</a></li></ul></div></li><li><a href="/focus-area" target="_self">Focus Areas</a><div class="dropdown"><ul><li><a href="/how-you-can-serve" target="_self">How You Can Serve</a></li></ul></div></li><li><a href="/stories" target="_self">Volunteer Stories</a><div class="dropdown"><ul><li><a href="/volunteer-stories" target="">Individuals Making a Difference</a></li><li><a href="/organization-stories" target="">Organizations Making a Difference</a></li></ul></div></li><li><a href="/get-involved" target="_self">Get Involved</a><div class="dropdown"><ul><li><a href="/certifying-organizations" target="_self">Certifying Organizations</a></li><li><a href="/leadership-organizations" target="_self">Leadership Organizations</a></li><li><a href="/volunteer" target="_self">Volunteers</a></li></ul></div></li></ul>
+
+
+                        
+                        <div id="event-logo"></div>
+				    </div>
+			    </div>
+                <a class="accessibility" href="#main-content">Skip to Content</a>
+			    <div class="header-elements">
+				    <div class="page-sizer">
+					    <ul class="quicklinks">
+						    <li><a id="hlCustomer" href="https://presidentialserviceawards.desk.com/" target="_blank">Customer Service</a></li>
+						    <li><a id="hlUpdates" href="sign-updates.aspx">Sign Up for Updates</a></li>
+                            <li><a id="hlContact" href="https://presidentialserviceawards.desk.com/customer/portal/emails/new" target="_blank">Contact Us</a></li>
+					    </ul>
+                        
+        <div id="login_lgvLoggedIn_pnlLogin" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'login_lgvLoggedIn_btnLogin')">
+	
+        <div class="form-login form">
+            <div class="field field-dynamic-label">
+                <label for="login_lgvLoggedIn_txt_username" id="login_lgvLoggedIn_lbl_username" style="display: block;">username</label>
+                <input name="ctl00$ctl00$login$lgvLoggedIn$txt_username" type="text" id="login_lgvLoggedIn_txt_username" />
+            </div>
+            <div class="field field-dynamic-label">
+                <label for="login_lgvLoggedIn_txt_password" id="login_lgvLoggedIn_lbl_password" style="display: block;">password</label>
+                <input name="ctl00$ctl00$login$lgvLoggedIn$txt_password" type="password" id="login_lgvLoggedIn_txt_password" />
+            </div>
+            <div class="actions">
+                <input type="submit" name="ctl00$ctl00$login$lgvLoggedIn$btnLogin" value="Login" id="login_lgvLoggedIn_btnLogin" class="button" />
+            </div>
+            <div class="forgot-link">
+                <a id="login_lgvLoggedIn_hlRetUser" href="retrieve-username.aspx">Retrieve Username</a>
+                 
+                <a id="login_lgvLoggedIn_hlForgot" href="forgot-password.aspx">Forgot Password?</a>
+            </div>
+            <div class="error-message">
+                <strong> </strong>
+            </div>
+        </div>
+        
+</div>
+    
+					    <div class="cncs-placeholder">
+						    <a href="http://www.nationalservice.gov/" target="_blank" title="Visit CNCS website (opens in a new tab/window)"><img src="assets/img/logo_cncs_header.png" id="Img1" alt="Corporation for National &amp; Community Service" width="117" height="52" /></a>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		    <div id="content">
+			    <div class="page-sizer">
+                    <a class="accessibility" href="#main-content">Skip to Content</a>
+                    
+    
+
+
+
+                    <a name="main-content"></a>
+
+                    
+    <a name="main-content"></a>
+    
+    <div class="article no-sidebar">
+        <div id="ContentPlaceHolder1_ContentPlaceHolder1_panRegLinks" class="registration-links">
+	
+            <span class="label-reg">Register as:</span> 
+            <a class="register-as" href="/register-co">Certifying Organization</a>
+            <a class="register-as" href="/register-vo">Volunteer</a>
+        
+</div>
+                
+        <div class="home-featured">
+            <div class="home-featured-shadow">
+                <div class="home-featured-main">
+                    <div class="intro">
+                        <div class="content-pad">
+                            <h1>The President's Volunteer Service Award</h1>
+                            <div class="intro-copy">
+                                <p>The President’s Volunteer Service Award (PVSA) is the premier volunteer awards program, encouraging citizens to live a life of service through presidential gratitude and national recognition.</p>
+                                <p>We encourage you to take a look around, be inspired and take positive action that changes the world.</p>
+								<div class="decor"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-placeholder">
+                        <div class="content-pad">
+                            <div class="slideshow" id="home-slideshow">
+                                
+                                        <div class="slideshow-item" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 6; opacity: 1;">
+                                            <img src="https://c.na61.visual.force.com/servlet/servlet.ImageServer?id=0150d000001DkwJAAS&amp;oid=00D300000000SmOEAU" alt="" title="&lt;div style=&quot;font-size:0.80em; line-height: 14px; margin-top:10px;&quot;&gt;&quot;Nowhere is our unity more evident than in the actions of our volunteer and charitable organizations that rally to their neighbors' aid.&quot;  - President Trump&lt;/div&gt;" />
+                                            <div class="legend">
+                                                <div class="legend-copy"><div style="font-size:0.80em; line-height: 14px; margin-top:10px;">"Nowhere is our unity more evident than in the actions of our volunteer and charitable organizations that rally to their neighbors' aid."  - President Trump</div></div>
+                                                <a href="/trumpawards" class="learnmore">
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="slideshow-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0;">
+                                            <img src="https://login.salesforce.com/servlet/servlet.ImageServer?id=015600000014xAAAAY&amp;oid=00D300000000SmOEAU" alt="Woman helps an older man walk up the driveway to his home." title="&lt;div style=&quot;font-size:0.95em; line-height: 14px; margin-top:10px;&quot;&gt;&quot;One person can make a difference, and everyone&lt;br&gt; &amp;nbsp should try.&quot;  - John F. Kennedy&lt;/div&gt;" />
+                                            <div class="legend">
+                                                <div class="legend-copy"><div style="font-size:0.95em; line-height: 14px; margin-top:10px;">"One person can make a difference, and everyone<br />   should try."  - John F. Kennedy</div></div>
+                                                <a href="/focus-area" class="learnmore">
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="slideshow-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0;">
+                                            <img src="https://c.na26.visual.force.com/servlet/servlet.ImageServer?id=015320000016ELWAA2&amp;oid=00D300000000SmOEAU" alt="A poster for the MLK Drum Major program. Are you a Drum Major?" title="&lt;div style=&quot;font-size:0.95em; line-height: 14px; margin-top:10px;&quot;&gt;Better Youth's media industry mentors, like director F. Gary Gray, are giving youth tools for self-expression and career growth .&lt;/div&gt;" />
+                                            <div class="legend">
+                                                <div class="legend-copy"><div style="font-size:0.95em; line-height: 14px; margin-top:10px;">Better Youth's media industry mentors, like director F. Gary Gray, are giving youth tools for self-expression and career growth .</div></div>
+                                                <a href="/organization-stories" class="learnmore">
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="slideshow-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2; opacity: 0;">
+                                            <img src="https://login.salesforce.com/servlet/servlet.ImageServer?id=015600000014xAFAAY&amp;oid=00D300000000SmOEAU" alt="An AmeriCorp young man kneels down to help a girl with her art project." title="&lt;div style=&quot;font-size:0.95em; line-height: 14px; margin-top:10px;&quot;&gt;&quot;Every human being feels pleasure in doing good&lt;br&gt; &amp;nbsp to another.&quot;  - Thomas Jefferson&lt;/div&gt;" />
+                                            <div class="legend">
+                                                <div class="legend-copy"><div style="font-size:0.95em; line-height: 14px; margin-top:10px;">"Every human being feels pleasure in doing good<br />   to another."  - Thomas Jefferson</div></div>
+                                                <a href="/who-we-are" class="learnmore">
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="slideshow-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 1; opacity: 0;">
+                                            <img src="https://c.na26.visual.force.com/servlet/servlet.ImageServer?id=015320000016ELbAAM&amp;oid=00D300000000SmOEAU" alt="A poster to thank all the volunteers for their hard work. Thank You Volunteers!" title="&lt;div style=&quot;font-size:0.80em; line-height: 14px; margin-top:10px;&quot;&gt;&quot;No matter how big and powerful government gets, and the many&lt;br&gt; &amp;nbsp services it provides, it can never take the place of volunteers.&quot; - Ronald Reagan&lt;/div&gt;" />
+                                            <div class="legend">
+                                                <div class="legend-copy"><div style="font-size:0.80em; line-height: 14px; margin-top:10px;">"No matter how big and powerful government gets, and the many<br />   services it provides, it can never take the place of volunteers." - Ronald Reagan</div></div>
+                                                <a href="/how-you-can-serve" class="learnmore">
+                                                    Learn More</a>
+                                            </div>
+                                        </div>
+                                    
+                            </div><div class="slideshow-pager"><a href="#" class="activeSlide">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+            <div class="shadow-bottom"> </div>
+        </div>
+
+        <div class="columns-wrapper three-columns home-spotlight">
+            <div class="column-item">
+                <div id="ContentPlaceHolder1_ContentPlaceHolder1_CmsBlock_blockContent"><h2>News and Events </h2>
+
+<div class="spotlight-item">
+<h4>President Trump's Letters Available</h4>
+
+<p>For awards certified after October 1, 2017 certificate packages will feature a new letter from President Donald J. Trump, and Lifetime Certificates will bear the President's signature. </p>
+
+<p><a class="learnmore" href="https://www.presidentialserviceawards.gov/trumpawards" id="ContentPlaceHolder1_ContentPlaceHolder1_SpecialEvent_learnMore" target="_blank">Read More</a> </p>
+</div></div>
+
+            </div>
+            <div class="column-item">
+                <div id="blockContent"><h2>Volunteer Stories </h2>
+
+<div class="spotlight-item">
+<h4>How Do Volunteers Inspire You?</h4>
+
+<p>Certifying Organizations, let us know how your volunteers are making a difference in your community. Log in to your profile to share photos and stories with us. <br />
+ </p>
+</div></div>
+
+            </div>
+            <div class="column-item">
+                <h2>Learn More</h2>
+                <div class="box get-updates">
+                    <h3 class="title">Get Updates</h3>
+                    <p>Learn more about our work, hear incredible stories of service and stay in touch</p>
+                    <div class="field field-dynamic-label">
+                        <label for="ContentPlaceHolder1_ContentPlaceHolder1_txt_suscribe_email" id="ContentPlaceHolder1_ContentPlaceHolder1_lblSuscribeEmail" style="display: block;">email</label><input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txt_suscribe_email" type="text" id="ContentPlaceHolder1_ContentPlaceHolder1_txt_suscribe_email" />
+                        <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btSignup" value="Sign-Up" id="ContentPlaceHolder1_ContentPlaceHolder1_btSignup" class="button button-signup" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+				    
+                    <div class="clear"> </div>
+			    </div>
+			    <div class="shadow-decor"> </div>
+		    </div>
+        
+            <div id="footer"><div class="page-sizer"><div class="sitemap"><ul><li><a href="/about" target="_self">About PVSA</a><ul><li><a href="/who-we-are" target="_self">Who We Are</a><ul><li><a href="/trumpawards" target="">Presidential Transition</a></li></ul></li><li><a href="/the-award" target="_self">The Award</a></li><li><a href="/award-package" target="_self">Award Packages</a><ul><li><a href="/inventory" target="">Inventory</a></li></ul></li><li><a href="/sign-updates.aspx" target="_self">Sign Up for Updates</a></li><li><a href="/our-agreement" target="_self">Our Agreement</a></li><li><a href="/faq" target="_self">FAQ</a></li><li><a href="/accessibility" target="">Accessibility</a></li></ul></li><li><a href="/focus-area" target="_self">Focus Areas</a><ul><li><a href="/how-you-can-serve" target="_self">How You Can Serve</a></li></ul></li><li><a href="/stories" target="_self">Volunteer Stories</a><ul><li><a href="/volunteer-stories" target="">Individuals Making a Difference</a></li><li><a href="/organization-stories" target="">Organizations Making a Difference</a></li></ul></li><li><a href="/get-involved" target="_self">Get Involved</a><ul><li><a href="/certifying-organizations" target="_self">Certifying Organizations</a></li><li><a href="/leadership-organizations" target="_self">Leadership Organizations</a></li><li><a href="/volunteer" target="_self">Volunteers</a></li></ul></li></ul></div><div class="contact"><div class="column-title"></div><div class="contact">
+<div class="column-title">Contact Information</div>
+
+<div class="vcard">
+<p>President's Volunteer Service Award</p>
+
+<p>c/o Points of Light</p>
+
+<p>600 Means Street NW, Suite 210</p>
+
+<p><span class="locality">Atlanta</span>, GA  <span class="postal-code">30318</span></p>
+
+<div class="adr">
+<div class="country-name"><span class="hide">Email: </span><a href="mailto:pvsa-support@pointsoflight.org?subject=PVSA%20Support">pvsa-support@pointsoflight.org</a></div>
+</div>
+</div>
+
+<div class="links">
+<ul>
+	<li><a href="/privacy.aspx">Privacy</a>/<a href="/terms.aspx">Terms &amp; Conditions</a></li>
+	<li><a href="/report-fraud.aspx">Report Fraud</a></li>
+</ul>
+</div>
+
+<div class="copyright">©2017 All Rights Reserved</div>
+
+<div class="copyright">President’s Volunteer Service Awards, Parts A, B, C, D, E and F. OMB Number: 3045–0086</div>
+
+<div class="socialmedia">
+<p><br />
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+</div>
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. --><script async="" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=CNCS&amp;pua=ua-33523145-2" type="text/javascript">
+&lt;/div&gt;</script></div></div><div class="clear"> </div></div></div>
+    <div id="sponsors"><div class="page-sizer"><div class="page-sizer">
+<div class="notice">Our shared mission to inspire service-driven leaders and volunteers ignites the power of PVSA.</div>
+<a class="cncs" href="http://www.nationalservice.gov/" target="_blank"><img alt="Corporation for National &amp; Community Service" src="https://login.salesforce.com/servlet/servlet.ImageServer?id=015600000014xN9AAI&amp;oid=00D300000000SmOEAU" style="width: 129px; height: 58px;" /></a> <a class="polf" href="http://www.pointsoflight.org/?webSyncID=ecd24037-aab0-0aa7-1d0e-b09ed3acd147&amp;sessionGUID=e9885a9b-82c4-dd67-83c5-e1a3e94c7aad" target="_blank"><img alt="Points of Light" src="https://login.salesforce.com/servlet/servlet.ImageServer?id=015600000014xI9AAI&amp;oid=00D300000000SmOEAU" style="width: 142px; height: 62px;" /></a></div></div></div>
+	    </div>
+    
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZGtb69CqZNGZpKW4CA8ZGIWwZBlEDga_qM5dEvf10nETR88lTfFTvZ-yPrZYRBP48Q2&amp;t=636741187213574902" type="text/javascript"></script>
+</form>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.31bcb7ae210ce3a448d2ffc6cde7ba34.html?origin=https%3A%2F%2Fwww.presidentialserviceawards.gov&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><img src="https://www.pages04.net/WTS/event.jpeg?accesskey=3abe81a-13674a64302-b72427ac28f4177bd55290ce12678282&amp;v=1.3&amp;isNewSession=1&amp;type=pageview&amp;isNewVisitor=1&amp;sessionGUID=e9885a9b-82c4-dd67-83c5-e1a3e94c7aad&amp;webSyncID=ecd24037-aab0-0aa7-1d0e-b09ed3acd147&amp;url=https%3A%2F%2Fwww.presidentialserviceawards.gov%2F&amp;newSiteVisit=1&amp;hostname=www.presidentialserviceawards.gov&amp;pathname=%2F&amp;newPageVisit=1&amp;eventKey=0bad2547-bbc9-ac2b-4e37-b690d42ba435" style="display: none;" /></body></html>

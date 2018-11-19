@@ -16,9 +16,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 
-print(', '.join(stopwords.words('english')))
-exit()
-
 def visible_tag(element):
     if element.parent.name in ['style', 'script', 'head', 'title', 'meta', 'img', 'iframe', '[document']:
         return False
@@ -45,7 +42,7 @@ def visible_text(html):
 
 def _Log(text=''):
     print(f'{datetime.datetime.now()}: {text}')
-    with open('results/log.log', 'a') as outfile:
+    with open('results/log.log', 'a+') as outfile:
         outfile.write(text + '\r\n')
 
 def ReplaceNonValidCharacters(text):
@@ -62,7 +59,7 @@ def LogGoogleResult(term, link):
 
     uri = urlparse(link)
 
-    f = open(fname, 'a')
+    f = open(fname, 'a+')
     f.write(f"{datetime.datetime.now()}, '{term}', '{uri.netloc}', '{link}'\n")
     f.close()
 
@@ -154,103 +151,106 @@ _DriverPath = '/Users/dan/Google Drive/School/2018 08 - ECSU-CSC450 Senior Resea
 #######################################################################
 #   pull search results
 #######################################################################
-# chrome_options = Options()
-# # chrome_options.add_argument("--headless")
-# chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36")
-# chrome_options.add_argument("pragma=no-cache")
-# chrome_options.add_argument("authority=www.google.com")
-# chrome_options.add_argument("referer=https://www.google.com")
-#
-# driver = webdriver.Chrome(executable_path=_DriverPath, options=chrome_options)
-#
-# for term in _TermsToSearchFor:
-#     t = urllib.parse.urlencode({'term': term}).replace('term=', '')
-#
-#     url = _SearchUrl.format(_ResultsPerPage, t, t)
-#     _Log('fetching: ' + url)
-#
-#     driver.get(url)
-#     time.sleep(10)
-#     links = driver.find_elements_by_css_selector('g-link')
-#
-#     SaveGoogleResult(term, driver.page_source)
-#
-# driver.close()
+chrome_options = Options()
+# chrome_options.add_argument("--headless")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36")
+chrome_options.add_argument("pragma=no-cache")
+chrome_options.add_argument("authority=www.google.com")
+chrome_options.add_argument("referer=https://www.google.com")
+
+driver = webdriver.Chrome(executable_path=_DriverPath, options=chrome_options)
+
+for term in _TermsToSearchFor:
+    t = urllib.parse.urlencode({'term': term}).replace('term=', '')
+
+    url = _SearchUrl.format(_ResultsPerPage, t, t)
+    _Log('fetching: ' + url)
+
+    driver.get(url)
+    time.sleep(10)
+    links = driver.find_elements_by_css_selector('g-link')
+
+    SaveGoogleResult(term, driver.page_source)
+
+driver.close()
 
 
 #######################################################################
 #   Extract links from google search results
 #######################################################################
-# allLinks = []
-#
-# files = [f for f in listdir('results/') if isfile(join('results/', f)) and '.html' in f ]
-# current = 1
-# total = len(files)
-#
-# for file in files:
-#     _Log(f'\tprocessing result {current} of {total} ({current/total*100:.4f}%): {file}')
-#     current += 1
-#
-#     text = ''
-#     with open('results/' + file, 'r') as f:
-#         text = f.read()
-#
-#     soup = BeautifulSoup(text, 'html.parser')
-#
-#     links = soup.select('g-link > a')
-#     _Log(f'\tg-link > a: {len(links)}')
-#     links = ProcessLinks(links, file)
-#     allLinks.extend(links)
-#
-#     links = soup.select('.r > a')
-#     _Log(f'\t.r > a: {len(links)}')
-#     links = ProcessLinks(links, file)
-#     allLinks.extend(links)
-#
-#     links = soup.select('g-inner-card > a')
-#     _Log(f'\tg-inner-card > a: {len(links)}')
-#     links = ProcessLinks(links, file)
-#     allLinks.extend(links)
-#
-# allLinks = sorted(set(allLinks))
-#
-# _Log(f'total links extracted: ({len(allLinks)}):')
+allLinks = []
+
+files = [f for f in listdir('results/') if isfile(join('results/', f)) and '.html' in f ]
+current = 1
+total = len(files)
+
+for file in files:
+    _Log(f'\tprocessing result {current} of {total} ({current/total*100:.4f}%): {file}')
+    current += 1
+
+    text = ''
+    with open('results/' + file, 'r') as f:
+        text = f.read()
+
+    soup = BeautifulSoup(text, 'html.parser')
+
+    links = soup.select('g-link > a')
+    _Log(f'\tg-link > a: {len(links)}')
+    links = ProcessLinks(links, file)
+    allLinks.extend(links)
+
+    links = soup.select('.r > a')
+    _Log(f'\t.r > a: {len(links)}')
+    links = ProcessLinks(links, file)
+    allLinks.extend(links)
+
+    links = soup.select('g-inner-card > a')
+    _Log(f'\tg-inner-card > a: {len(links)}')
+    links = ProcessLinks(links, file)
+    allLinks.extend(links)
+
+allLinks = sorted(set(allLinks))
+
+_Log(f'total links extracted: ({len(allLinks)}):')
 
 
 #######################################################################
 #   pull and save linked pages
 #######################################################################
-# chrome_options = Options()
+chrome_options = Options()
 # chrome_options.add_argument("--headless")
-# chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36")
-# chrome_options.add_argument("pragma=no-cache")
-# driver = webdriver.Chrome(executable_path=_DriverPath, options=chrome_options)
-# driver.set_page_load_timeout(15)
-#
-# startTime = time.time()
-# current = 0
-# total = len(allLinks)
-#
-# _Log(f'Pulling linked pages...')
-#
-# for l in allLinks:
-#     current += 1
-#     if isfile(GenerateFileName(l)):
-#         _Log(f'\tSkipping linked page {current} of {total} ({current/total*100:.4f}%): {l}')
-#         continue
-#     _Log(f'\tfetching linked page {current} of {total} ({current/total*100:.4f}%): {l}')
-#
-#
-#     try:
-#         driver.get(l)
-#         SaveWebResult(l, driver.page_source)
-#     except Exception as ex:
-#         _Log(f"An exception of type {type(ex).__name__} occurred. Arguments:\n\t{ex.args}")
-#
-# driver.close()
-# endTime = time.time()
-#
-# _Log(f'finished in {endTime - startTime}')
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36")
+chrome_options.add_argument("pragma=no-cache")
+driver = webdriver.Chrome(executable_path=_DriverPath, options=chrome_options)
+driver.set_page_load_timeout(30)
+
+startTime = time.time()
+current = 0
+total = len(allLinks)
+
+_Log(f'Pulling linked pages...')
+
+for l in allLinks:
+    current += 1
+    if isfile(GenerateFileName(l)):
+        _Log(f'\tSkipping linked page {current} of {total} ({current/total*100:.4f}%): {l}')
+        continue
+    if "http://krcrtv.com/news/camp-fire/" in l:
+        continue
+
+    _Log(f'\tfetching linked page {current} of {total} ({current/total*100:.4f}%): {l}')
+
+
+    try:
+        driver.get(l)
+        SaveWebResult(l, driver.page_source)
+    except Exception as ex:
+        _Log(f"An exception of type {type(ex).__name__} occurred. Arguments:\n\t{ex.args}")
+
+driver.close()
+endTime = time.time()
+
+_Log(f'finished in {endTime - startTime}')
 
 
 #######################################################################
@@ -289,219 +289,219 @@ knownsites = {}
 #######################################################################
 #   process similarity to samples
 #######################################################################
-# _Log('loading pages for similarity comparison...')
-# files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f ]
-# files.sort()
-# pagesForComparison = {}
-# current = 1
-# total = len(files)
-# for f in files:
-#     _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
-#     current += 1
-#     with open('results/pages/' + f, 'r') as infile:
-#         pagesForComparison[f] = visible_text(infile.read())
-#
-# _Log('loading liberal samples...')
-# liberalSamplesFiles = [f for f in listdir('results/liberal samples/') if isfile(join('results/liberal samples/', f)) and '.html' in f ]
-# lib = {}
-# current = 1
-# total = len(liberalSamplesFiles)
-# for f in liberalSamplesFiles:
-#     _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
-#     current += 1
-#     with open('results/liberal samples/' + f, 'r') as infile:
-#         lib[f] = visible_text(infile.read())
-#
-# _Log('loading conservative samples...')
-# con = {}
-# conservativeSamplesFiles = [f for f in listdir('results/conservative samples/') if isfile(join('results/conservative samples/', f)) and '.html' in f ]
-# current = 1
-# total = len(conservativeSamplesFiles)
-# for f in conservativeSamplesFiles:
-#     _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
-#     current += 1
-#     with open('results/conservative samples/' + f, 'r') as infile:
-#         con[f] = visible_text(infile.read())
-#
-# rows = len(pagesForComparison) + 1
-# columns = len(liberalSamplesFiles) + len(conservativeSamplesFiles) + 1
-# comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
-#
-# startTime = datetime.datetime.now()
-# _Log()
-# _Log(f'files to process: {len(pagesForComparison)}')
-#
-#
-# # populate row and column headers
-# col = 1
-# row = 1
-# for c in range(0, len(liberalSamplesFiles)):
-#     comparisonResults[0][col] = liberalSamplesFiles[c]
-#     col += 1
-# for c in range(0, len(conservativeSamplesFiles)):
-#     comparisonResults[0][col] = conservativeSamplesFiles[c]
-#     col += 1
-# for k in pagesForComparison.keys():
-#     comparisonResults[row][0] = k
-#     row += 1
-#
-#
-# # do the comparisons
-# spacy.prefer_gpu()
-# nlp = spacy.load('en')  # https://spacy.io/usage/models
-# current = 1
-# total = (len(comparisonResults)-1) * (len(comparisonResults[0])-1)
-# startTime = datetime.datetime.now()
-#
-# for r in range(1, len(comparisonResults)):
-#     for c in range(1, len(comparisonResults[r])):
-#         f1 = comparisonResults[r][0]
-#         f2 = comparisonResults[0][c]
-#
-#         _Log(f'\tcomparing {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed): \'{f1}\', \'{f2}\'')
-#         current += 1
-#
-#         page = pagesForComparison[f1]
-#         if f2 in lib:
-#             comparison = lib[f2]
-#         elif f2 in con:
-#             comparison = con[f2]
-#         else:
-#             raise Exception('This is a problem')
-#
-#         f1 = nlp(page)
-#         f2 = nlp(comparison)
-#
-#         comparisonResults[r][c] = f1.similarity(f2)
-#
-#
-# # output to CSV
-# buffer = ''
-# for row in range(0, len(comparisonResults)):
-#     for col in range(0, len(comparisonResults[row])):
-#         buffer += str(comparisonResults[row][col]) + ','
-#     buffer += '\n'
-#
-# with open('results/spacy.csv', 'w') as outfile:
-#     outfile.write(buffer)
-#
-# _Log(f'complete in {datetime.datetime.now() - startTime}')
+_Log('loading pages for similarity comparison...')
+files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f ]
+files.sort()
+pagesForComparison = {}
+current = 1
+total = len(files)
+for f in files:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/pages/' + f, 'r') as infile:
+        pagesForComparison[f] = visible_text(infile.read())
+
+_Log('loading liberal samples...')
+liberalSamplesFiles = [f for f in listdir('results/liberal samples/') if isfile(join('results/liberal samples/', f)) and '.html' in f ]
+lib = {}
+current = 1
+total = len(liberalSamplesFiles)
+for f in liberalSamplesFiles:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/liberal samples/' + f, 'r') as infile:
+        lib[f] = visible_text(infile.read())
+
+_Log('loading conservative samples...')
+con = {}
+conservativeSamplesFiles = [f for f in listdir('results/conservative samples/') if isfile(join('results/conservative samples/', f)) and '.html' in f ]
+current = 1
+total = len(conservativeSamplesFiles)
+for f in conservativeSamplesFiles:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/conservative samples/' + f, 'r') as infile:
+        con[f] = visible_text(infile.read())
+
+rows = len(pagesForComparison) + 1
+columns = len(liberalSamplesFiles) + len(conservativeSamplesFiles) + 1
+comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
+
+startTime = datetime.datetime.now()
+_Log()
+_Log(f'files to process: {len(pagesForComparison)}')
+
+
+# populate row and column headers
+col = 1
+row = 1
+for c in range(0, len(liberalSamplesFiles)):
+    comparisonResults[0][col] = liberalSamplesFiles[c]
+    col += 1
+for c in range(0, len(conservativeSamplesFiles)):
+    comparisonResults[0][col] = conservativeSamplesFiles[c]
+    col += 1
+for k in pagesForComparison.keys():
+    comparisonResults[row][0] = k
+    row += 1
+
+
+# do the comparisons
+spacy.prefer_gpu()
+nlp = spacy.load('en')  # https://spacy.io/usage/models
+current = 1
+total = (len(comparisonResults)-1) * (len(comparisonResults[0])-1)
+startTime = datetime.datetime.now()
+
+for r in range(1, len(comparisonResults)):
+    for c in range(1, len(comparisonResults[r])):
+        f1 = comparisonResults[r][0]
+        f2 = comparisonResults[0][c]
+
+        _Log(f'\tcomparing {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed): \'{f1}\', \'{f2}\'')
+        current += 1
+
+        page = pagesForComparison[f1]
+        if f2 in lib:
+            comparison = lib[f2]
+        elif f2 in con:
+            comparison = con[f2]
+        else:
+            raise Exception('This is a problem')
+
+        f1 = nlp(page)
+        f2 = nlp(comparison)
+
+        comparisonResults[r][c] = f1.similarity(f2)
+
+
+# output to CSV
+buffer = ''
+for row in range(0, len(comparisonResults)):
+    for col in range(0, len(comparisonResults[row])):
+        buffer += str(comparisonResults[row][col]) + ','
+    buffer += '\n'
+
+with open('results/spacy.csv', 'w') as outfile:
+    outfile.write(buffer)
+
+_Log(f'complete in {datetime.datetime.now() - startTime}')
 
 
 #######################################################################
 #   count search terms (termcount.csv)
 #######################################################################
-# files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f]
-# files.sort()
-#
-# pages = {}
-# current = 1
-# total = len(files)
-#
-# for f in files:
-#     _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
-#     current += 1
-#     with open('results/pages/' + f, 'r') as infile:
-#         pages[f] = visible_text(infile.read())
-#
-# rows = len(files) + 1
-# columns = len(_LiberalTerms) + len(_ConservativeTerms) + 1
-# comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
-#
-#
-# # populate row and column headers
-# col = 1
-# row = 1
-# for r in range(0, len(files)):
-#     comparisonResults[row][0] = files[r]
-#     row += 1
-# for c in range(0, len(_LiberalTerms)):
-#     comparisonResults[0][col] = _LiberalTerms[c]
-#     col += 1
-# for c in range(0, len(_ConservativeTerms)):
-#     comparisonResults[0][col] = _ConservativeTerms[c]
-#     col += 1
-#
-#
-# # do the counts
-# current = 1
-# total = (len(comparisonResults)-1) * (len(comparisonResults[0])-1)
-# startTime = datetime.datetime.now()
-#
-# for r in range(1, len(comparisonResults)):
-#     for c in range(1, len(comparisonResults[r])):
-#         file = comparisonResults[r][0]
-#         term = comparisonResults[0][c]
-#
-#         _Log(f'\tcomparing {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed): \'{term}\', \'{file}\'')
-#         current += 1
-#
-#         page = pages[file]
-#
-#         comparisonResults[r][c] = page.count(term)
-#
-#
-# # output to CSV
-# buffer = ''
-# for row in range(0, len(comparisonResults)):
-#     for col in range(0, len(comparisonResults[row])):
-#         buffer += str(comparisonResults[row][col]) + ','
-#     buffer += '\n'
-#
-# with open('results/termcount.csv', 'w') as outfile:
-#     outfile.write(buffer)
+files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f]
+files.sort()
+
+pages = {}
+current = 1
+total = len(files)
+
+for f in files:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/pages/' + f, 'r') as infile:
+        pages[f] = visible_text(infile.read())
+
+rows = len(files) + 1
+columns = len(_LiberalTerms) + len(_ConservativeTerms) + 1
+comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
+
+
+# populate row and column headers
+col = 1
+row = 1
+for r in range(0, len(files)):
+    comparisonResults[row][0] = files[r]
+    row += 1
+for c in range(0, len(_LiberalTerms)):
+    comparisonResults[0][col] = _LiberalTerms[c]
+    col += 1
+for c in range(0, len(_ConservativeTerms)):
+    comparisonResults[0][col] = _ConservativeTerms[c]
+    col += 1
+
+
+# do the counts
+current = 1
+total = (len(comparisonResults)-1) * (len(comparisonResults[0])-1)
+startTime = datetime.datetime.now()
+
+for r in range(1, len(comparisonResults)):
+    for c in range(1, len(comparisonResults[r])):
+        file = comparisonResults[r][0]
+        term = comparisonResults[0][c]
+
+        _Log(f'\tcomparing {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed): \'{term}\', \'{file}\'')
+        current += 1
+
+        page = pages[file]
+
+        comparisonResults[r][c] = page.count(term)
+
+
+# output to CSV
+buffer = ''
+for row in range(0, len(comparisonResults)):
+    for col in range(0, len(comparisonResults[row])):
+        buffer += str(comparisonResults[row][col]) + ','
+    buffer += '\n'
+
+with open('results/termcount.csv', 'w') as outfile:
+    outfile.write(buffer)
 
 
 #######################################################################
 #   Process sentiment
 #######################################################################
-# files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f]
-# files.sort()
-#
-# pages = {}
-# startTime = datetime.datetime.now()
-# current = 1
-# total = len(files)
-#
-# for f in files:
-#     _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
-#     current += 1
-#     with open('results/pages/' + f, 'r') as infile:
-#         pages[f] = visible_text(infile.read())
-#
-# rows = len(files) + 1
-# columns = 3
-# comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
-#
-# # populate row and column headers
-# col = 1
-# row = 1
-# for r in range(0, len(files)):
-#     comparisonResults[row][0] = files[r]
-#     row += 1
-# comparisonResults[0][1] = 'Polarity'
-# comparisonResults[0][2] = 'Subjectivity'
-#
-# current = 1
-# for r in range(1, len(comparisonResults)):
-#     file = comparisonResults[r][0]
-#
-#     _Log(f'\tcomparing subjectivity {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed), \'{file}\'')
-#     current += 1
-#
-#     page = pages[file]
-#     blob = TextBlob(page)
-#
-#     comparisonResults[r][1] = blob.polarity
-#     comparisonResults[r][2] = blob.subjectivity
-#
-#
-# # output to CSV
-# buffer = ''
-# for row in range(0, len(comparisonResults)):
-#     for col in range(0, len(comparisonResults[row])):
-#         buffer += str(comparisonResults[row][col]) + ','
-#     buffer += '\n'
-#
-# with open('results/sentiment.csv', 'w') as outfile:
-#     outfile.write(buffer)
+files = [f for f in listdir('results/pages/') if isfile(join('results/pages/', f)) and '.html' in f]
+files.sort()
+
+pages = {}
+startTime = datetime.datetime.now()
+current = 1
+total = len(files)
+
+for f in files:
+    _Log(f'\tloading {current} of {total} ({current/total*100:.4f}%): {f}')
+    current += 1
+    with open('results/pages/' + f, 'r') as infile:
+        pages[f] = visible_text(infile.read())
+
+rows = len(files) + 1
+columns = 3
+comparisonResults = [[0 for x in range(columns)] for y in range(rows)]
+
+# populate row and column headers
+col = 1
+row = 1
+for r in range(0, len(files)):
+    comparisonResults[row][0] = files[r]
+    row += 1
+comparisonResults[0][1] = 'Polarity'
+comparisonResults[0][2] = 'Subjectivity'
+
+current = 1
+for r in range(1, len(comparisonResults)):
+    file = comparisonResults[r][0]
+
+    _Log(f'\tcomparing subjectivity {current} of {total} ({current/total*100:.4f}%, {datetime.datetime.now() - startTime} elapsed), \'{file}\'')
+    current += 1
+
+    page = pages[file]
+    blob = TextBlob(page)
+
+    comparisonResults[r][1] = blob.polarity
+    comparisonResults[r][2] = blob.subjectivity
+
+
+# output to CSV
+buffer = ''
+for row in range(0, len(comparisonResults)):
+    for col in range(0, len(comparisonResults[row])):
+        buffer += str(comparisonResults[row][col]) + ','
+    buffer += '\n'
+
+with open('results/sentiment.csv', 'w') as outfile:
+    outfile.write(buffer)
