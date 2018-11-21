@@ -17,7 +17,7 @@ from nltk.tokenize import word_tokenize
 
 
 def visible_tag(element):
-    if element.parent.name in ['style', 'script', 'head', 'title', 'meta', 'img', 'iframe', '[document']:
+    if element.parent.name in ['style', 'script', 'head', 'title', 'meta', 'img', 'iframe', '[document]']:
         return False
     if isinstance(element, Comment):
         return False
