@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="351bc678-b863-4e66-aa18-e7a77bab543f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results-combined/results.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results-combined.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/results-combined.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +15,14 @@
     <session id="-858544896">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="25" />
-          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.3" value="7" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,10 +71,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4135">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="120">
+              <caret line="8" column="25" lean-forward="true" selection-end-line="507" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
                 <marker date="1542767609834" expanded="true" signature="719:1025" ph="..." />
                 <marker date="1542767609834" expanded="true" signature="1994:2069" ph="..." />
               </folding>
@@ -152,7 +150,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -243,7 +241,7 @@
     <frame x="170" y="23" width="1270" height="841" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25407165" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.262215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,10 +284,9 @@
     <entry file="file://$PROJECT_DIR$/results/sentiment.csv" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4135">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-end-line="507" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
             <marker date="1542767609834" expanded="true" signature="719:1025" ph="..." />
             <marker date="1542767609834" expanded="true" signature="1994:2069" ph="..." />
           </folding>
